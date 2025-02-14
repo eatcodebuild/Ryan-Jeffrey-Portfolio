@@ -1,0 +1,300 @@
+:root {
+    --orange-primary: #FFAC4D;
+    --orange-hover: #e79a42;
+    --orange-active: #db913d;
+    --turquoise-primary: #2BA89D;
+    --turquoise-hover: #238a81;
+    --dark-grey: #1b2027;
+    --light-grey: rgb(173, 173, 173);
+}
+
+.bg-img {
+    background-image: url(/Images/Triangle.png);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-color: var(--dark-grey);
+    background-size: 800px;
+    position: relative;
+    height: 90vh;
+    overflow: hidden;
+}
+
+.bg-orange {
+    background-color: var(--orange-primary);
+}
+
+.bg-grey {
+    background-color: var(--dark-grey);
+}
+
+.bg-light-grey {
+    background-color: var(--light-grey);
+}
+
+.card {
+    background-color: white !important;
+    border: transparent;
+}
+
+.selfieBox {
+   position: absolute;
+   bottom: -160px;
+   z-index: 1;
+}
+
+.helloBox {
+    position: relative;
+    z-index: 2;
+}
+
+.bg-img.dashboard {
+    height: auto;
+}
+
+.nav-link {
+    color: white !important;
+    transition: 0.2s;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    border-radius: 5px;
+}
+
+.nav-link:hover {
+    background-color: var(--turquoise-hover) !important;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+nav {
+    background-color: var(--turquoise-primary);
+}
+
+.btn-primary {
+    background-color: var(--orange-primary) !important;
+    border-color: var(--orange-primary) !important;
+}
+
+.btn-primary:hover {
+    background-color: var(--orange-hover) !important;
+    border-color: var(--orange-hover) !important;
+}
+
+.btn-primary:active {
+    background-color: var(--orange-active) !important;
+    border-color: var(--orange-active) !important;
+}
+
+.btn-outline-primary {
+    border-color: #ffffff !important;
+    color: white !important;
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--orange-primary) !important;
+    border-color: var(--orange-primary) !important;
+}
+
+.btn-outline-primary:active {
+    background-color: var(--orange-active) !important;
+    border-color: var(--orange-active) !important;
+}
+
+.navbar-toggler {
+    border: none !important;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+.input-group {
+    width: 100% !important;
+}
+
+footer {
+    background-color: var(--turquoise-primary);
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideUpDiagonallyRight {
+    from {
+        transform: translateY(-100px) translateX(200px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0px) translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideUpDiagonallyLeft {
+    from {
+        transform: translateY(-100px) translateX(-200px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0px) translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(500px);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateX(-20px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(-500px);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateX(20px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes emerge {
+    from {
+        transform: translateY(500px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0%);
+    }
+
+    50% {
+        opacity: 0.5;
+        transform: scale(200%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(100%);
+    }
+}
+
+.slideUp {
+    animation-name: slideUp;
+    animation-duration: 1.2s;
+    animation-delay: 0s;
+    opacity: 0;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.slideUp.letsConnect {
+    animation-delay: 1.8s;
+}
+
+.slideUp.portfolio {
+    animation-delay: 1.5s;
+}
+
+.slideUpDiagonallyLeft {
+    animation-name: slideUpDiagonallyLeft;
+    animation-duration: 1.2s;
+    animation-delay: 0.5s;
+    opacity: 0;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.slideUpDiagonallyRight {
+    animation-name: slideUpDiagonallyRight;
+    animation-duration: 1.2s;
+    animation-delay: 0.5s;
+    opacity: 0;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.slideInLeft {
+    animation-name: slideInLeft;
+    animation-duration: 2s;
+    animation-delay: 1.3s;
+    opacity: 0;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.slideInRight {
+    animation-name: slideInRight;
+    animation-duration: 2s;
+    animation-delay: 0.8s;
+    opacity: 0;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.emerge {
+    animation-name: emerge;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    opacity: 0;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-delay: 1.8s;
+    opacity: 0;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.montserrat {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  .inter {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
