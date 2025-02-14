@@ -15,9 +15,10 @@
     background-color: var(--dark-grey);
     background-size: 800px;
     position: relative;
-    height: 90vh;
+    height: 80vh;
     overflow: hidden;
 }
+
 
 .bg-orange {
     background-color: var(--orange-primary);
