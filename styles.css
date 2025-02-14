@@ -15,12 +15,12 @@
     background-color: var(--dark-grey);
     background-size: 800px;
     position: relative;
-    height: 80vh;
+    height: 650px;
     overflow: hidden;
 }
 
 .bg-img.small {
-    height: 70vh;
+    height: 550px;
 }
 
 
