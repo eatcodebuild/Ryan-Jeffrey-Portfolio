@@ -19,6 +19,10 @@
     overflow: hidden;
 }
 
+.bg-img.small {
+    height: 70vh;
+}
+
 
 .bg-orange {
     background-color: var(--orange-primary);
