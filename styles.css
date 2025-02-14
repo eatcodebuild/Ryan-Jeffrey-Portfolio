@@ -37,8 +37,26 @@
 }
 
 .card {
-    background-color: white !important;
+    background-color: var(--dark-grey) !important;
     border: transparent;
+}
+
+#Expertise .card h2 {
+    color: white;
+    font-weight: 200;
+}
+
+#Expertise .card {
+    height: 100%;
+}
+
+#technologies .card {
+    background-color: white !important;
+    height: 100%;
+}
+
+#technologies .card h2 {
+    font-weight: 300;
 }
 
 .selfieBox {

@@ -45,7 +45,10 @@
     </nav>
 
 
-    <main>        
+    <main> 
+        
+        <!-- Large screen hero ↓ -->
+
         <div class="bg-img d-none d-md-block" >
             <div class="selfieBox">
                 <img class="emerge" src="/Images/selfie.PNG" alt="selfie" height="655px">
@@ -67,13 +70,14 @@
             </div>
         </div>
 
+        <!-- Small screen hero ↓ -->
 
         <div class="bg-img d-block d-md-none small">
             <div class="selfieBox small">
                 <img class="emerge" src="/Images/selfie.PNG" alt="selfie" height="455px">
             </div>
             <div class="helloBox">
-                <h1 class="display-2 text-white mt-5 slideUp text-center">Hello!</h1>
+                <h1 class="display-2 text-white mt-5 slideUp text-center">Hi, I'm Ryan!</h1>
                 <div class="d-flex justify-content-center align-items-center gap-3 mt-5">
                     <a href="#">
                         <button type="button" class="btn btn-outline-primary rounded-4 px-4 slideUpDiagonallyLeft">Portfolio</button>
@@ -85,28 +89,142 @@
             </div>
         </div>
         
-        <div class="bg-orange p-5">
+        <!-- Expertise ↓ -->
+
+        <div id="Expertise" class="bg-white p-5">
             <div class="container">
-                <h2 class="display-3 text-center text-white mb-5">Capabilities</h2>
-                <div class="row row-cols-1 row-cols-md-3 gap-4 gap-md-0">
+                <h2 class="display-3 text-center mb-5">Expertise</h2>
+                <div class="row row-cols-1 row-cols-lg-3 gap-4 gap-lg-0">
                     <div class="col">
-                        <div class="card shadow p-5">
-                            <!-- I am up to here -->
+                        <div class="card shadow rounded-4 p-5">
+                            <img class="mb-3" src="/Images/stack-svgrepo-com (1).svg" alt="" height="100px">
+                            <h2 class="text-center">Full Stack Web Development</h2>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card shadow p-5">
-                            <!-- I am up to here -->
+                        <div class="card shadow rounded-4 p-5">
+                            <img class="mb-3" src="/Images/responsive-marketing-svgrepo-com.svg" alt="" height="100px">
+                            <h2 class="text-center">Responsive Web Design</h2>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card shadow p-5">
-                            <!-- I am up to here -->
+                        <div class="card shadow rounded-4 p-5">
+                            <img class="mb-3" src="/Images/automation-decision-svgrepo-com.svg" alt="" height="100px">
+                            <h2 class="text-center">Automation & Optimization</h2>
                         </div>
                     </div>
                 </div>
+                <div class="d-flex justify-content-center align-items-center mt-5">
+                    <a href="#">
+                        <button type="button" class="btn btn-primary px-4 rounded-4">Learn more</button>
+                    </a>
+                </div>
             </div>
-            
+        </div>
+
+
+        <!-- Design - canva, figma
+        frontend - html5, css, javascript
+        backend - javascript, node.js, mongodb
+        frameworks - Bootstrap, express.js
+        deployment - vercel, github
+        project management - asana, clickup, notion
+        Workflow - word, excel, powerpoint -->
+
+        <div id="technologies" class="bg-grey p-5">
+            <div class="container">
+                <h2 class="display-3 text-white text-center mb-5">Technologies</h2>
+                <!-- <div class="row row-cols-1 row-cols-lg-3 gap-4 gap-lg-0 mb-4">
+                    <div class="col">
+                        <div class="card shadow rounded-4 p-5">
+                            <div class="d-flex justify-content-center align-items-center gap-3 mb-4">
+                                <img src="/Images/Canva-logo.webp" alt="Canva-logo" height="100px" width="auto">
+                                <img src="/Images/figma-svgrepo-com.svg" alt="Figma Logo" height="100px" width="auto">
+                            </div>
+                            <hr>
+                            <h2 class="text-center">Design</h2>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow rounded-4 p-5">
+                            <div class="d-flex justify-content-center align-items-center gap-3 mb-4">
+                                <img src="/Images/html-5-svgrepo-com.svg" alt="HTML logo" height="100px" width="auto">
+                                <img src="/Images/css-3-svgrepo-com.svg" alt="CSS Logo" height="100px" width="auto">
+                                <img src="/Images/javascript-svgrepo-com.svg" alt="JS Logo" height="90px" width="auto">
+                            </div>
+                            <hr>
+                            <h2 class="text-center">Frontend</h2>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow rounded-4 p-5">
+                            <div class="d-flex justify-content-center align-items-center gap-3 mb-4 flex-wrap">
+                                <img src="/Images/javascript-svgrepo-com.svg" alt="JS Logo" height="90px" width="auto">
+                                <img src="/Images/nodejs-svgrepo-com.svg" alt="node Logo" height="100px" width="auto">
+                                <img src="/Images/mongodb-logo-png-1024x276.png" alt="mongo Logo" height="70px" width="auto">
+                            </div>
+                            <hr>
+                            <h2 class="text-center">Backend</h2>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-lg-3 gap-4 gap-lg-0">
+                    <div class="col">
+                        <div class="card shadow rounded-4 p-5">
+                            <div class="d-flex justify-content-center align-items-center gap-2 mb-4">
+                                <img src="/Images/bootstrap5-logo.png" alt="bootstrap-logo" height="100px" width="auto">
+                                <img src="/Images/ExpressJS.png" alt="express Logo" height="60px" width="auto">
+                            </div>
+                            <hr>
+                            <h2 class="text-center">Frameworks</h2>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow rounded-4 p-5">
+                            <div class="d-flex justify-content-center align-items-center gap-3 mb-4">
+                                <img src="/Images/Vercel-logo-01.png" alt="vercel-logo" height="100px" width="auto">
+                                <img src="/Images/github-svgrepo-com.svg" alt="github Logo" height="100px" width="auto">
+                            </div>
+                            <hr>
+                            <h2 class="text-center">Deployment</h2>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow rounded-4 p-5">
+                            <div class="d-flex justify-content-center align-items-center gap-3 mb-4">
+                                <img src="/Images/Asana-Emblem.png" alt="Canva-logo" height="80px" width="auto">
+                                <img src="/Images/ClickUp-Logo3-1024x577.png" alt="Figma Logo" height="100px" width="auto">
+                            </div>
+                            <hr>
+                            <h2 class="text-center">Project Management</h2>
+                            <hr>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="card p-3 rounded-4">
+                    <div class="d-flex justify-content-center align-items-center gap-5 flex-wrap">
+                        <img src="/Images/ClickUp-Logo3-1024x577.png" alt="Figma Logo" height="100px" width="auto">
+                        <img src="/Images/Asana-Emblem.png" alt="Figma Logo" height="120px" width="auto">
+                        <img src="/Images/html-5-svgrepo-com.svg" alt="Figma Logo" height="100px" width="auto">
+                        <img src="/Images/css-3-svgrepo-com.svg" alt="Figma Logo" height="100px" width="auto">
+                        <img src="/Images/javascript-svgrepo-com.svg" alt="Figma Logo" height="90px" width="auto">
+                        <img src="/Images/nodejs-svgrepo-com.svg" alt="Figma Logo" height="100px" width="auto">
+                        <img src="/Images/ExpressJS.png" alt="Figma Logo" height="70px" width="auto">
+                        <img src="/Images/mongodb-logo-png-1024x276.png" alt="Figma Logo" height="80px" width="auto">
+                        <img src="/Images/Canva-logo.webp" alt="Figma Logo" height="100px" width="auto">
+                        <img src="/Images/figma-svgrepo-com.svg" alt="Figma Logo" height="100px" width="auto">
+                        <img src="/Images/git.png" alt="Figma Logo" height="80px" width="auto">
+                        <img src="/Images/github-svgrepo-com.svg" alt="Figma Logo" height="100px" width="auto">
+                        <img src="/Images/Vercel-logo-01.png" alt="Figma Logo" height="170px" width="auto">
+                        <img src="/Images/bootstrap5-logo.png" alt="Figma Logo" height="130px" width="auto">
+                    </div>
+                </div>
+            </div>
         </div>
 
     </main>
