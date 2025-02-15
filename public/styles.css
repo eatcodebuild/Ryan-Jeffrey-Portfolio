@@ -59,6 +59,25 @@
     font-weight: 300;
 }
 
+#projects .card {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 300px;
+}
+
+#projects #card1 {
+    background-image: url(/Images/bmi-calculator.png);
+}
+
+#projects #card2 {
+    background-image: url(/Images/Coastaljoinery.png);
+}
+
+#projects #card3 {
+    background-image: url(/Images/campout.png);
+}
+
 .selfieBox {
    position: absolute;
    bottom: -160px;
@@ -80,7 +99,7 @@
     height: auto;
 }
 
-.nav-link {
+nav .nav-link {
     color: white !important;
     transition: 0.2s;
     padding-left: 20px !important;
@@ -88,7 +107,7 @@
     border-radius: 5px;
 }
 
-.nav-link:hover {
+nav .nav-link:hover {
     background-color: var(--turquoise-hover) !important;
     border-radius: 5px;
     transition: 0.2s;
@@ -327,3 +346,35 @@ footer {
     font-weight: 300;
     font-style: normal;
   }
+
+  .pop:hover {
+    transform: scale(105%);
+    transition: 0.2s;
+  }
+
+  .pop {
+    transition: 0.2s;
+  }
+
+  .card-pop:hover {
+    transform: scale(102%);
+    transition: 0.2s;
+  }
+
+  .card-pop {
+    transition: 0.2s;
+  }
+
+  #projects .col h2  {
+    font-weight: 300;
+  }
+
+  #projects .col a:hover  {
+    text-decoration: underline;
+    transition: 0.2s;
+  }
+
+  footer .nav-link:hover {
+    text-decoration: underline;
+  }
+  
