@@ -9,7 +9,7 @@
 }
 
 .bg-img {
-    background-image: url(/public/Images/Triangle.png);
+    background-image: url(/Images/Triangle.png);
     background-position: left bottom;
     background-repeat: no-repeat;
     background-color: var(--dark-grey);
