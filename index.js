@@ -12,11 +12,11 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '/public')));
 
-app.get('/home', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public/index.html'));
-})
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, '/public/index.html'))
+});
 
 
 
