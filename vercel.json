@@ -12,9 +12,20 @@
         "dest": "index.js"
       }
     ],
-    "redirects": [
-      {"source": "/bmi-calculator", "destination": "https://bmi-calculator-tau-wheat.vercel.app/"},
-      {"source": "/coastal-joinery", "destination": "https://coastal-joinery.vercel.app/"},
-      {"source": "/campout", "destination": "https://campout.vercel.app/"}
+    "rewrites": [
+      {
+        "source": "/bmi-calculator",
+        "destination": "https://bmi-calculator-tau-wheat.vercel.app/"
+      },
+
+      {
+        "source": "/coastal-joinery",
+        "destination": "https://coastal-joinery.vercel.app/"
+      },
+
+      {
+        "source": "/campout",
+        "destination": "https://campout.vercel.app/"
+      }
     ]
   }
