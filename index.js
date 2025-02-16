@@ -38,7 +38,9 @@ app.get('/testimonials', (req, res) => {
     res.sendFile(path.join(__dirname, 'public/testimonials.html'))
 });
 
-
+app.get('/campout', (req, res) => {
+    res.sendFile("https://campout.vercel.app/")
+});
 
 
 
