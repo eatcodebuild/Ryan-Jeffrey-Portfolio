@@ -13,8 +13,8 @@
       }
     ],
     "redirects": [
-      {"source": "/bmi-calculator", "destination": "https://bmi-calculator-tau-wheat.vercel.app/", "permanent": true},
-      {"source": "/coastal-joinery", "destination": "https://coastal-joinery.vercel.app/", "permanent": true},
-      {"source": "/campout", "destination": "https://campout.vercel.app/", "permanent": true}
+      {"source": "/bmi-calculator", "destination": "https://bmi-calculator-tau-wheat.vercel.app/"},
+      {"source": "/coastal-joinery", "destination": "https://coastal-joinery.vercel.app/"},
+      {"source": "/campout", "destination": "https://campout.vercel.app/"}
     ]
   }
