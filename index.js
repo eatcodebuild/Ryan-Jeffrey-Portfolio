@@ -39,7 +39,7 @@ app.get('/testimonials', (req, res) => {
 });
 
 app.get('/campout', (req, res) => {
-    res.sendFile("https://campout.vercel.app/")
+    res.redirect("https://campout.vercel.app/");
 });
 
 
