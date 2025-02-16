@@ -38,11 +38,6 @@ app.get('/testimonials', (req, res) => {
     res.sendFile(path.join(__dirname, 'public/testimonials.html'))
 });
 
-app.get('/campout', (req, res) => {
-    res.redirect("https://campout.vercel.app/");
-});
-
-
 
 
 
