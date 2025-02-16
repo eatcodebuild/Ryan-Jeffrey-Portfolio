@@ -383,3 +383,6 @@ footer {
     text-decoration: underline;
   }
   
+  footer h4 {
+    font-weight: 300;
+  }
