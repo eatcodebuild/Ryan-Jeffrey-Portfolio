@@ -464,3 +464,7 @@ footer {
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
 }
+
+body {
+    overflow-x: hidden;
+}
