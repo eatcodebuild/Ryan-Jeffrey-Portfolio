@@ -275,6 +275,10 @@ footer {
     animation-fill-mode: forwards;
 }
 
+.slideUp.delayed {
+    animation-delay: 1s;
+}
+
 .slideUp.letsConnect {
     animation-delay: 1.8s;
 }
@@ -286,7 +290,7 @@ footer {
 .slideUpDiagonallyLeft {
     animation-name: slideUpDiagonallyLeft;
     animation-duration: 1.2s;
-    animation-delay: 0.5s;
+    animation-delay: 1.3s;
     opacity: 0;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -295,7 +299,7 @@ footer {
 .slideUpDiagonallyRight {
     animation-name: slideUpDiagonallyRight;
     animation-duration: 1.2s;
-    animation-delay: 0.5s;
+    animation-delay: 1.3s;
     opacity: 0;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
