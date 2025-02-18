@@ -404,3 +404,36 @@ footer {
         transition: 0.2s;
       }
 }
+
+.scroll-up {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.scroll-up.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.scroll-left {
+    opacity: 0;
+    transform: translateX(-500px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.scroll-left.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.scroll-right {
+    opacity: 0;
+    transform: translateX(500px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.scroll-right.active {
+    opacity: 1;
+    transform: translateX(0);
+}
