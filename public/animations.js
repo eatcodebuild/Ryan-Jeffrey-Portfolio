@@ -1,8 +1,10 @@
+// Scroll to top on reload ↓
+
 window.onbeforeunload = function () {
     window.scrollTo(0, 0);
 }
 
-
+// Scroll to appear function ↓
 
 document.addEventListener("DOMContentLoaded", function () {
     const scrollItems = document.querySelectorAll(".scroll-up, .scroll-left, .scroll-right");

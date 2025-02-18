@@ -1,6 +1,6 @@
 :root {
     --orange-primary: #FFAC4D;
-    --orange-hover: #e79a42;
+    --orange-hover: #1b2027;
     --orange-active: #db913d;
     --primary: #161616;
     --primary-hover: #238a81;
@@ -124,11 +124,19 @@ nav {
 .btn-primary {
     background-color: var(--orange-primary) !important;
     border-color: var(--orange-primary) !important;
+    transition: 0.15s !important;
 }
 
 .btn-primary:hover {
     background-color: var(--orange-hover) !important;
     border-color: var(--orange-hover) !important;
+    transition: 0.15s !important;
+}
+
+.btn-primary.hero:hover {
+    background-color: var(--orange-hover) !important;
+    border-color: white !important;
+    transition: 0.15s !important;
 }
 
 .btn-primary:active {
@@ -436,4 +444,23 @@ footer {
 .scroll-right.active {
     opacity: 1;
     transform: translateX(0);
+}
+
+@keyframes moveSVG {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-5px);
+    }
+    100% {
+        transform: translateX(100px);
+    }
+}
+
+.moveSVG:hover img {
+    animation-name: moveSVG;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
 }
