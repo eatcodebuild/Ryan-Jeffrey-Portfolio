@@ -2,14 +2,14 @@
     --orange-primary: #FFAC4D;
     --orange-hover: #e79a42;
     --orange-active: #db913d;
-    --turquoise-primary: #2BA89D;
-    --turquoise-hover: #238a81;
+    --primary: #161616;
+    --primary-hover: #238a81;
     --dark-grey: #1b2027;
     --light-grey: rgb(173, 173, 173);
 }
 
 .bg-img {
-    background-image: url(/Images/Triangle.png);
+    background-image: url(/Images/black\ triangle.png);
     background-position: left bottom;
     background-repeat: no-repeat;
     background-color: var(--dark-grey);
@@ -37,7 +37,7 @@
 }
 
 .bg-turquoise {
-    background-color: var(--turquoise-primary);
+    background-color: var(--primary);
 }
 
 .card {
@@ -112,13 +112,13 @@ nav .nav-link {
 }
 
 nav .nav-link:hover {
-    background-color: var(--turquoise-hover) !important;
+    background-color: var(--orange-primary) !important;
     border-radius: 5px;
     transition: 0.2s;
 }
 
 nav {
-    background-color: var(--turquoise-primary);
+    background-color: var(--primary);
 }
 
 .btn-primary {
@@ -164,7 +164,7 @@ nav {
 }
 
 footer {
-    background-color: var(--turquoise-primary);
+    background-color: var(--primary);
 }
 
 @keyframes slideUp {
@@ -351,11 +351,6 @@ footer {
     font-style: normal;
   }
 
-  .pop:hover {
-    transform: scale(105%);
-    transition: 0.2s;
-  }
-
   .pop {
     transition: 0.2s;
   }
@@ -386,3 +381,22 @@ footer {
   footer h4 {
     font-weight: 300;
   }
+
+
+@media (max-width: 768px) {
+    .resize {
+        transform: scale(70%);
+    }
+
+    .pop:hover {
+        transform: scale(77%);
+        transition: 0.2s;
+      }
+}
+
+@media (min-width: 768px) {
+    .pop:hover {
+        transform: scale(107%);
+        transition: 0.2s;
+      }
+}
