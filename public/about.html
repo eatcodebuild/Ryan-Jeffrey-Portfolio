@@ -18,7 +18,7 @@
 
     <!-- navbar ↓ -->
 
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg scroll-right">
         <div class="container">
             <a class="navbar-brand" href="/">
                 <img src="/Images/White RJ.png" alt="logo" height="40px" width="auto">
@@ -52,14 +52,117 @@
 
     <main> 
 
-        <div class="bg-white p-5">
-            <div class="container slideUp py-5">
-                <h2 class="display-6 text-center mb-5">Sorry! This page is under construction - Come back later!</h2>
-                <div class="d-flex justify-content-center align-items-center flex-column">
-                    <img src="/Images/hammer-and-wrench-svgrepo-com.svg" class="mb-5" alt="Hammer and Wrench" height="80px" width="auto">
-                    <a href="/">
-                        <button class="btn btn-primary px-4 rounded-3">Go Home</button>
-                    </a>
+        <div class="bg-hero about p-5 scroll-left">
+            <div class="container d-flex align-items-center justify-content-evenly flex-column flex-lg-row h-100 gap-5 py-5">
+                <div class="profile-frame slideInRight">
+                    <img class="profile-pic" src="/Images/selfie.PNG" alt="" >
+                </div>
+                <div class="slideInLeft">
+                    <h2 class="display-2 text-center text-md-start text-white mb-5 scroll-up">Discover who I am</h2>
+                    <div class="d-flex gap-3">
+                        <ul id="about-buttons" class="list-unstyled d-none d-lg-block">
+                            <li>
+                                <button type="button" onclick="location.href='#introduction'" class="btn btn-primary rounded-3 mb-3">
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <span class="hide">Introduction</span>
+                                        <img class="rotateDown" src="/Images/right-chevron-svgrepo-com.svg" alt="chevron" height="20px" width="auto">
+                                    </div>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" onclick="location.href='#qualifications'" class="btn btn-primary rounded-3 mb-3">
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <span class="hide">Qualifications</span>
+                                        <img class="rotateDown" src="/Images/right-chevron-svgrepo-com.svg" alt="chevron" height="20px" width="auto">
+                                    </div>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" onclick="location.href='#experience'" class="btn btn-primary rounded-3 mb-3">
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <span class="hide">Experience</span>
+                                        <img class="rotateDown" src="/Images/right-chevron-svgrepo-com.svg" alt="chevron" height="20px" width="auto">
+                                    </div>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" onclick="location.href='#tech-stack'" class="btn btn-primary rounded-3 mb-3">
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <span class="hide">Tech-Stack</span>
+                                        <img class="rotateDown" src="/Images/right-chevron-svgrepo-com.svg" alt="chevron" height="20px" width="auto">
+                                    </div>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" onclick="location.href='#future-goals'" class="btn btn-primary rounded-3 mb-3">
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <span class="hide">Future Goals</span>
+                                        <img class="rotateDown" src="/Images/right-chevron-svgrepo-com.svg" alt="chevron" height="20px" width="auto">
+                                    </div>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" onclick="location.href='#current-interests'" class="btn btn-primary rounded-3 mb-3">
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <span class="hide">Current Interests</span>
+                                        <img class="rotateDown" src="/Images/right-chevron-svgrepo-com.svg" alt="chevron" height="20px" width="auto">
+                                    </div>
+                                </button>
+                            </li>
+                        </ul>
+
+
+                        <ul id="small-screen-about-buttons" class="list-unstyled d-block d-lg-none w-100">
+                            <li class="d-flex justify-content-center align-items-center">
+                                <button type="button" onclick="location.href='#introduction'" class="btn btn-primary rounded-3 mb-3">
+                                    <div class="d-flex justify-content-center align-items-center gap-2">
+                                        <span>Introduction</span>
+                                        <img src="/Images/right-chevron-svgrepo-com.svg" alt="chevron" height="20px" width="auto">
+                                    </div>
+                                </button>
+                            </li>
+                            <li class="d-flex justify-content-center align-items-center" class="d-flex justify-content-center align-items-center">
+                                <button type="button" onclick="location.href='#qualifications'" class="btn btn-primary rounded-3 mb-3">
+                                    <div class="d-flex justify-content-center align-items-center gap-2">
+                                        <span>Qualifications</span>
+                                        <img src="/Images/right-chevron-svgrepo-com.svg" alt="chevron" height="20px" width="auto">
+                                    </div>
+                                </button>
+                            </li>
+                            <li class="d-flex justify-content-center align-items-center" class="d-flex justify-content-center align-items-center">
+                                <button type="button" onclick="location.href='#experience'" class="btn btn-primary rounded-3 mb-3">
+                                    <div class="d-flex justify-content-center align-items-center gap-2">
+                                        <span>Experience</span>
+                                        <img src="/Images/right-chevron-svgrepo-com.svg" alt="chevron" height="20px" width="auto">
+                                    </div>
+                                </button>
+                            </li>
+                            <li class="d-flex justify-content-center align-items-center" class="d-flex justify-content-center align-items-center">
+                                <button type="button" onclick="location.href='#tech-stack'" class="btn btn-primary rounded-3 mb-3">
+                                    <div class="d-flex justify-content-center align-items-center gap-2">
+                                        <span>Tech-Stack</span>
+                                        <img src="/Images/right-chevron-svgrepo-com.svg" alt="chevron" height="20px" width="auto">
+                                    </div>
+                                </button>
+                            </li>
+                            <li class="d-flex justify-content-center align-items-center" class="d-flex justify-content-center align-items-center">
+                                <button type="button" onclick="location.href='#future-goals'" class="btn btn-primary rounded-3 mb-3">
+                                    <div class="d-flex justify-content-center align-items-center gap-2">
+                                        <span>Future Goals</span>
+                                        <img src="/Images/right-chevron-svgrepo-com.svg" alt="chevron" height="20px" width="auto">
+                                    </div>
+                                </button>
+                            </li>
+                            <li class="d-flex justify-content-center align-items-center" class="d-flex justify-content-center align-items-center">
+                                <button type="button" onclick="location.href='#current-interests'" class="btn btn-primary rounded-3 mb-3">
+                                    <div class="d-flex justify-content-center align-items-center gap-2">
+                                        <span>Current Interests</span>
+                                        <img src="/Images/right-chevron-svgrepo-com.svg" alt="chevron" height="20px" width="auto">
+                                    </div>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
