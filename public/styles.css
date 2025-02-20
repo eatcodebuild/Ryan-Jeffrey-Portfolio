@@ -465,12 +465,11 @@ footer {
     animation-iteration-count: 1;
 }
 
-body {
+
+html, body {
     overflow-x: hidden;
-    position: relative;
-    max-width: 100%;
 }
 
-* {
-    max-width: 100%;
+body {
+    position: relative;
 }
