@@ -19,7 +19,7 @@
     background-color: var(--dark-grey);
     background-size: 800px;
     position: relative;
-    height: 90vh;
+    height: 700px;
     overflow: hidden;
 }
 
@@ -46,6 +46,7 @@
     position: relative;
     background-color: white;
     border: solid 10px var(--orange-primary);
+    flex-shrink: 0;
 }
 
 .profile-pic {
@@ -55,11 +56,6 @@
     left: 5%;
     top: 5%;
 }
-
-.bg-img.small {
-    height: 70vh;
-}
-
 
 .bg-orange {
     background-color: var(--orange-primary);
@@ -172,6 +168,12 @@ nav {
 
 .btn-primary.hero:hover {
     background-color: var(--orange-hover) !important;
+    border-color: var(--orange-hover) !important;
+    transition: 0.15s !important;
+}
+
+.btn-primary.about:hover {
+    background-color: transparent !important;
     border-color: white !important;
     transition: 0.15s !important;
 }
@@ -371,7 +373,7 @@ footer {
 .emerge {
     animation-name: emerge;
     animation-duration: 1s;
-    animation-delay: 0s;
+    animation-delay: 0.5s;
     opacity: 0;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -538,6 +540,27 @@ body {
     .profile-frame{
         height: 250px;
         width: 250px;
+        border-radius: 50%;
+        overflow: hidden;
+        background-clip: border-box;
+        position: relative;
+        background-color: white;
+        border: solid 10px var(--orange-primary);
+    }
+    
+    .profile-pic {
+        height: auto;
+        width: 90%;
+        position: absolute;
+        left: 5%;
+        top: 5%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .profile-frame{
+        height: 300px;
+        width: 300px;
         border-radius: 50%;
         overflow: hidden;
         background-clip: border-box;

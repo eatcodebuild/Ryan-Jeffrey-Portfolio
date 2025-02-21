@@ -31,8 +31,8 @@ app.get('/blog', (req, res) => {
     res.sendFile(path.join(__dirname, 'public/blog.html'))
 });
 
-app.get('/work', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public/myWork.html'))
+app.get('/projects', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public/projects.html'))
 });
 
 app.get('/testimonials', (req, res) => {
