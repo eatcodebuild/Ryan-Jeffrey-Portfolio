@@ -73,7 +73,7 @@
     background-color: var(--primary);
 }
 
-.card {
+.card.home {
     background-color: var(--dark-grey) !important;
     border: transparent;
 }
@@ -152,6 +152,9 @@ nav .nav-link:hover {
 
 nav {
     background-color: var(--primary);
+    /* position: fixed !important;
+    width: 100% !important;
+    z-index: 1000; */
 }
 
 .btn-primary {
