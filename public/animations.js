@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.querySelector('a[href="#certifications"]').addEventListener('click', function (e) {
-    e.preventDefault(); // Prevent the default behavior of the link
+    e.preventDefault();
     const certifications = document.getElementById('certifications');
     window.scrollTo({
       top: certifications.offsetTop,
