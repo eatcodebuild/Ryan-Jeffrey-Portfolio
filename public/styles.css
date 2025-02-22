@@ -581,7 +581,6 @@ body {
     }
 }
 
-.row.skills {
-    position: relative;
-    overflow-x: hidden;
+#certifications .card {
+    border-color: transparent !important;
 }
