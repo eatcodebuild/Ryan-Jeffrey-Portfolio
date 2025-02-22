@@ -580,3 +580,8 @@ body {
         top: 5%;
     }
 }
+
+.row.skills {
+    position: relative;
+    overflow-x: hidden;
+}
