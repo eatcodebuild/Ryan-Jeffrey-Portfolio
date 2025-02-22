@@ -24,3 +24,13 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("scroll", checkScroll);
     checkScroll();
 });
+
+document.querySelector('a[href="#certifications"]').addEventListener('click', function (e) {
+    e.preventDefault(); // Prevent the default behavior of the link
+    const certifications = document.getElementById('certifications');
+    window.scrollTo({
+      top: certifications.offsetTop,
+      behavior: 'smooth'
+    });
+  });
+  
