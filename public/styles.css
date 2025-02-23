@@ -581,7 +581,7 @@ body {
     }
 }
 
-#certifications .card {
+.card {
     border-color: transparent !important;
 }
 
