@@ -101,24 +101,23 @@
                         <div class="col-lg-8 col-12 d-flex justify-content-center align-items-center">
                             <div class="card rounded-3 shadow p-4 w-100 h-100">
                                 <div class="w-100">
-                                    <h2 class="fw-light mb-3">Email Me Here:</h2>
-                                    <div class="mb-3">
-                                        <label for="firstName" class="form-label">First Name</label>
-                                        <input type="text" id="firstName" class="form-control">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="lastName" class="form-label">Last Name</label>
-                                        <input type="text" id="lastName" class="form-control">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="subject" class="form-label">Subject</label>
-                                        <input type="text" id="subject" class="form-control">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="message" class="form-label">Message</label>
-                                        <textarea id="message" class="form-control" rows="5"></textarea>
-                                    </div>
-                                    <button type="submit" class="btn btn-primary px-5 rounded-3 shadow-sm mt-3s">Send</button>
+                                    <form id="contactForm">
+                                        <h2 class="fw-light mb-3">Send me a message</h2>
+                                        <div class="mb-3">
+                                            <label for="name" class="form-label">Full Name</label>
+                                            <input type="text" id="name", required class="form-control">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="email" class="form-label">Your Email Address</label>
+                                            <input type="email" id="email" required class="form-control">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="message" class="form-label">Message</label>
+                                            <textarea id="message" class="form-control" rows="8" required></textarea>
+                                        </div>
+                                    </form> 
+                                    <button type="submit" class="btn btn-primary px-5 rounded-3 shadow-sm mt-3s">Send Message</button>
+                                    <p id="responseMessage"></p>
                                 </div>
                             </div>
                         </div>
@@ -187,7 +186,30 @@
   
 
 
+    <script>
 
+        // Handles Contact Form ↓
+
+        const contactForm = document.getElementById('contactForm');
+
+        contactForm.addEventListener('submit', async function (event) {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            const reponseMessage = document.getElementById('responseMessage');
+
+            const response = await fetch('/send-email', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ name, email, message })
+            });
+
+            const data = await response.json();
+            responseMessage.textcontent = data.message;
+        });
+    </script>
 
 
 
