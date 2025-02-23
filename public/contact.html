@@ -23,11 +23,19 @@
             <a class="navbar-brand" href="/">
                 <img src="/Images/White RJ.png" alt="logo" height="40px" width="auto">
             </a>
+            <a href="tel:+0422611786" class="d-block d-lg-none">
+                <button type="button" class="btn btn-primary rounded-3">
+                    <div class="d-flex justify-content-center align-items-center gap-2">
+                        <img src="/Images/phone-svgrepo-com.svg" alt="phone img" height="30px" width="auto">
+                        <span>Let's Talk!</span>
+                    </div>
+                </button>
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span><img src="/Images/hamburger icon.svg" alt="hamburger icon" height="40px" width="auto"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto gap-1">
+                <ul class="navbar-nav mx-auto gap-1">
                     <li class="nav-item">
                         <a class="nav-link" href="/">Home</a>
                     </li>
@@ -40,11 +48,16 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/contact">Contact</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/blog">Blog</a>
-                    </li>
                 </ul>
             </div>
+            <a href="tel:+0422611786" class="d-none d-lg-block">
+                <button type="button" class="btn btn-primary rounded-3">
+                    <div class="d-flex justify-content-center align-items-center gap-2">
+                        <img src="/Images/phone-svgrepo-com.svg" alt="phone img" height="30px" width="auto">
+                        <span>Let's Talk!</span>
+                    </div>
+                </button>
+            </a>
         </div>
     </nav>
 
@@ -52,14 +65,64 @@
 
     <main> 
 
-        <div class="bg-white p-5">
-            <div class="container slideUp py-5">
-                <h2 class="display-6 text-center mb-5">Sorry! This page is under construction - Come back later!</h2>
-                <div class="d-flex justify-content-center align-items-center flex-column">
-                    <img src="/Images/hammer-and-wrench-svgrepo-com.svg" class="mb-5" alt="Hammer and Wrench" height="80px" width="auto">
-                    <a href="/">
-                        <button class="btn btn-primary px-4 rounded-3">Go Home</button>
-                    </a>
+        <div class="bg-grey p-5">
+            <div class="container py-5 d-flex justify-content-center align-items-center">
+                <div class="card w-100 bg-orange p-4 p-md-5 rounded-4 shadow slideUp">
+                    <h2 class="display-4 text-white">Get in touch!</h2>
+                    <div class="row mt-3">
+                        <div class="col-lg-4 col-12 d-flex align-items-center mb-4 mb-lg-0">
+                            <div class="card rounded-3 shadow p-4 w-100 h-100">
+                                <div class="d-flex flex-column gap-4">
+                                    <div>
+                                        <h2 class="fw-light">Phone</h2>
+                                        <a class="text-dark" href="tel:+0422611786">0422 611 786</a>
+                                    </div>
+                                    <div>
+                                        <h2 class="fw-light">Email</h2>
+                                        <a href="mailto: r.jeffrey@live.com.au" class="text-dark">r.jeffrey@live.com.au</a>
+                                    </div>
+                                    <div>
+                                        <h2 class="fw-light">Social / Profiles</h2>
+                                        <div class="d-flex align-items-center gap-3 mt-3">
+                                            <a href="https://www.instagram.com/eat.code.build/" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+                                                <img src="/Images/instagramcolour-1-svgrepo-com.svg" alt="Instagram" height="40px" width="auto">
+                                            </a>
+                                            <a href="https://www.linkedin.com/in/ryan-jeffrey-b21327247/" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+                                                <img src="/Images/linkedincolour-svgrepo-com.svg" alt="LinkedIn" height="45px" width="auto">
+                                            </a>
+                                            <a href="https://github.com/eatcodebuild" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+                                                <img src="/Images/github-svgrepo-com.svg" alt="Github" height="42px" width="auto">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-12 d-flex justify-content-center align-items-center">
+                            <div class="card rounded-3 shadow p-4 w-100 h-100">
+                                <div class="w-100">
+                                    <h2 class="fw-light mb-3">Email Me Here:</h2>
+                                    <div class="mb-3">
+                                        <label for="firstName" class="form-label">First Name</label>
+                                        <input type="text" id="firstName" class="form-control">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="lastName" class="form-label">Last Name</label>
+                                        <input type="text" id="lastName" class="form-control">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="subject" class="form-label">Subject</label>
+                                        <input type="text" id="subject" class="form-control">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="message" class="form-label">Message</label>
+                                        <textarea id="message" class="form-control" rows="5"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary px-5 rounded-3 shadow-sm mt-3s">Send</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -83,45 +146,37 @@
                             <li class="nav-item">
                                 <a class="nav-link text-center text-white" href="/about">About</a>
                             </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul class="navbar-nav">
                             <li class="nav-item">
                                 <a class="nav-link text-center text-white" href="/projects">Projects</a>
                             </li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <ul class="navbar-nav">
                             <li class="nav-item">
                                 <a class="nav-link text-center text-white" href="/contact">Contact</a>
                             </li>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-center text-white" href="/blog">Blog</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-center text-white" href="/about#experience">Experience</a>
-                            </li>
                         </ul>
                     </div>
                     <div class="col">
                         <ul class="navbar-nav">
                             <li class="nav-item">
+                                <a class="nav-link text-center text-white" href="/about#experience">Experience</a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link text-center text-white" href="/about#certifications">Certifications</a>
                             </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul class="navbar-nav">
                             <li class="nav-item">
                                 <a class="nav-link text-center text-white" href="/testimonials">Testimonials</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-center text-white" href="/about/#learning-and-development">Learning & Development</a>
                             </li>
-                            </li>
                         </ul>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-8 col-md-7 col-lg-5 col-xl-4">
-                    <h4 class="text-white mb-3 text-center text-md-start">Subscribe to my blog</h4>
-                    <div class="input-group">
-                        <input  placeholder="Enter your email" type="email" class="form-control">
-                        <button class="btn btn-outline-primary">Subscribe</button>
                     </div>
                 </div>
             </div>
