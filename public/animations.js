@@ -25,12 +25,4 @@ document.addEventListener("DOMContentLoaded", function () {
     checkScroll();
 });
 
-document.querySelector('a[href="#certifications"]').addEventListener('click', function (e) {
-    e.preventDefault();
-    const certifications = document.getElementById('certifications');
-    window.scrollTo({
-      top: certifications.offsetTop,
-      behavior: 'smooth'
-    });
-  });
   

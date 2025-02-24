@@ -10,8 +10,9 @@ dotenv.config();
 
 const app = express();
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(cors());
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 // Handles Displaying of HTML Pages ↓
 
@@ -44,22 +45,25 @@ app.get('/testimonials', (req, res) => {
 // Handles contact form ↓
 
 app.post('/send-email', async (req, res) => {
-    const { name, email, message } = req.body;
+    const { name, phone, email, message } = req.body;
 
     try {
         const transporter = nodeMailer.createTransport({
-            service: 'Outlook',
+            host: 'smtp.gmail.com',
+            port: 587,
+            secure: false,
             auth: {
-                user: process.env.USER_EMAIL,
-                pass: process.env.USER_PASS
-            },
+                user: "contact.ryanjeffrey@gmail.com",
+                pass: "dhqrewcjriabvgsh"
+            }
         });
 
         const mailOptions = {
             from: email,
-            to: process.env.USER_EMAIL,
+            to: "r.jeffrey@live.com.au",
             subject: `New Contact Form Message From ${name}!`,
-            text: `You've received a new message from: \n \n Name: ${name} \n Email: ${email} \n Message: ${message}`,
+            html: `<h2>Message from: ${name}</h2>`,
+            text: `You've received a new message from: \n \n Name: ${name} \n Email: ${email} \n Phone: ${phone} \n \n Message: ${message}`,
         };
 
         await transporter.sendMail(mailOptions); 
