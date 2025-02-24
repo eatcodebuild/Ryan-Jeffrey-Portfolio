@@ -61,9 +61,8 @@ app.post('/send-email', async (req, res) => {
         const mailOptions = {
             from: email,
             to: "r.jeffrey@live.com.au",
-            subject: `New Contact Form Message From ${name}!`,
-            html: `<h2>Message from: ${name}</h2>`,
-            text: `You've received a new message from: \n \n Name: ${name} \n Email: ${email} \n Phone: ${phone} \n \n Message: ${message}`,
+            subject: `New Contact Form Message From ${name}`,
+            text: `You've received a new message from: \n \n Name: ${name} \n Email: ${email} \n Phone: ${phone} \n \n Message: \n ${message}`,
         };
 
         await transporter.sendMail(mailOptions); 
