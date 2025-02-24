@@ -37,6 +37,13 @@
     background-image: url(/Images/pexels-nemuel-6424587.jpg);
 }
 
+.bg-contact {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-image: url(/Images/macbook-2617705_1920.jpg);
+}
+
 .profile-frame{
     height: 400px;
     width: 400px;
