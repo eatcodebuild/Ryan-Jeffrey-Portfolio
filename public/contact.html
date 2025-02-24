@@ -121,7 +121,9 @@
                                     <button type="submit" class="btn btn-primary px-5 rounded-3 shadow mt-3">Send Message</button>
                                 </form> 
                                 <div id="responseContainer" class="mt-3">
-
+                                    <div id="spinIcon" class="spinner-border text-orange" hidden role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -200,6 +202,9 @@
         const phone = document.getElementById('phone').value;
         const message = document.getElementById('message').value;
         const responseContainer = document.getElementById('responseContainer');
+        const spinIcon = document.getElementById('spinIcon');
+
+        spinIcon.removeAttribute('hidden');
 
         try {
             const response = await fetch('/send-email', {
@@ -226,6 +231,8 @@
 
             messageCard.innerHTML = messageContent;
             responseContainer.appendChild(messageCard);
+
+            clearForm();
 
         } catch (error) {
             responseContainer.innerHTML = `
@@ -254,12 +261,14 @@
 
         // Clears form data ↓
 
-        document.addEventListener('DOMContentLoaded', () => {
-            const name = document.getElementById('name').value = '';
-            const email = document.getElementById('email').value = '';
-            const phone = document.getElementById('phone').value = '';
-            const message = document.getElementById('message').value = '';
-        });
+        document.addEventListener('DOMContentLoaded', (clearForm()));
+
+        function clearForm() {
+            name = document.getElementById('name').value = '';
+            email = document.getElementById('email').value = '';
+            phone = document.getElementById('phone').value = '';
+            message = document.getElementById('message').value = '';
+        }
 
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
