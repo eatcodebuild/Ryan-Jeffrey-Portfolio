@@ -68,6 +68,7 @@
     background-color: white;
     border: solid 10px var(--orange-primary);
     flex-shrink: 0;
+    position: relative;
 }
 
 .profile-pic {
@@ -76,6 +77,7 @@
     position: absolute;
     left: 5%;
     top: 5%;
+    object-fit: cover;
 }
 
 .bg-orange {
