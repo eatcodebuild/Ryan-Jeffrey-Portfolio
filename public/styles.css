@@ -23,18 +23,32 @@
     overflow: hidden;
 }
 
+.hero-banner-img-projects {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    /* background-image: url(/Images/campout.png); */
+    background-color: var(--dark-grey);
+    height: 100%;
+}
+
 .bg-hero {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;  
-    background-color: rgba(31, 19, 37, 0.979);
-    /* background-color: var(--dark-grey); */
-    background-blend-mode: overlay;
-    height: 100%;
+}
+
+.bg-dark-screen {
+    background-color: rgba(0, 0, 0, 0.514);
 }
 
 .bg-hero.about {
     background-image: url(/Images/pexels-nemuel-6424587.jpg);
+}
+
+.bg-hero.projects {
+    background-image: url(/Images/markus-winkler-Q2J2qQsoYH8-unsplash.jpg);
+    height: 600px;
 }
 
 .bg-contact {
@@ -236,6 +250,18 @@ footer {
     }
 }
 
+@keyframes slideDown {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
 @keyframes slideUpDiagonallyRight {
     from {
         transform: translateY(-100px) translateX(200px);
@@ -277,6 +303,18 @@ footer {
     }
 }
 
+@keyframes slideInLeft-noBounce {
+    0% {
+        transform: translateX(500px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
 @keyframes slideInRight {
     0% {
         transform: translateX(-500px);
@@ -286,6 +324,18 @@ footer {
     50% {
         transform: translateX(20px);
         opacity: 1;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight-noBounce {
+    0% {
+        transform: translateX(-500px);
+        opacity: 0;
     }
 
     100% {
@@ -323,6 +373,32 @@ footer {
     }
 }
 
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.fade.about {
+    animation-delay: 0.8s;
+}
+
+.fade.projects {
+    animation-delay: 0.4s;
+}
+
 .slideUp {
     animation-name: slideUp;
     animation-duration: 1.2s;
@@ -332,8 +408,29 @@ footer {
     animation-fill-mode: forwards;
 }
 
+.slideDown {
+    animation-name: slideDown;
+    animation-duration: 1.2s;
+    animation-delay: 0s;
+    opacity: 0;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.slideDown.projects.arrow {
+    animation-delay: 1.5s;
+}
+
 .slideUp.delayed {
     animation-delay: 0.8s;
+}
+
+.slideUp.projects {
+    animation-delay: 1s;
+}
+
+.slideUp.projects.banner {
+    animation-delay: 1.5s;
 }
 
 .slideUp.letsConnect {
@@ -371,6 +468,19 @@ footer {
     animation-fill-mode: forwards;
 }
 
+.slideInLeft-noBounce {
+    animation-name: slideInLeft-noBounce;
+    animation-duration: 1.5s;
+    animation-delay: 0s;
+    opacity: 0;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.slideInLeft-noBounce.projects {
+    animation-delay: 0.3s;
+}
+
 .slideInRight {
     animation-name: slideInRight;
     animation-duration: 2s;
@@ -378,6 +488,19 @@ footer {
     opacity: 0;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+}
+
+.slideInRight-noBounce {
+    animation-name: slideInRight-noBounce;
+    animation-duration: 1.5s;
+    animation-delay: 0s;
+    opacity: 0;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.slideInRight-noBounce.projects {
+    animation-delay: 0.3s;
 }
 
 .emerge {
@@ -598,4 +721,31 @@ body {
 
 .text-orange {
     color: var(--orange-primary);
+}
+
+#coastal-joinery-project-thumbnail {
+    background-image: url(/Images/Coastaljoinery.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    min-height: 400px;
+}
+
+#campout-project-thumbnail {
+    background-image: url(/Images/campout.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    min-height: 400px;
+}
+
+#bmi-calculator-project-thumbnail {
+    background-image: url(/Images/bmi-calculator.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    min-height: 400px;
 }
