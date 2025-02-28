@@ -19,7 +19,7 @@
     background-color: var(--dark-grey);
     background-size: 800px;
     position: relative;
-    height: 700px;
+    height: 100vh;
     overflow: hidden;
 }
 
@@ -36,6 +36,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;  
+    height: 100vh;
 }
 
 .bg-dark-screen {
@@ -48,13 +49,13 @@
 
 .bg-hero.projects {
     background-image: url(/Images/markus-winkler-Q2J2qQsoYH8-unsplash.jpg);
-    height: 600px;
 }
 
 .bg-contact {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover; 
+    height: 100vh;
     background-image: url(/Images/macbook-2617705_1920.jpg);
 }
 
