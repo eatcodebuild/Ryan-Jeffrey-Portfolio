@@ -55,7 +55,8 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover; 
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     background-image: url(/Images/macbook-2617705_1920.jpg);
 }
 
