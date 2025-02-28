@@ -19,7 +19,7 @@
     background-color: var(--dark-grey);
     background-size: 800px;
     position: relative;
-    height: 100vh;
+    height: 94vh;
     overflow: hidden;
 }
 
@@ -36,7 +36,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;  
-    height: 100vh;
+    height: 94vh;
 }
 
 .bg-dark-screen {
@@ -55,7 +55,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover; 
-    min-height: 100vh;
+    min-height: 94vh;
     height: auto;
     background-image: url(/Images/macbook-2617705_1920.jpg);
 }
