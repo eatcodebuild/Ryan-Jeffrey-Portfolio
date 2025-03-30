@@ -498,6 +498,14 @@ footer {
     animation-fill-mode: forwards;
 }
 
+.slideInRight.profile-frame {
+    animation-delay: 0s;
+}
+
+.slideInLeft.menu {
+    animation-delay: 0.3s;
+}
+
 .slideInRight-noBounce {
     animation-name: slideInRight-noBounce;
     animation-duration: 1.5s;
