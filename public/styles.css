@@ -61,9 +61,7 @@
     background-size: cover; 
     min-height: 94vh;
     height: auto;
-    background-image: url(/Images/Black\ Background\ Abstract.jpg);
-    background-color: rgba(0, 0, 0, 0.712);
-    background-blend-mode: overlay;
+    background-image: url(/Images/macbook-2617705_1920.jpg);
 }
 
 .profile-frame{
