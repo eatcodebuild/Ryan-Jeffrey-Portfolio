@@ -774,3 +774,12 @@ body {
     height: 100%;
     min-height: 400px;
 }
+
+#yellowCircles-project-thumbnail {
+    background-image: url(/Images/3YC.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    min-height: 400px;
+}
