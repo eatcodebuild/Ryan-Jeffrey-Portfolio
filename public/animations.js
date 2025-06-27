@@ -23,11 +23,32 @@ document.addEventListener("DOMContentLoaded", function () {
 function darkenNav() {
     const nav = document.getElementsByTagName("nav")[0];
     if (window.scrollY > 100) {
-        nav.style.background = "linear-gradient(rgb(6, 5, 22), black)";
+        nav.classList.remove("nav-transparent");
+        nav.classList.add("darken-nav");
     } else {
-        nav.style.background = "transparent";
+        nav.classList.remove("darken-nav");
+        nav.classList.add("nav-transparent");
     }
 }
 window.addEventListener("scroll", darkenNav);
 window.addEventListener("load", darkenNav);
+
+
+function darkenNavMenuDropdown() {
+    const nav = document.getElementsByTagName("nav")[0];
+    if (window.scrollY === 0) {
+        nav.classList.remove("nav-transparent");
+        nav.classList.add("darken-nav");
+    } else {
+        nav.classList.remove("darken-nav");
+        nav.classList.add("nav-transparent");
+    }
+}
+
+const hamburgerIcons = document.querySelectorAll(".navbar-toggler");
+hamburgerIcons.forEach(icon => {
+    icon.addEventListener("click", () => {
+        darkenNavMenuDropdown();
+    });
+});
 

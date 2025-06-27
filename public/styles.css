@@ -123,11 +123,12 @@
 .bg-space.hero {
     position: relative;
     overflow: hidden;
-    min-height: 100vh;
+    height: 100vh !important;
     background: linear-gradient(rgb(6, 5, 22), black);
 }
 
-.bg-space.about {
+.bg-space.contact {
+    min-height: 100vh !important;
     background: linear-gradient(rgb(6, 5, 22), black);
 }
 
@@ -208,12 +209,7 @@ nav .nav-link:hover {
     transition: 0.2s;
 }
 
-nav {
-    background-color: var(--primary);
-}
-
 nav.home {
-    background-color: transparent;
     position: fixed !important;
     width: 100% !important;
     z-index: 1000;
@@ -861,4 +857,12 @@ body {
 
 .text-color {
     color: rgb(255, 255, 255);
+}
+
+.darken-nav {
+    background: linear-gradient(rgb(6, 5, 22), black);
+}
+
+.nav-transparent {
+    background-color: transparent;
 }
