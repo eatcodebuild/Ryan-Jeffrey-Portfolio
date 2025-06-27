@@ -39,10 +39,7 @@ function darkenNavMenuDropdown() {
     if (!nav.classList.contains("darken-nav")) {
         nav.classList.remove("nav-transparent");
         nav.classList.add("darken-nav");
-    } else {
-        nav.classList.remove("darken-nav");
-        nav.classList.add("nav-transparent");
-    }
+    } 
 }
 
 const hamburgerIcons = document.querySelectorAll(".navbar-toggler");
