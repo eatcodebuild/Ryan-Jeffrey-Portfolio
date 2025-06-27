@@ -36,7 +36,7 @@ window.addEventListener("load", darkenNav);
 
 function darkenNavMenuDropdown() {
     const nav = document.getElementsByTagName("nav")[0];
-    if (window.scrollY === 0) {
+    if (!nav.classList.contains("darken-nav")) {
         nav.classList.remove("nav-transparent");
         nav.classList.add("darken-nav");
     } else {
