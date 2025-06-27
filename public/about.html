@@ -19,7 +19,7 @@
 
     <!-- navbar ↓ -->
 
-    <nav class="navbar navbar-expand-lg">
+    <nav class="home navbar navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand" href="/">
                 <img src="/Images/White RJ.png" alt="logo" height="40px" width="auto">
@@ -37,9 +37,6 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto gap-1">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/">Home</a>
-                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/about">About</a>
                     </li>
@@ -65,102 +62,103 @@
     <!-- Main content ↓ -->
 
     <main> 
-        <div class="bg-hero about">
-            <div class="bg-dark-screen d-flex justify-content-center align-items-center about p-5 h-100">
-                <div class="container d-flex align-items-center justify-content-between flex-column flex-lg-row h-100 gap-5 py-5">
-                    <div class="profile-frame slideInRight">
-                        <img class="profile-pic" src="/Images/selfie-small.webp" alt="Ryan Jeffrey Face">
+        <div class="bg-space hero">
+            <div class="container d-flex align-items-center justify-content-center w-100 h-100 py-5">
+                <div class="row w-100 justify-content-lg-between justify-content-center">
+                    <div class="col-lg-6 col-12 d-flex align-items-center justify-content-center justify-content-lg-start">
+                        <h2 class="display-2 text-center text-lg-start text-white mb-5 slideInRight aboutMe">About me</h2>
                     </div>
-                    <div class="slideInLeft menu">
-                        <h2 class="display-2 text-center text-md-start text-white mb-5">Get to know me</h2>
-                        <ul id="about-buttons" class="list-unstyled d-none d-lg-block">
-                            <li>
-                                <button type="button" onclick="location.href='#introduction'" class="btn btn-primary about rounded-3 mb-3">
-                                    <div class="d-flex justify-content-center align-items-center">
-                                        <span class="hide">Introduction</span>
-                                        <img class="rotateDown" src="/Images/right-chevron-svgrepo-com.svg" alt="chevron" height="20px" width="auto">
-                                    </div>
-                                </button>
-                            </li>
-                            <li>
-                                <button type="button" onclick="location.href='#certifications'" class="btn btn-primary about rounded-3 mb-3">
-                                    <div class="d-flex justify-content-center align-items-center">
-                                        <span class="hide">Certifications</span>
-                                        <img class="rotateDown" src="/Images/right-chevron-svgrepo-com.svg" alt="chevron" height="20px" width="auto">
-                                    </div>
-                                </button>
-                            </li>
-                            <li>
-                                <button type="button" onclick="location.href='#experience'" class="btn btn-primary about rounded-3 mb-3">
-                                    <div class="d-flex justify-content-center align-items-center">
-                                        <span class="hide">Experience</span>
-                                        <img class="rotateDown" src="/Images/right-chevron-svgrepo-com.svg" alt="chevron" height="20px" width="auto">
-                                    </div>
-                                </button>
-                            </li>
-                            <li>
-                                <button type="button" onclick="location.href='#skills'" class="btn btn-primary about rounded-3 mb-3">
-                                    <div class="d-flex justify-content-center align-items-center">
-                                        <span class="hide">Skills</span>
-                                        <img class="rotateDown" src="/Images/right-chevron-svgrepo-com.svg" alt="chevron" height="20px" width="auto">
-                                    </div>
-                                </button>
-                            </li>
-                            <li>
-                                <button type="button" onclick="location.href='#learning-and-development'" class="btn btn-primary about rounded-3 mb-3">
-                                    <div class="d-flex justify-content-center align-items-center">
-                                        <span class="hide">Ongoing Learning & Development</span>
-                                        <img class="rotateDown" src="/Images/right-chevron-svgrepo-com.svg" alt="chevron" height="20px" width="auto">
-                                    </div>
-                                </button>
-                            </li>
-                        </ul>
-    
-                        <!-- ↑ Responsive display of hero buttons on a large screen ↑ -->
-                        <!-- ↓ Responsive display of hero buttons on a small screen ↓ -->
-    
-                        <ul id="small-screen-about-buttons" class="list-unstyled d-block d-lg-none w-100">
-                            <li class="d-flex justify-content-center align-items-center">
-                                <button type="button" onclick="location.href='#introduction'" class="btn btn-primary about rounded-3 mb-3 col-10">
-                                    <div class="d-flex justify-content-center align-items-center gap-2">
-                                        <span>Introduction</span>
-                                        <img src="/Images/right-chevron-svgrepo-com.svg" alt="chevron" height="20px" width="auto">
-                                    </div>
-                                </button>
-                            </li>
-                            <li class="d-flex justify-content-center align-items-center" class="d-flex justify-content-center align-items-center">
-                                <button type="button" onclick="location.href='#certifications'" class="btn btn-primary about rounded-3 mb-3 col-10">
-                                    <div class="d-flex justify-content-center align-items-center gap-2">
-                                        <span>Certifications</span>
-                                        <img src="/Images/right-chevron-svgrepo-com.svg" alt="chevron" height="20px" width="auto">
-                                    </div>
-                                </button>
-                            </li>
-                            <li class="d-flex justify-content-center align-items-center" class="d-flex justify-content-center align-items-center">
-                                <button type="button" onclick="location.href='#experience'" class="btn btn-primary about rounded-3 mb-3 col-10">
-                                    <div class="d-flex justify-content-center align-items-center gap-2">
-                                        <span>Experience</span>
-                                        <img src="/Images/right-chevron-svgrepo-com.svg" alt="chevron" height="20px" width="auto">
-                                    </div>
-                                </button>
-                            </li>
-                            <li class="d-flex justify-content-center align-items-center" class="d-flex justify-content-center align-items-center">
-                                <button type="button" onclick="location.href='#skills'" class="btn btn-primary about rounded-3 mb-3 col-10">
-                                    <div class="d-flex justify-content-center align-items-center gap-2">
-                                        <span>Skills</span>
-                                        <img src="/Images/right-chevron-svgrepo-com.svg" alt="chevron" height="20px" width="auto">
-                                    </div>
-                                </button>
-                            </li>
-                            <li class="d-flex justify-content-center align-items-center" class="d-flex justify-content-center align-items-center">
-                                <button type="button" onclick="location.href='#learning-and-development'" class="btn btn-primary about rounded-3 mb-3 col-10">
-                                    <div class="d-flex justify-content-center align-items-center gap-2">
-                                        <span>Ongoing Learning & Development</span>
-                                        <img src="/Images/right-chevron-svgrepo-com.svg" alt="chevron" height="20px" width="auto">
-                                    </div>
-                                </button>
-                            </li>
-                        </ul>
+                    <div class="col-lg-4 col-12 d-flex align-items-center justify-content-center justify-content-lg-start">
+                        <div class="slideInLeft menu">
+                            <ul id="about-buttons" class="list-unstyled d-none d-lg-block">
+                                <li>
+                                    <button type="button" onclick="location.href='#introduction'" class="btn btn-primary about rounded-3 mb-3">
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <span class="hide">Introduction</span>
+                                            <img class="rotateDown" src="/Images/right-chevron-svgrepo-com.svg" alt="chevron" height="20px" width="auto">
+                                        </div>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" onclick="location.href='#certifications'" class="btn btn-primary about rounded-3 mb-3">
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <span class="hide">Certifications</span>
+                                            <img class="rotateDown" src="/Images/right-chevron-svgrepo-com.svg" alt="chevron" height="20px" width="auto">
+                                        </div>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" onclick="location.href='#experience'" class="btn btn-primary about rounded-3 mb-3">
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <span class="hide">Experience</span>
+                                            <img class="rotateDown" src="/Images/right-chevron-svgrepo-com.svg" alt="chevron" height="20px" width="auto">
+                                        </div>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" onclick="location.href='#skills'" class="btn btn-primary about rounded-3 mb-3">
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <span class="hide">Skills</span>
+                                            <img class="rotateDown" src="/Images/right-chevron-svgrepo-com.svg" alt="chevron" height="20px" width="auto">
+                                        </div>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" onclick="location.href='#learning-and-development'" class="btn btn-primary about rounded-3 mb-3">
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <span class="hide">Ongoing Learning & Development</span>
+                                            <img class="rotateDown" src="/Images/right-chevron-svgrepo-com.svg" alt="chevron" height="20px" width="auto">
+                                        </div>
+                                    </button>
+                                </li>
+                            </ul>
+
+                            <!-- ↑ Responsive display of hero buttons on a large screen ↑ -->
+                            <!-- ↓ Responsive display of hero buttons on a small screen ↓ -->
+
+                            <ul id="small-screen-about-buttons" class="list-unstyled d-block d-lg-none w-100">
+                                <li class="d-flex justify-content-center align-items-center">
+                                    <button type="button" onclick="location.href='#introduction'" class="btn btn-primary about rounded-3 mb-3 col-12">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span>Introduction</span>
+                                            <img src="/Images/right-chevron-svgrepo-com.svg" alt="chevron" height="20px" width="auto">
+                                        </div>
+                                    </button>
+                                </li>
+                                <li class="d-flex justify-content-center align-items-center" class="d-flex justify-content-center align-items-center">
+                                    <button type="button" onclick="location.href='#certifications'" class="btn btn-primary about rounded-3 mb-3 col-12">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span>Certifications</span>
+                                            <img src="/Images/right-chevron-svgrepo-com.svg" alt="chevron" height="20px" width="auto">
+                                        </div>
+                                    </button>
+                                </li>
+                                <li class="d-flex justify-content-center align-items-center" class="d-flex justify-content-center align-items-center">
+                                    <button type="button" onclick="location.href='#experience'" class="btn btn-primary about rounded-3 mb-3 col-12">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span>Experience</span>
+                                            <img src="/Images/right-chevron-svgrepo-com.svg" alt="chevron" height="20px" width="auto">
+                                        </div>
+                                    </button>
+                                </li>
+                                <li class="d-flex justify-content-center align-items-center" class="d-flex justify-content-center align-items-center">
+                                    <button type="button" onclick="location.href='#skills'" class="btn btn-primary about rounded-3 mb-3 col-12">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span>Skills</span>
+                                            <img src="/Images/right-chevron-svgrepo-com.svg" alt="chevron" height="20px" width="auto">
+                                        </div>
+                                    </button>
+                                </li>
+                                <li class="d-flex justify-content-center align-items-center" class="d-flex justify-content-center align-items-center">
+                                    <button type="button" onclick="location.href='#learning-and-development'" class="btn btn-primary about rounded-3 mb-3 col-12">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span>Ongoing Learning & Development</span>
+                                            <img src="/Images/right-chevron-svgrepo-com.svg" alt="chevron" height="20px" width="auto">
+                                        </div>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -168,34 +166,34 @@
 
         <!-- ↓ Introduction ↓ -->
 
-        <section id="introduction" class="bg-white px-3 px-md-5 py-5">
-            <div class="container">
-                <h2 class="display-4 mb-5 scroll-up">Introduction</h2>
-                <p class="lead scroll-up">
+        <section id="introduction" class="bg-space px-3 px-md-5 py-5">
+            <div class="container scroll-up text-color">
+                <h2 class="display-4 mb-5">Introduction</h2>
+                <p class="lead">
                     Hello, and thanks for stopping by! I'm Ryan Jeffrey, a web developer specialising in creating visually engaging, 
                     professional websites with seamless functionality tailored to small business needs. 
                     I'm also a trainer & assessor passionate about educating those new to the tech world, helping them navigate digital tools with confidence.
                 </p>
-                <p class="lead scroll-up">
+                <p class="lead">
                     My background is a little different from the typical developer - I started my career in the joinery and furniture-making industry, 
                     working on high-end commercial and residential projects for over a decade. During that time, I developed a deep interest in programming CNC machines, 
                     which sparked my transition into software development.
                 </p>
-                <p class="lead scroll-up">
+                <p class="lead">
                     One of my day-to-day tasks and key achievements was to improve efficiency by creating CNC programs that allowed inexperienced users to easily modify and run machine 
                     operations without needing to learn complex programming. This approach - hiding the backend logic while delivering a user-friendly 
                     experience - mirrors how we interact with modern applications today. That realisation fueled my passion for development, and now here we are.
                 </p>
-                <p class="lead scroll-up">
+                <p class="lead">
                     Now, as a developer, my primary focus is client satisfaction. I work closely with businesses to build high-impact websites that enhance brand awareness 
                     and drive sales. Beyond website development, I also help business owners integrate automation tools and AI-powered solutions to streamline 
                     repetitive tasks and improve efficiency.
                 </p>
-                <p class="lead scroll-up">
+                <p class="lead">
                     If you're looking for a developer who combines technical expertise, problem-solving skills, and a user-focused approach, 
                     I'd love to connect and discuss how I can contribute to your team. 
                 </p>
-                <p class="lead scroll-up"> 
+                <p class="lead"> 
                     Click below to get in touch! 
                 </p>
                 <a href="/contact">
@@ -211,8 +209,8 @@
 
         <!-- ↓ Certifications ↓ -->
 
-        <section id="certifications" class="bg-grey px-3 px-md-5 py-5">
-            <div class="container">
+        <section id="certifications" class="bg-space color px-3 px-md-5 py-5">
+            <div class="container pt-5">
                 <h2 class="display-4 mb-5 scroll-up text-white">Certifications</h2>
                 <div class="row row-cols-lg-2 row-cols-1">
                     <div class="col scroll-left">
@@ -266,8 +264,8 @@
 
         <!-- ↓ Experience ↓ -->
 
-        <section id="experience" class="bg-orange px-3 px-md-5 py-5">
-            <div class="container">
+        <section id="experience" class="bg-space px-3 px-md-5 py-5">
+            <div class="container pt-5">
                 <h2 class="display-4 mb-5 scroll-up text-white">Experience</h2>
                 <div class="card scroll-left rounded-4 bg-white p-4 mb-4 shadow">
                     <div class="d-flex justify-content-between flex-column flex-md-row align-items-center">
@@ -546,9 +544,9 @@
 
         <!-- ↓ Skills ↓ -->
 
-        <section id="skills" class="bg-white px-3 px-md-5 py-5">
-            <div class="container">
-                <h2 class="display-4 mb-5 scroll-up">Skills</h2>
+        <section id="skills" class="bg-space color px-3 px-md-5 py-5">
+            <div class="container pt-5">
+                <h2 class="display-4 mb-5 scroll-up text-color">Skills</h2>
                 <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4">
                     <div class="col mb-4 mb-xl-0 scroll-up">
                         <div class="card rounded-4 shadow p-4 h-100">
@@ -836,8 +834,8 @@
 
         <!-- ↓ Ongoing Learning & Development ↓ -->
 
-        <section id="learning-and-development" class="bg-grey px-3 px-md-5 py-5">
-            <div class="container">
+        <section id="learning-and-development" class="bg-space px-3 px-md-5 py-5">
+            <div class="container pt-5">
                 <h2 class="display-4 mb-5 scroll-up text-white">Ongoing Learning & Development</h2>
                 <div class="card bg-white rounded-4 p-4 shadow mb-4 scroll-left">
                     <h3 class="fw-light mb-3">Angular</h3>
@@ -878,66 +876,44 @@
 
     <!-- Footer ↓ -->
 
-    <footer>
+    <footer class="pt-5 home">
         <div class="py-5 px-3 container">
-            <div class="d-flex justify-content-between flex-column gap-5 gap-lg-0 flex-lg-row align-items-center px-3 mb-5">
+            <div class="d-flex justify-content-between flex-column gap-5 gap-lg-0 flex-lg-row align-items-lg-center align-items-start px-3 mb-5">
                 <a href="/">
                     <img src="/Images/White RJ.png" alt="logo" height="60px" width="auto">
                 </a>
-                <div class="d-flex align-items-center gap-4">
+                <div class="d-flex align-items-center gap-4 pt-5 pt-lg-0">
                     <a href="https://www.instagram.com/eat.code.build/" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
-                        <img src="/Images/instagram-white.svg" alt="Instagram" height="35px" width="auto">
+                        <img src="/Images/instagram-white.svg" alt="Instagram" height="25px" width="auto">
                     </a>
                     <a href="https://www.linkedin.com/in/ryan-jeffrey-b21327247/" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
-                        <img src="/Images/linkedin-circle-white.svg" alt="LinkedIn" height="35px" width="auto">
+                        <img src="/Images/linkedin-circle-white.svg" alt="LinkedIn" height="25px" width="auto">
                     </a>
                     <a href="https://github.com/eatcodebuild" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
-                        <img src="/Images/github-white.svg" alt="Github" height="35px" width="auto">
+                        <img src="/Images/github-white.svg" alt="Github" height="25px" width="auto">
                     </a>
                 </div>
-                <div class="row ">
-                    <div class="col">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link text-center text-white" href="/">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-center text-white" href="/about">About</a>
-                            </li>
-                        </ul>
+                <div class="row justify-content-start py-5 py-lg-0">
+                    <div class="col d-flex flex-column align-items-start gap-3">
+                        <a class="nav-link text-center text-white" href="/">Home</a>
+                        <a class="nav-link text-center text-white" href="/about">About</a>
                     </div>
-                    <div class="col">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link text-center text-white" href="/projects">Projects</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-center text-white" href="/contact">Contact</a>
-                            </li>
-                        </ul>
+                    <div class="col d-flex flex-column align-items-start gap-3">
+                        <a class="nav-link text-center text-white" href="/projects">Projects</a>
+                        <a class="nav-link text-center text-white" href="/contact">Contact</a>
                     </div>
-                    <div class="col">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link text-center text-white" href="/about#experience">Experience</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-center text-white" href="/about#certifications">Certifications</a>
-                            </li>
-                        </ul>
+                    <div class="col d-flex flex-column align-items-start gap-3">
+                        <a class="nav-link text-center text-white" href="/about#experience">Experience</a>
+                        <a class="nav-link text-center text-white" href="/about#certifications">Certifications</a>
                     </div>
-                    <div class="col">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link text-center text-white" href="/about/#learning-and-development">Learning & Development</a>
-                            </li>
-                        </ul>
+                    <div class="col d-flex flex-column align-items-start gap-3">
+                        <a class="nav-link text-center text-white" href="/about/#learning-and-development">Learning & Development</a>
                     </div>
                 </div>
             </div>
-            <div class="row d-flex justify-content-between align-items-center">
-                <div class="col">
-                    <div class="d-flex flex-column align-items-center align-items-lg-start gap-2 px-3 mb-5">
+            <div class="row d-flex justify-content-between align-items-center pt-3 pt-lg-5 mb-5">
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <div class="d-flex flex-column align-items-start gap-2 px-3">
                         <div class="d-flex align-items-center gap-4">
                             <img src="/Images/phone-svgrepo-com.svg" alt="phone img" height="30px" width="auto">
                             <a class="text-dark text-white text-decoration-none" href="tel:+61422611786">0422 611 786</a>
@@ -952,11 +928,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="col d-flex justify-content-center align-items-center">
-                    <iframe class="rounded-3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62433.16705404631!2d151.41972365563515!3d-33.08035316439375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b7328f2029fa325%3A0x5017d681632eb80!2sCooranbong%20NSW%202265!5e0!3m2!1sen!2sau!4v1740384651175!5m2!1sen!2sau" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="col-lg-5 mt-5 mt-lg-0 d-flex justify-content-center align-items-center">
+                    <div class="border rounded-1 shadow p-4 h-100 w-100">
+                        <h3 class="display-4 text-white mb-4">Want to chat?</h3>
+                        <a class="btn btn-primary" href="/contact">Send me a direct message</a>
+                    </div>
                 </div>
             </div>
-            <p class="text-white text-center mt-5"> Ryan Jeffrey - Full Stack Developer | 2025 | Let's Connect!</p>
+            <div class="pt-3">
+                <p class="text-white text-start text-lg-center mt-5 mb-1 small"> Ryan Jeffrey - Full Stack Developer</p>
+                <p class="text-white text-start text-lg-center small">&COPY; 2025 | Let's Connect!</p>
+            </div>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

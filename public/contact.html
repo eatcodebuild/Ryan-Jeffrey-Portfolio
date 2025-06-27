@@ -19,7 +19,7 @@
 
     <!-- navbar ↓ -->
 
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar home navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand" href="/">
                 <img src="/Images/White RJ.png" alt="logo" height="40px" width="auto">
@@ -37,9 +37,6 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto gap-1">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/">Home</a>
-                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/about">About</a>
                     </li>
@@ -66,59 +63,59 @@
 
     <main> 
 
-        <div class="bg-contact d-flex justify-content-center align-items-center px-lg-5 p-md-4 px-3 py-5">
+        <div class="bg-space hero d-flex justify-content-center align-items-center px-lg-5 px-3">
             <div class="container py-5">
                 <div class="slideInRight-noBounce w-100">
-                    <div class="row bg-grey rounded-3">
-                        <div class="col-lg-6 col-12 mb-4 mb-lg-0 p-md-5 p-4 bg-grey d-flex flex-column justify-content-center align-items-start">
-                            <h2 class="display-4 text-white mb-4">Get in touch with me</h2>
+                    <div class="row rounded-3">
+                        <div class="col-lg-6 col-12 mb-4 mb-lg-0 p-md-5 p-4 bg-transparent d-flex flex-column justify-content-center align-items-start">
+                            <h2 class="display-3 fw-semibold text-white mb-4">Get in touch</h2>
                             <div class="d-flex flex-column gap-2">
                                 <div class="d-flex align-items-center gap-4">
-                                    <img src="/Images/phone-svgrepo-com.svg" alt="phone img" height="30px" width="auto">
+                                    <img src="/Images/phone-svgrepo-com.svg" alt="phone img" height="25px" width="auto">
                                     <a class="text-dark text-white text-decoration-none" href="tel:+61422611786">0422 611 786</a>
                                 </div>
                                 <div class="d-flex align-items-center gap-4">
-                                    <img src="/Images/mail-svgrepo-com.svg" alt="phone img" height="30px" width="auto">
+                                    <img src="/Images/mail-svgrepo-com.svg" alt="phone img" height="25px" width="auto">
                                     <a href="mailto: r.jeffrey@live.com.au" class="text-white text-decoration-none">r.jeffrey@live.com.au</a>
                                 </div>
-                                <div class="d-flex align-items-center gap-4">
-                                    <img src="/Images/place-point-svgrepo-com.svg" alt="phone img" height="30px" width="auto">
+                                <div class="d-flex align-items-center gap-4 mb-5">
+                                    <img src="/Images/place-point-svgrepo-com.svg" alt="phone img" height="25px" width="auto">
                                     <p class="mb-0 text-white">Cooranbong 2265, NSW, Australia</p>
                                 </div>
                                 <div class="mt-5">
                                     <h2 class="text-white fw-light mb-3">Find me online:</h2>
                                     <div class="d-flex align-items-center gap-4">
                                         <a href="https://www.instagram.com/eat.code.build/" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
-                                            <img src="/Images/instagram-white.svg" alt="Instagram" height="35px" width="auto">
+                                            <img src="/Images/instagram-white.svg" alt="Instagram" height="25px" width="auto">
                                         </a>
                                         <a href="https://www.linkedin.com/in/ryan-jeffrey-b21327247/" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
-                                            <img src="/Images/linkedin-circle-white.svg" alt="LinkedIn" height="35px" width="auto">
+                                            <img src="/Images/linkedin-circle-white.svg" alt="LinkedIn" height="25px" width="auto">
                                         </a>
                                         <a href="https://github.com/eatcodebuild" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
-                                            <img src="/Images/github-white.svg" alt="Github" height="35px" width="auto">
+                                            <img src="/Images/github-white.svg" alt="Github" height="25px" width="auto">
                                         </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-6 col-12 d-flex justify-content-center align-items-center p-0">
-                            <div class="card rounded-3 shadow p-4 w-100 h-100">
+                            <div class="card contactForm-bg rounded-3 shadow p-4 w-100 h-100">
                                 <form id="contactForm">
-                                    <h2 class="fw-light mb-3">Send me a message</h2>
+                                    <h2 class="display-4 mb-3 text-white">Send me a message</h2>
                                     <div class="mb-3">
-                                        <label for="name" class="form-label">Full Name</label>
+                                        <label for="name" class="form-label text-white">Full Name</label>
                                         <input type="text" id="name" name="name" required class="form-control shadow-sm">
                                     </div>
                                     <div class="mb-3">
-                                        <label for="phone" class="form-label">Phone Number</label>
+                                        <label for="phone" class="form-label text-white">Phone Number</label>
                                         <input type="text" id="phone" name="phone" required class="form-control shadow-sm">
                                     </div>
                                     <div class="mb-3">
-                                        <label for="email" class="form-label">Email Address</label>
+                                        <label for="email" class="form-label text-white">Email Address</label>
                                         <input type="email" id="email" name="email" required class="form-control shadow-sm">
                                     </div>
                                     <div class="mb-3">
-                                        <label for="message" class="form-label">Message</label>
+                                        <label for="message" class="form-label text-white">Message</label>
                                         <textarea id="message" class="form-control shadow-sm" name="message" rows="8" required></textarea>
                                     </div>
                                     <button type="submit" class="btn btn-primary px-5 rounded-3 shadow mt-3">Send Message</button>
@@ -139,66 +136,44 @@
 
     <!-- Footer ↓ -->
 
-    <footer>
+    <footer class="pt-5 home">
         <div class="py-5 px-3 container">
-            <div class="d-flex justify-content-between flex-column gap-5 gap-lg-0 flex-lg-row align-items-center px-3 mb-5">
+            <div class="d-flex justify-content-between flex-column gap-5 gap-lg-0 flex-lg-row align-items-lg-center align-items-start px-3 mb-5">
                 <a href="/">
                     <img src="/Images/White RJ.png" alt="logo" height="60px" width="auto">
                 </a>
-                <div class="d-flex align-items-center gap-4">
+                <div class="d-flex align-items-center gap-4 pt-5 pt-lg-0">
                     <a href="https://www.instagram.com/eat.code.build/" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
-                        <img src="/Images/instagram-white.svg" alt="Instagram" height="35px" width="auto">
+                        <img src="/Images/instagram-white.svg" alt="Instagram" height="25px" width="auto">
                     </a>
                     <a href="https://www.linkedin.com/in/ryan-jeffrey-b21327247/" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
-                        <img src="/Images/linkedin-circle-white.svg" alt="LinkedIn" height="35px" width="auto">
+                        <img src="/Images/linkedin-circle-white.svg" alt="LinkedIn" height="25px" width="auto">
                     </a>
                     <a href="https://github.com/eatcodebuild" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
-                        <img src="/Images/github-white.svg" alt="Github" height="35px" width="auto">
+                        <img src="/Images/github-white.svg" alt="Github" height="25px" width="auto">
                     </a>
                 </div>
-                <div class="row ">
-                    <div class="col">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link text-center text-white" href="/">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-center text-white" href="/about">About</a>
-                            </li>
-                        </ul>
+                <div class="row justify-content-start py-5 py-lg-0">
+                    <div class="col d-flex flex-column align-items-start gap-3">
+                        <a class="nav-link text-center text-white" href="/">Home</a>
+                        <a class="nav-link text-center text-white" href="/about">About</a>
                     </div>
-                    <div class="col">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link text-center text-white" href="/projects">Projects</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-center text-white" href="/contact">Contact</a>
-                            </li>
-                        </ul>
+                    <div class="col d-flex flex-column align-items-start gap-3">
+                        <a class="nav-link text-center text-white" href="/projects">Projects</a>
+                        <a class="nav-link text-center text-white" href="/contact">Contact</a>
                     </div>
-                    <div class="col">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link text-center text-white" href="/about#experience">Experience</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-center text-white" href="/about#certifications">Certifications</a>
-                            </li>
-                        </ul>
+                    <div class="col d-flex flex-column align-items-start gap-3">
+                        <a class="nav-link text-center text-white" href="/about#experience">Experience</a>
+                        <a class="nav-link text-center text-white" href="/about#certifications">Certifications</a>
                     </div>
-                    <div class="col">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link text-center text-white" href="/about/#learning-and-development">Learning & Development</a>
-                            </li>
-                        </ul>
+                    <div class="col d-flex flex-column align-items-start gap-3">
+                        <a class="nav-link text-center text-white" href="/about/#learning-and-development">Learning & Development</a>
                     </div>
                 </div>
             </div>
-            <div class="row d-flex justify-content-between align-items-center">
-                <div class="col">
-                    <div class="d-flex flex-column align-items-center align-items-lg-start gap-2 px-3 mb-5">
+            <div class="row d-flex justify-content-between align-items-center pt-3 pt-lg-5 mb-5">
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <div class="d-flex flex-column align-items-start gap-2 px-3">
                         <div class="d-flex align-items-center gap-4">
                             <img src="/Images/phone-svgrepo-com.svg" alt="phone img" height="30px" width="auto">
                             <a class="text-dark text-white text-decoration-none" href="tel:+61422611786">0422 611 786</a>
@@ -213,11 +188,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="col d-flex justify-content-center align-items-center">
-                    <iframe class="rounded-3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62433.16705404631!2d151.41972365563515!3d-33.08035316439375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b7328f2029fa325%3A0x5017d681632eb80!2sCooranbong%20NSW%202265!5e0!3m2!1sen!2sau!4v1740384651175!5m2!1sen!2sau" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="col-lg-5 mt-5 mt-lg-0 d-flex justify-content-center align-items-center">
+                    <div class="border rounded-1 shadow p-4 h-100 w-100">
+                        <h3 class="display-4 text-white mb-4">Want to chat?</h3>
+                        <a class="btn btn-primary" href="/contact">Send me a direct message</a>
+                    </div>
                 </div>
             </div>
-            <p class="text-white text-center mt-5"> Ryan Jeffrey - Full Stack Developer | 2025 | Let's Connect!</p>
+            <div class="pt-3">
+                <p class="text-white text-start text-lg-center mt-5 mb-1 small"> Ryan Jeffrey - Full Stack Developer</p>
+                <p class="text-white text-start text-lg-center small">&COPY; 2025 | Let's Connect!</p>
+            </div>
         </div>
     </footer>
     <script>

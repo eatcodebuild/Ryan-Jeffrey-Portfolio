@@ -19,7 +19,7 @@
 
     <!-- navbar ↓ -->
 
-    <nav class="navbar navbar-expand-lg">
+    <nav class="home navbar navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand" href="/">
                 <img src="/Images/White RJ.png" alt="logo" height="40px" width="auto">
@@ -37,9 +37,6 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto gap-1">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/">Home</a>
-                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/about">About</a>
                     </li>
@@ -66,26 +63,17 @@
 
     <main> 
 
-        <div class="bg-hero d-flex flex-column flex-md-row justify-content-between align-items-center projects slideInRight-noBounce">
-            <div class="bg-dark-screen col-md-8 col-12 p-5 fade slideInRight-noBounce projects h-100">
-                <div class="container d-flex flex-column flex-md-row justify-content-center align-items-center h-100">
-                    <h1 class="display-1 d-none d-md-block text-center text-white slideUp projects mb-5">Projects</h1>
-                    <h1 class="display-1 d-block d-md-none text-center text-white slideUp projects mb-5">Projects</h1>
-                    <img class="d-block d-md-none slideDown sm projects arrow col-3" src="/Images/arrow-down-circle-svgrepo-com-full-white.svg" alt="Arrow">
-                </div> 
-            </div>
-            <div class="d-none col-4 d-md-block h-100">
-                <div class="hero-banner-img-projects slideInLeft-noBounce projects d-flex justify-content-center align-items-center">
-                    <img class="slideDown projects arrow col-6" src="/Images/arrow-down-circle-svgrepo-com-full-white.svg" alt="Arrow">
-                </div>
-            </div>
+        <div class="bg-space hero">
+            <div class="container d-flex justify-content-start align-items-center h-100">
+                <h1 class="display-1 text-start text-white slideUp mb-5">Projects</h1>
+            </div> 
         </div>
 
-        <div id="projects-list">
-            <div class="bg-white py-5 ">
-                <div class="container">
+        <div id="projects-list bg-space">
+            <div class="py-5">
+                <div class="container pt-5">
                     <div class="row align-items-stretch justify-content-center flex-column-reverse flex-lg-row align-items-center scroll-up px-3 px-lg-0">
-                        <div class="col-lg-6 col-xl-7 col-12 p-lg-4">
+                        <div class="col-lg-6 col-xl-7 col-12 p-lg-4 text-color">
                             <h4 class="display-4 mb-4 mt-5 mt-lg-0">Web Development Business Website</h4>
                             <p class="lead mb-2">
                                 This is the official website for 3 Yellow Circles, built to attract and onboard clients quickly and easily. 
@@ -110,82 +98,72 @@
                     </div>
                 </div>
             </div>
-    
-            <div class="container scroll-up">
-                <hr>
-            </div>
 
-            <div class="bg-white py-5 ">
-                <div class="container">
-                    <div class="row align-items-stretch justify-content-center flex-column-reverse flex-lg-row-reverse align-items-center scroll-up px-3 px-lg-0">
-                        <div class="col-lg-6 col-xl-7 col-12 p-lg-4">
-                            <h4 class="display-4 mb-4 mt-5 mt-lg-0">To Do List Application</h4>
-                            <p class="lead mb-2">
-                                Here is a full-stack web application developed with the MEN stack.
-                            </p>
-                            <p class="lead mb-4"> 
-                                This To Do App is a full-stack web application with a frontend built using HTML, CSS, and JavaScript, and a backend powered by Node.js, Express.js, and MongoDB. 
-                                It incorporates RESTful APIs for seamless data interaction between the client and server, enabling real-time updates and efficient data management. 
-                                Designed with scalability in mind, this application provides a user-friendly interface and a robust backend architecture, 
-                                demonstrating expertise in frontend, backend, and API integration to deliver a high-performance, dynamic web experience.
-                            </p>
-                            <a class="text-decoration-none" href="https://full-stack-to-do-app-backend.vercel.app/" target="_blank" rel="noopener noreferrer">
-                                <button type="button" class="btn btn-primary rounded-3 px-4 shadow-sm mt-4 moveSVG">
-                                    <div class="d-flex gap-1 justify-content-center align-items-center">
-                                        <span>Visit website</span>
-                                        <img src="/Images/right-chevron-svgrepo-com.svg" alt="chevron" height="20px" width="auto">
-                                    </div>
-                                </button>
-                            </a>
+            <div class="bg-space color">
+                <div class="py-5">
+                    <div class="container pt-5">
+                        <div class="row align-items-stretch justify-content-center flex-column-reverse flex-lg-row-reverse align-items-center scroll-up px-3 px-lg-0">
+                            <div class="col-lg-6 col-xl-7 col-12 p-lg-4 text-color">
+                                <h4 class="display-4 mb-4 mt-5 mt-lg-0">To Do List Application</h4>
+                                <p class="lead mb-2">
+                                    Here is a full-stack web application developed with the MEN stack.
+                                </p>
+                                <p class="lead mb-4"> 
+                                    This To Do App is a full-stack web application with a frontend built using HTML, CSS, and JavaScript, and a backend powered by Node.js, Express.js, and MongoDB. 
+                                    It incorporates RESTful APIs for seamless data interaction between the client and server, enabling real-time updates and efficient data management. 
+                                    Designed with scalability in mind, this application provides a user-friendly interface and a robust backend architecture, 
+                                    demonstrating expertise in frontend, backend, and API integration to deliver a high-performance, dynamic web experience.
+                                </p>
+                                <a class="text-decoration-none" href="https://full-stack-to-do-app-backend.vercel.app/" target="_blank" rel="noopener noreferrer">
+                                    <button type="button" class="btn btn-primary rounded-3 px-4 shadow-sm mt-4 moveSVG">
+                                        <div class="d-flex gap-1 justify-content-center align-items-center">
+                                            <span>Visit website</span>
+                                            <img src="/Images/right-chevron-svgrepo-com.svg" alt="chevron" height="20px" width="auto">
+                                        </div>
+                                    </button>
+                                </a>
+                            </div>
+                            <div class="col-lg-6 col-xl-5 col-12 mx-auto">
+                                <div id="toDoApp-project-thumbnail" class="rounded-4 shadow"></div>
+                            </div>
                         </div>
-                        <div class="col-lg-6 col-xl-5 col-12 mx-auto">
-                            <div id="toDoApp-project-thumbnail" class="rounded-4 shadow"></div>
+                    </div>
+                </div>
+
+                <div class="py-5">
+                    <div class="container pt-5">
+                        <div class="row align-items-stretch justify-content-center flex-column-reverse flex-lg-row align-items-center scroll-up px-3 px-lg-0">
+                            <div class="col-lg-6 col-xl-7 col-12 p-lg-4 text-color">
+                                <h4 class="display-4 mb-4 mt-5 mt-lg-0">BMI Calculator</h4>
+                                <p class="lead mb-2">
+                                    This project is a single-document web application built using HTML, CSS, and JavaScript.
+                                </p>
+                                <p class="lead mb-4"> 
+                                    Although it is a simple, front-end-only project, it effectively demonstrates the power of the three core web development languages. 
+                                    I frequently use this project as a teaching tool to introduce my web development students to JavaScript fundamentals, 
+                                    including variables and basic interactivity.
+                                </p>
+                                <a class="text-decoration-none" href="https://bmi-calculator-tau-wheat.vercel.app/" target="_blank" rel="noopener noreferrer">
+                                    <button type="button" class="btn btn-primary rounded-3 px-4 shadow-sm mt-4 moveSVG">
+                                        <div class="d-flex gap-1 justify-content-center align-items-center">
+                                            <span>Visit website</span>
+                                            <img src="/Images/right-chevron-svgrepo-com.svg" alt="chevron" height="20px" width="auto">
+                                        </div>
+                                    </button>
+                                </a>
+                            </div>
+                            <div class="col-lg-6 col-xl-5 col-12 col-md-8 mx-auto">
+                                <div id="bmi-calculator-project-thumbnail" class="rounded-4 shadow"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
     
-            <div class="container scroll-up">
-                <hr>
-            </div>
-
-            <div class="bg-white py-5 ">
-                <div class="container">
-                    <div class="row align-items-stretch justify-content-center flex-column-reverse flex-lg-row align-items-center scroll-up px-3 px-lg-0">
-                        <div class="col-lg-6 col-xl-7 col-12 p-lg-4">
-                            <h4 class="display-4 mb-4 mt-5 mt-lg-0">BMI Calculator</h4>
-                            <p class="lead mb-2">
-                                This project is a single-document web application built using HTML, CSS, and JavaScript.
-                            </p>
-                            <p class="lead mb-4"> 
-                                Although it is a simple, front-end-only project, it effectively demonstrates the power of the three core web development languages. 
-                                I frequently use this project as a teaching tool to introduce my web development students to JavaScript fundamentals, 
-                                including variables and basic interactivity.
-                            </p>
-                            <a class="text-decoration-none" href="https://bmi-calculator-tau-wheat.vercel.app/" target="_blank" rel="noopener noreferrer">
-                                <button type="button" class="btn btn-primary rounded-3 px-4 shadow-sm mt-4 moveSVG">
-                                    <div class="d-flex gap-1 justify-content-center align-items-center">
-                                        <span>Visit website</span>
-                                        <img src="/Images/right-chevron-svgrepo-com.svg" alt="chevron" height="20px" width="auto">
-                                    </div>
-                                </button>
-                            </a>
-                        </div>
-                        <div class="col-lg-6 col-xl-5 col-12 col-md-8 mx-auto">
-                            <div id="bmi-calculator-project-thumbnail" class="rounded-4 shadow"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="container scroll-up">
-                <hr>
-            </div>
-
-            <div class="bg-white py-5 ">
+            <div class="pt-5">
                 <div class="container">
                     <div class="row align-items-stretch justify-content-center flex-column-reverse flex-lg-row-reverse align-items-center scroll-up px-3 px-lg-0">
-                        <div class="col-lg-6 col-xl-7 col-12 p-lg-4">
+                        <div class="col-lg-6 col-xl-7 col-12 p-lg-4 text-color">
                             <h4 class="display-4 mb-4 mt-5 mt-lg-0">Campout</h4>
                             <p class="lead mb-2">
                                 I designed this website using Figma, Canva and Uizard and built using HTML and CSS as a creative way to explore an "Airbnb"-style concept for camping.
@@ -211,14 +189,10 @@
                 </div>
             </div>
 
-            <div class="container scroll-up">
-                <hr>
-            </div>
-
-            <div class="bg-white py-5 ">
-                <div class="container">
+            <div class="py-5">
+                <div class="container pt-5">
                     <div class="row align-items-stretch justify-content-center flex-column-reverse flex-lg-row align-items-center scroll-up px-3 px-lg-0">
-                        <div class="col-lg-6 col-xl-7 col-12 p-lg-4">
+                        <div class="col-lg-6 col-xl-7 col-12 p-lg-4 text-color">
                             <h4 class="display-4 mb-4 mt-5 mt-lg-0">Coastal Joinery</h4>
                             <p class="lead mb-2">
                                 I designed and developed this project as a concept for a website redesign for a joinery company I previously worked for. 
@@ -246,22 +220,16 @@
                 </div>
             </div>
 
-            <div class="container scroll-up">
-                <hr>
-            </div>
-
-            <div class="bg-white py-5">
-                <div class="container">
-                    <div class="d-flex gap-3 justify-content-center flex-column flex-lg-row align-items-center scroll-left px-3 px-lg-0">
-                        <h2 class="display-2 text-center">More projects coming soon...</h2>
+            <div class="py-5">
+                <div class="container pt-5">
+                    <div class="d-flex gap-3 justify-content-center flex-column flex-lg-row align-items-center scroll-left px-3 px-lg-0 text-color">
+                        <h2 class="display-2 text-center opacity-25">More projects coming soon...</h2>
                         <div class="spinner-border text-orange" role="status">
                             <span class="visually-hidden">Loading...</span>
                         </div>
                     </div>
-                    
                 </div>
             </div>
-
         </div>
 
 
@@ -271,66 +239,44 @@
 
     <!-- Footer ↓ -->
 
-    <footer>
+    <footer class="pt-5 home">
         <div class="py-5 px-3 container">
-            <div class="d-flex justify-content-between flex-column gap-5 gap-lg-0 flex-lg-row align-items-center px-3 mb-5">
+            <div class="d-flex justify-content-between flex-column gap-5 gap-lg-0 flex-lg-row align-items-lg-center align-items-start px-3 mb-5">
                 <a href="/">
                     <img src="/Images/White RJ.png" alt="logo" height="60px" width="auto">
                 </a>
-                <div class="d-flex align-items-center gap-4">
+                <div class="d-flex align-items-center gap-4 pt-5 pt-lg-0">
                     <a href="https://www.instagram.com/eat.code.build/" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
-                        <img src="/Images/instagram-white.svg" alt="Instagram" height="35px" width="auto">
+                        <img src="/Images/instagram-white.svg" alt="Instagram" height="25px" width="auto">
                     </a>
                     <a href="https://www.linkedin.com/in/ryan-jeffrey-b21327247/" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
-                        <img src="/Images/linkedin-circle-white.svg" alt="LinkedIn" height="35px" width="auto">
+                        <img src="/Images/linkedin-circle-white.svg" alt="LinkedIn" height="25px" width="auto">
                     </a>
                     <a href="https://github.com/eatcodebuild" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
-                        <img src="/Images/github-white.svg" alt="Github" height="35px" width="auto">
+                        <img src="/Images/github-white.svg" alt="Github" height="25px" width="auto">
                     </a>
                 </div>
-                <div class="row ">
-                    <div class="col">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link text-center text-white" href="/">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-center text-white" href="/about">About</a>
-                            </li>
-                        </ul>
+                <div class="row justify-content-start py-5 py-lg-0">
+                    <div class="col d-flex flex-column align-items-start gap-3">
+                        <a class="nav-link text-center text-white" href="/">Home</a>
+                        <a class="nav-link text-center text-white" href="/about">About</a>
                     </div>
-                    <div class="col">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link text-center text-white" href="/projects">Projects</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-center text-white" href="/contact">Contact</a>
-                            </li>
-                        </ul>
+                    <div class="col d-flex flex-column align-items-start gap-3">
+                        <a class="nav-link text-center text-white" href="/projects">Projects</a>
+                        <a class="nav-link text-center text-white" href="/contact">Contact</a>
                     </div>
-                    <div class="col">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link text-center text-white" href="/about#experience">Experience</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-center text-white" href="/about#certifications">Certifications</a>
-                            </li>
-                        </ul>
+                    <div class="col d-flex flex-column align-items-start gap-3">
+                        <a class="nav-link text-center text-white" href="/about#experience">Experience</a>
+                        <a class="nav-link text-center text-white" href="/about#certifications">Certifications</a>
                     </div>
-                    <div class="col">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link text-center text-white" href="/about/#learning-and-development">Learning & Development</a>
-                            </li>
-                        </ul>
+                    <div class="col d-flex flex-column align-items-start gap-3">
+                        <a class="nav-link text-center text-white" href="/about/#learning-and-development">Learning & Development</a>
                     </div>
                 </div>
             </div>
-            <div class="row d-flex justify-content-between align-items-center">
-                <div class="col">
-                    <div class="d-flex flex-column align-items-center align-items-lg-start gap-2 px-3 mb-5">
+            <div class="row d-flex justify-content-between align-items-center pt-3 pt-lg-5 mb-5">
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <div class="d-flex flex-column align-items-start gap-2 px-3">
                         <div class="d-flex align-items-center gap-4">
                             <img src="/Images/phone-svgrepo-com.svg" alt="phone img" height="30px" width="auto">
                             <a class="text-dark text-white text-decoration-none" href="tel:+61422611786">0422 611 786</a>
@@ -345,11 +291,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="col d-flex justify-content-center align-items-center">
-                    <iframe class="rounded-3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62433.16705404631!2d151.41972365563515!3d-33.08035316439375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b7328f2029fa325%3A0x5017d681632eb80!2sCooranbong%20NSW%202265!5e0!3m2!1sen!2sau!4v1740384651175!5m2!1sen!2sau" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="col-lg-5 mt-5 mt-lg-0 d-flex justify-content-center align-items-center">
+                    <div class="border rounded-1 shadow p-4 h-100 w-100">
+                        <h3 class="display-4 text-white mb-4">Want to chat?</h3>
+                        <a class="btn btn-primary" href="/contact">Send me a direct message</a>
+                    </div>
                 </div>
             </div>
-            <p class="text-white text-center mt-5"> Ryan Jeffrey - Full Stack Developer | 2025 | Let's Connect!</p>
+            <div class="pt-3">
+                <p class="text-white text-start text-lg-center mt-5 mb-1 small"> Ryan Jeffrey - Full Stack Developer</p>
+                <p class="text-white text-start text-lg-center small">&COPY; 2025 | Let's Connect!</p>
+            </div>
         </div>
     </footer>
 

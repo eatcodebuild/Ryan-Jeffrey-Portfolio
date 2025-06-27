@@ -1,9 +1,3 @@
-// Scroll to top on reload ↓
-
-window.onbeforeunload = function () {
-    window.scrollTo(0, 0);
-}
-
 // Scroll to appear function ↓
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -25,4 +19,15 @@ document.addEventListener("DOMContentLoaded", function () {
     checkScroll();
 });
 
-  
+
+function darkenNav() {
+    const nav = document.getElementsByTagName("nav")[0];
+    if (window.scrollY > 100) {
+        nav.style.background = "linear-gradient(rgb(6, 5, 22), black)";
+    } else {
+        nav.style.background = "transparent";
+    }
+}
+window.addEventListener("scroll", darkenNav);
+window.addEventListener("load", darkenNav);
+

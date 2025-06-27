@@ -20,7 +20,7 @@
 
     <!-- navbar ↓ -->
 
-    <nav class="navbar navbar-expand-lg">
+    <nav class="home navbar navbar-expand-lg appearDown">
         <div class="container">
             <a class="navbar-brand" href="/">
                 <img src="/Images/White RJ.png" alt="logo" height="40px" width="auto">
@@ -38,9 +38,6 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto gap-1">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/">Home</a>
-                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/about">About</a>
                     </li>
@@ -69,7 +66,7 @@
         
         <!-- Large screen hero ↓ -->
 
-        <div class="bg-img d-none d-md-block slideInRight-noBounce">
+        <div class="bg-space hero d-none d-md-block">
             <div class="container h-100">
                 <div class="d-flex justify-content-between align-items-center gap-5 h-100">
                     <div class="profile-frame emerge">
@@ -94,8 +91,8 @@
 
         <!-- Small screen hero ↓ -->
 
-        <div class="bg-img d-block d-md-none small slideInRight-noBounce py-5">
-            <div class="container h-100 py-5">
+        <div class="bg-space hero d-block d-md-none small">
+            <div class="container h-100 pb-5">
                 <div class="d-flex justify-content-center align-items-center flex-column gap-5 h-100">
                     <div class="profile-frame emerge">
                         <img class="profile-pic" src="/Images/selfie-small.webp" alt="Ryan Jeffrey Face" loading="eager">
@@ -117,244 +114,213 @@
 
         <!-- Welcome ↓ -->
 
-        <div class="bg-white px-3 px-md-5 py-5">
-            <div class="container">
-                <h2 class="display-4 mb-5 scroll-up">Welcome!</h2>
-                <h4 class="scroll-up" >Hi, I'm Ryan - Web Developer & Problem Solver</h4>
-                <p class="lead scroll-up">
-                    Welcome to my corner of the web! I'm a passionate web developer with a knack for creating sleek, functional, and user-friendly digital experiences.
-                </p>
-                <p class="lead scroll-up">
-                    With a background in full stack web development, woodworking, project management, and teaching, I bring a unique blend of creativity, precision, and leadership to every project.
-                    I specialize in HTML, CSS, JavaScript, Node.js, MongoDB, and Express.js, crafting seamless frontend and backend solutions.
-                </p>
-                <p class="lead scroll-up">Whether it's building a dynamic web application, optimizing workflows, or designing intuitive user interfaces, I thrive on turning ideas into reality.</p>
-                <p class="lead scroll-up">Let's build something great together!</p>
-                <a href="/about">
-                    <button type="button" class="btn btn-primary rounded-3 px-4 shadow-sm scroll-up mt-4 moveSVG">
-                        <div class="d-flex gap-1 justify-content-center align-items-center">
-                            <span>Discover more</span>
-                            <img src="/Images/right-chevron-svgrepo-com.svg" alt="chevron" height="20px" width="auto">
-                        </div>
-                    </button>
-                </a>
-            </div>
-        </div>
-        <div class="container scroll-up">
-            <hr>
-        </div>
-        
-        <!-- ↓ Expertise ↓ -->
-
-        <div id="Expertise" class="bg-white px-3 px-md-5 py-5">
-            <div class="container">
-                <h2 class="display-4 mb-5 scroll-up">Expertise</h2>
-                <div class="row row-cols-1 row-cols-lg-3 gap-4 gap-lg-0">
-                    <div class="col scroll-left">
-                        <div class="card home shadow rounded-4 p-5">
-                            <img class="mb-3" src="/Images/stack-svgrepo-com (1).svg" alt="" height="100px">
-                            <h2 class="text-center">Full Stack Web Development</h2>
-                        </div>
-                    </div>
-                    <div class="col scroll-up">
-                        <div class="card home shadow rounded-4 p-5">
-                            <img class="mb-3" src="/Images/responsive-marketing-svgrepo-com.svg" alt="" height="100px">
-                            <h2 class="text-center">Responsive Web Design</h2>
-                        </div>
-                    </div>
-                    <div class="col scroll-right">
-                        <div class="card home shadow rounded-4 p-5">
-                            <img class="mb-3" src="/Images/automation-decision-svgrepo-com.svg" alt="" height="100px">
-                            <h2 class="text-center">Automation & Optimization</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="d-flex justify-content-center align-items-center mt-5">
-                    <a href="/about#skills">
-                        <button type="button" class="btn btn-primary rounded-3 px-4 shadow-sm scroll-up mt-4 moveSVG">
+        <div class="bg-space">
+            <div class="px-3 px-md-5 py-5">
+                <div class="container py-lg-5 scroll-up text-color">
+                    <h2 class="display-4 mb-5">Welcome!</h2>
+                    <h4 >Hi, I'm Ryan - Web Developer & Problem Solver</h4>
+                    <p class="lead">
+                        Welcome to my corner of the web! I'm a passionate web developer with a knack for creating sleek, functional, and user-friendly digital experiences.
+                    </p>
+                    <p class="lead">
+                        With a background in full stack web development, woodworking, project management, and teaching, I bring a unique blend of creativity, precision, and leadership to every project.
+                        I specialize in HTML, CSS, JavaScript, Node.js, MongoDB, and Express.js, crafting seamless frontend and backend solutions.
+                    </p>
+                    <p class="lead">Whether it's building a dynamic web application, optimizing workflows, or designing intuitive user interfaces, I thrive on turning ideas into reality.</p>
+                    <p class="lead">Let's build something great together!</p>
+                    <a href="/about">
+                        <button type="button" class="btn btn-primary rounded-3 px-4 shadow-sm mt-4 moveSVG">
                             <div class="d-flex gap-1 justify-content-center align-items-center">
-                                <span>More</span>
+                                <span>Discover more</span>
                                 <img src="/Images/right-chevron-svgrepo-com.svg" alt="chevron" height="20px" width="auto">
                             </div>
                         </button>
                     </a>
                 </div>
             </div>
-        </div>
+            
+            <!-- ↓ Expertise ↓ -->
 
-        <!-- ↓ Technologies ↓ -->
-
-        <div id="technologies" class="bg-orange px-3 px-md-5 py-5">
-            <div class="container">
-                <h2 class="display-4 text-white mb-5 scroll-up">Technologies</h2>
-                <div class="card shadow p-3 rounded-4 scroll-right">
-                    <div class="d-flex justify-content-center align-items-center gap-md-5 flex-wrap">
-                        <div class="scroll-up">
-                            <img class="pop resize" src="/Images/ClickUp-Logo3-1024x577.png" alt="clickup Logo" height="100px" width="auto" loading="lazy">
-                        </div>
-                        <div class="scroll-up">
-                            <img class="pop resize" src="/Images/Asana-Emblem.png" alt="asana Logo" height="120px" width="auto" loading="lazy">
-                        </div>
-                        <div class="scroll-up">
-                            <img class="pop resize" src="/Images/html-5-svgrepo-com.svg" alt="html Logo" height="100px" width="auto" loading="lazy">
-                        </div>
-                        <div class="scroll-up">
-                            <img class="pop resize" src="/Images/css-3-svgrepo-com.svg" alt="css Logo" height="100px" width="auto" loading="lazy">
-                        </div>
-                        <div class="scroll-up">
-                            <img class="pop resize" src="/Images/javascript-svgrepo-com.svg" alt="javascript Logo" height="90px" width="auto" loading="lazy">
-                        </div>
-                        <div class="scroll-up">
-                            <img class="pop resize" src="/Images/nodejs-svgrepo-com.svg" alt="nodejs Logo" height="100px" width="auto" loading="lazy">
-                        </div>
-                        <div class="scroll-up">
-                            <img class="pop resize mb-4 mb-md-0 mt-3 mt-md-0" src="/Images/ExpressJS.png" alt="expressjs Logo" height="60px" width="auto" loading="lazy">
-                        </div>
-                        <div class="scroll-up">
-                            <img class="pop resize mb-4 mb-md-0" src="/Images/mongodb-logo-png-1024x276.png" alt="mongodb Logo" height="70px" width="auto" loading="lazy">
-                        </div>
-                        <div class="scroll-up">
-                            <img class="pop resize mb-4 mb-md-0" src="/Images/Canva-logo.webp" alt="Canva-logo Logo" height="100px" width="auto" loading="lazy">
-                        </div>
-                        <div class="scroll-up">
-                            <img class="pop resize mb-4 mb-md-0" src="/Images/figma-svgrepo-com.svg" alt="Figma Logo" height="100px" width="auto" loading="lazy">
-                        </div>
-                        <div class="scroll-up">
-                            <img class="pop resize" src="/Images/git.png" alt="git Logo" height="80px" width="auto" loading="lazy">
-                        </div>
-                        <div class="scroll-up">
-                            <img class="pop resize" src="/Images/word.webp" alt="Word Logo" height="80px" width="auto" loading="lazy">
-                        </div>
-                        <div class="scroll-up">
-                            <img class="pop resize" src="/Images/excel.webp" alt="Excel Logo" height="130px" width="auto" loading="lazy">
-                        </div>
-                        <div class="scroll-up">
-                            <img class="pop resize" src="/Images/Powerpoint.png" alt="PowerPoint Logo" height="90px" width="auto" loading="lazy">
-                        </div>
-                        <div class="scroll-up">
-                            <img class="pop resize" src="/Images/vs code.png" alt="Excel Logo" height="90px" width="auto" loading="lazy">
-                        </div>
-                        <div class="scroll-up">
-                            <img class="pop resize" src="/Images/github-svgrepo-com.svg" alt="github Logo" height="100px" width="auto" loading="lazy">
-                        </div>
-                        <div class="scroll-up">
-                            <img class="pop resize" src="/Images/bootstrap5-logo.png" alt="bootstrap Logo" height="130px" width="auto" loading="lazy">
-                        </div>
-                        <div class="scroll-up">
-                            <img class="pop resize" src="/Images/Vercel-logo-01.png" alt="vercel Logo" height="70px" width="auto" loading="lazy">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- ↓ Projects ↓ -->
-         
-        <div id="projects" class="bg-white px-3 px-md-5 py-5">
-            <div class="container">
-                <h2 class="display-4 mb-5 scroll-up">Projects</h2>
-                <div class="row row-cols-1 row-cols-lg-3 gap-4 gap-lg-0">
-                    <div class="col mb-4 mb-lg-3 scroll-left mx-auto">
-                        <a href="https://bmi-calculator-tau-wheat.vercel.app/" target="_blank" rel="noopener noreferrer">
-                            <div id="card1" class="card fadeout card-pop shadow rounded-4 p-5 d-flex justify-content-center align-items-center"></div>
-                        </a>
-                        <a href="https://bmi-calculator-tau-wheat.vercel.app/" class="nav-link" target="_blank" rel="noopener noreferrer">
-                            <h2 class="text-center mt-4">BMI Calculator</h2>
-                        </a>
-                    </div>
-                    <div class="col mb-4 mb-lg-3 scroll-up">
-                        <a href="https://full-stack-to-do-app-backend.vercel.app/" target="_blank" rel="noopener noreferrer">
-                            <div id="card2" class="card fadeout card-pop shadow rounded-4 p-5 d-flex justify-content-center align-items-center"></div>
-                        </a>
-                        <a href="https://full-stack-to-do-app-backend.vercel.app/" class="nav-link" target="_blank" rel="noopener noreferrer">
-                            <h2 class="text-center mt-4">List App</h2>
-                        </a>
-                    </div>
-                    <div class="col mb-4 mb-lg-5 scroll-right">
-                        <a href="https://www.3yellowcircles.com.au/" target="_blank" rel="noopener noreferrer">
-                            <div id="card3" class="card fadeout card-pop shadow rounded-4 p-5 d-flex justify-content-center align-items-center"></div>
-                        </a>
-                        <a href="https://www.3yellowcircles.com.au/" class="nav-link" target="_blank" rel="noopener noreferrer">
-                            <h2 class="text-center mt-4">Web Agency Site</h2>
-                        </a>
-                    </div>
-                </div>
-                <div class="d-flex justify-content-center align-items-center">
-                    <a href="/projects">
-                        <button type="button" class="btn btn-primary rounded-3 px-4 shadow-sm scroll-up mt-4 moveSVG">
-                            <div class="d-flex gap-1 justify-content-center align-items-center">
-                                <span>View all</span>
-                                <img src="/Images/right-chevron-svgrepo-com.svg" alt="chevron" height="20px" width="auto">
+            <div id="Expertise" class="bg-space color px-3 px-md-5 py-5">
+                <div class="container py-lg-5 text-color">
+                    <h2 class="display-4 mb-5 scroll-up">Expertise</h2>
+                    <div class="row row-cols-1 row-cols-lg-3 gap-4 gap-lg-0">
+                        <div class="col scroll-left">
+                            <div class="card bg-orange shadow rounded-4 p-5">
+                                <img class="mb-3" src="/Images/stack-svgrepo-com (1).svg" alt="" height="100px">
+                                <h2 class="text-center">Full Stack Web Development</h2>
                             </div>
-                        </button>
-                    </a>
+                        </div>
+                        <div class="col scroll-up">
+                            <div class="card bg-orange shadow rounded-4 p-5">
+                                <img class="mb-3" src="/Images/responsive-marketing-svgrepo-com.svg" alt="" height="100px">
+                                <h2 class="text-center">Responsive Web Design</h2>
+                            </div>
+                        </div>
+                        <div class="col scroll-right">
+                            <div class="card bg-orange shadow rounded-4 p-5">
+                                <img class="mb-3" src="/Images/automation-decision-svgrepo-com.svg" alt="" height="100px">
+                                <h2 class="text-center">Automation & Optimization</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center mt-5">
+                        <a href="/about#skills">
+                            <button type="button" class="btn btn-primary rounded-3 px-4 shadow-sm scroll-up mt-2 moveSVG">
+                                <div class="d-flex gap-1 justify-content-center align-items-center">
+                                    <span>More</span>
+                                    <img src="/Images/right-chevron-svgrepo-com.svg" alt="chevron" height="20px" width="auto">
+                                </div>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ↓ Technologies ↓ -->
+
+            <div id="technologies" class="px-3 px-md-5 py-5">
+                <div class="container-fluid py-lg-5">
+                    <!-- <h2 class="display-4 mb-5 scroll-up">Technologies</h2> -->
+                    <div class="card p-3 rounded-1 bg-black scroll-right">
+                        <div class="d-flex justify-content-center align-items-center gap-md-5 flex-wrap">
+                            <div class="scroll-up">
+                                <img class="pop resize" src="/Images/ClickUp-Logo3-1024x577.png" alt="clickup Logo" height="100px" width="auto" loading="lazy">
+                            </div>
+                            <div class="scroll-up">
+                                <img class="pop resize" src="/Images/Asana-Emblem.png" alt="asana Logo" height="120px" width="auto" loading="lazy">
+                            </div>
+                            <div class="scroll-up">
+                                <img class="pop resize" src="/Images/html-5-svgrepo-com.svg" alt="html Logo" height="100px" width="auto" loading="lazy">
+                            </div>
+                            <div class="scroll-up">
+                                <img class="pop resize" src="/Images/css-3-svgrepo-com.svg" alt="css Logo" height="100px" width="auto" loading="lazy">
+                            </div>
+                            <div class="scroll-up">
+                                <img class="pop resize" src="/Images/javascript-svgrepo-com.svg" alt="javascript Logo" height="90px" width="auto" loading="lazy">
+                            </div>
+                            <div class="scroll-up">
+                                <img class="pop resize" src="/Images/nodejs-svgrepo-com.svg" alt="nodejs Logo" height="100px" width="auto" loading="lazy">
+                            </div>
+                            <div class="scroll-up">
+                                <img class="pop resize mb-4 mb-md-0 mt-3 mt-md-0" src="/Images/ExpressJS.png" alt="expressjs Logo" height="60px" width="auto" loading="lazy">
+                            </div>
+                            <div class="scroll-up">
+                                <img class="pop resize mb-4 mb-md-0" src="/Images/mongodb-logo-png-1024x276.png" alt="mongodb Logo" height="70px" width="auto" loading="lazy">
+                            </div>
+                            <div class="scroll-up">
+                                <img class="pop resize mb-4 mb-md-0" src="/Images/Canva-logo.webp" alt="Canva-logo Logo" height="100px" width="auto" loading="lazy">
+                            </div>
+                            <div class="scroll-up">
+                                <img class="pop resize mb-4 mb-md-0" src="/Images/figma-svgrepo-com.svg" alt="Figma Logo" height="100px" width="auto" loading="lazy">
+                            </div>
+                            <div class="scroll-up">
+                                <img class="pop resize" src="/Images/git.png" alt="git Logo" height="80px" width="auto" loading="lazy">
+                            </div>
+                            <div class="scroll-up">
+                                <img class="pop resize" src="/Images/vs code.png" alt="Excel Logo" height="90px" width="auto" loading="lazy">
+                            </div>
+                            <div class="scroll-up">
+                                <img class="pop resize" src="/Images/github-svgrepo-com.svg" alt="github Logo" height="100px" width="auto" loading="lazy">
+                            </div>
+                            <div class="scroll-up">
+                                <img class="pop resize" src="/Images/bootstrap5-logo.png" alt="bootstrap Logo" height="130px" width="auto" loading="lazy">
+                            </div>
+                            <div class="scroll-up">
+                                <img class="pop resize" src="/Images/Vercel-logo-01.png" alt="vercel Logo" height="70px" width="auto" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ↓ Projects ↓ -->
+            
+            <div id="projects" class="px-3 px-md-5 py-5">
+                <div class="container py-lg-5 text-color">
+                    <h2 class="display-4 mb-5 scroll-up">Projects</h2>
+                    <div class="row row-cols-1 row-cols-lg-3 gap-4 gap-lg-0">
+                        <div class="col mb-4 mb-lg-3 scroll-left mx-auto">
+                            <a href="https://bmi-calculator-tau-wheat.vercel.app/" target="_blank" rel="noopener noreferrer">
+                                <div id="card1" class="card fadeout card-pop shadow rounded-4 p-5 d-flex justify-content-center align-items-center"></div>
+                            </a>
+                            <a href="https://bmi-calculator-tau-wheat.vercel.app/" class="nav-link" target="_blank" rel="noopener noreferrer">
+                                <h2 class="text-center mt-4">BMI Calculator</h2>
+                            </a>
+                        </div>
+                        <div class="col mb-4 mb-lg-3 scroll-up">
+                            <a href="https://full-stack-to-do-app-backend.vercel.app/" target="_blank" rel="noopener noreferrer">
+                                <div id="card2" class="card fadeout card-pop shadow rounded-4 p-5 d-flex justify-content-center align-items-center"></div>
+                            </a>
+                            <a href="https://full-stack-to-do-app-backend.vercel.app/" class="nav-link" target="_blank" rel="noopener noreferrer">
+                                <h2 class="text-center mt-4">List App</h2>
+                            </a>
+                        </div>
+                        <div class="col mb-4 mb-lg-5 scroll-right">
+                            <a href="https://www.3yellowcircles.com.au/" target="_blank" rel="noopener noreferrer">
+                                <div id="card3" class="card fadeout card-pop shadow rounded-4 p-5 d-flex justify-content-center align-items-center"></div>
+                            </a>
+                            <a href="https://www.3yellowcircles.com.au/" class="nav-link" target="_blank" rel="noopener noreferrer">
+                                <h2 class="text-center mt-4">Web Agency Site</h2>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <a href="/projects">
+                            <button type="button" class="btn btn-primary rounded-3 px-4 shadow-sm scroll-up mt-2 moveSVG">
+                                <div class="d-flex gap-1 justify-content-center align-items-center">
+                                    <span>View all</span>
+                                    <img src="/Images/right-chevron-svgrepo-com.svg" alt="chevron" height="20px" width="auto">
+                                </div>
+                            </button>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
+
     </main>
 
     <!-- ↓ Footer ↓ -->
 
-    <footer>
-        <div class="py-5 px-3 container">
-            <div class="d-flex justify-content-between flex-column gap-5 gap-lg-0 flex-lg-row align-items-center px-3 mb-5">
+    <footer class="pt-5 home">
+        <div class="pt-5 px-3 container">
+            <div class="d-flex justify-content-between flex-column gap-5 gap-lg-0 flex-lg-row align-items-lg-center align-items-start px-3 mb-5">
                 <a href="/">
                     <img src="/Images/White RJ.png" alt="logo" height="60px" width="auto">
                 </a>
-                <div class="d-flex align-items-center gap-4">
+                <div class="d-flex align-items-center gap-4 pt-5 pt-lg-0">
                     <a href="https://www.instagram.com/eat.code.build/" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
-                        <img src="/Images/instagram-white.svg" alt="Instagram" height="35px" width="auto">
+                        <img src="/Images/instagram-white.svg" alt="Instagram" height="25px" width="auto">
                     </a>
                     <a href="https://www.linkedin.com/in/ryan-jeffrey-b21327247/" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
-                        <img src="/Images/linkedin-circle-white.svg" alt="LinkedIn" height="35px" width="auto">
+                        <img src="/Images/linkedin-circle-white.svg" alt="LinkedIn" height="25px" width="auto">
                     </a>
                     <a href="https://github.com/eatcodebuild" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
-                        <img src="/Images/github-white.svg" alt="Github" height="35px" width="auto">
+                        <img src="/Images/github-white.svg" alt="Github" height="25px" width="auto">
                     </a>
                 </div>
-                <div class="row ">
-                    <div class="col">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link text-center text-white" href="/">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-center text-white" href="/about">About</a>
-                            </li>
-                        </ul>
+                <div class="row justify-content-start py-5 py-lg-0">
+                    <div class="col d-flex flex-column align-items-start gap-3">
+                        <a class="nav-link text-center text-white" href="/">Home</a>
+                        <a class="nav-link text-center text-white" href="/about">About</a>
                     </div>
-                    <div class="col">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link text-center text-white" href="/projects">Projects</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-center text-white" href="/contact">Contact</a>
-                            </li>
-                        </ul>
+                    <div class="col d-flex flex-column align-items-start gap-3">
+                        <a class="nav-link text-center text-white" href="/projects">Projects</a>
+                        <a class="nav-link text-center text-white" href="/contact">Contact</a>
                     </div>
-                    <div class="col">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link text-center text-white" href="/about#experience">Experience</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-center text-white" href="/about#certifications">Certifications</a>
-                            </li>
-                        </ul>
+                    <div class="col d-flex flex-column align-items-start gap-3">
+                        <a class="nav-link text-center text-white" href="/about#experience">Experience</a>
+                        <a class="nav-link text-center text-white" href="/about#certifications">Certifications</a>
                     </div>
-                    <div class="col">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link text-center text-white" href="/about/#learning-and-development">Learning & Development</a>
-                            </li>
-                        </ul>
+                    <div class="col d-flex flex-column align-items-start gap-3">
+                        <a class="nav-link text-center text-white" href="/about/#learning-and-development">Learning & Development</a>
                     </div>
                 </div>
             </div>
-            <div class="row d-flex justify-content-between align-items-center">
-                <div class="col">
-                    <div class="d-flex flex-column align-items-center align-items-lg-start gap-2 px-3 mb-5">
+            <div class="row d-flex justify-content-between align-items-center pt-3 pt-lg-5 mb-5">
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <div class="d-flex flex-column align-items-start gap-2 px-3">
                         <div class="d-flex align-items-center gap-4">
                             <img src="/Images/phone-svgrepo-com.svg" alt="phone img" height="30px" width="auto">
                             <a class="text-dark text-white text-decoration-none" href="tel:+61422611786">0422 611 786</a>
@@ -369,11 +335,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="col d-flex justify-content-center align-items-center">
-                    <iframe class="rounded-3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62433.16705404631!2d151.41972365563515!3d-33.08035316439375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b7328f2029fa325%3A0x5017d681632eb80!2sCooranbong%20NSW%202265!5e0!3m2!1sen!2sau!4v1740384651175!5m2!1sen!2sau" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="col-lg-5 mt-5 mt-lg-0 d-flex justify-content-center align-items-center">
+                    <div class="border rounded-1 shadow p-4 h-100 w-100">
+                        <h3 class="display-4 text-white mb-4">Want to chat?</h3>
+                        <a class="btn btn-primary" href="/contact">Send me a direct message</a>
+                    </div>
                 </div>
             </div>
-            <p class="text-white text-center mt-5"> Ryan Jeffrey - Full Stack Developer | 2025 | Let's Connect!</p>
+            <div class="pt-3">
+                <p class="text-white text-start text-lg-center mt-5 mb-1 small"> Ryan Jeffrey - Full Stack Developer</p>
+                <p class="text-white text-start text-lg-center small mb-0 pb-2">&COPY; 2025 | Let's Connect!</p>
+            </div>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

@@ -1,8 +1,8 @@
 :root {
-    --orange-primary: #FFAC4D;
+    --orange-primary: #2d4952;
     --orange-hover: #1b2027;
-    --orange-active: #db913d;
-    --primary: #161616;
+    --orange-active: #243941;
+    --primary: #000000;
     --primary-hover: #238a81;
     --dark-grey: #1b2027;
     --light-grey: rgb(239, 239, 239);
@@ -45,6 +45,12 @@
     height: auto;
 }
 
+.bg-dark-screen.about {
+    background-color: rgba(0, 0, 0, 0.829);
+    min-height: 94vh;
+    height: auto;
+}
+
 .bg-hero.about {
     background-image: url(/Images/pexels-nemuel-6424587.jpg);
     min-height: 94vh;
@@ -62,6 +68,10 @@
     min-height: 94vh;
     height: auto;
     background-image: url(/Images/macbook-2617705_1920.jpg);
+}
+
+.contactForm-bg {
+    background-color: rgba(255, 255, 255, 0.082);
 }
 
 .profile-frame{
@@ -87,7 +97,7 @@
 }
 
 .bg-orange {
-    background-color: var(--orange-primary);
+    background-color: #ffffff0a;
 }
 
 .bg-grey {
@@ -100,6 +110,25 @@
 
 .bg-turquoise {
     background-color: var(--primary);
+}
+
+.bg-space {
+    background-color: black;
+}
+
+.bg-space.color {
+    background: linear-gradient(black 0%, rgb(6, 5, 22) 30%, rgb(6, 5, 22) 70%, black 100%);
+}
+
+.bg-space.hero {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    background: linear-gradient(rgb(6, 5, 22), black);
+}
+
+.bg-space.about {
+    background: linear-gradient(rgb(6, 5, 22), black);
 }
 
 .card.home {
@@ -117,7 +146,7 @@
 }
 
 #technologies .card {
-    background-color: white !important;
+    /* background-color: white !important; */
     height: 100%;
 }
 
@@ -181,9 +210,13 @@ nav .nav-link:hover {
 
 nav {
     background-color: var(--primary);
-    /* position: fixed !important;
+}
+
+nav.home {
+    background-color: transparent;
+    position: fixed !important;
     width: 100% !important;
-    z-index: 1000; */
+    z-index: 1000;
 }
 
 .btn-primary {
@@ -244,6 +277,11 @@ nav {
 
 footer {
     background-color: var(--primary);
+}
+
+footer.home {
+    /* background-color: var(--primary); */
+    background: linear-gradient(black, rgb(6, 5, 22));
 }
 
 @keyframes slideUp {
@@ -503,7 +541,11 @@ footer {
 }
 
 .slideInLeft.menu {
-    animation-delay: 0.3s;
+    animation-delay: 0s;
+}
+
+.slideInRight.aboutMe {
+    animation-delay: 0s;
 }
 
 .slideInRight-noBounce {
@@ -553,6 +595,11 @@ footer {
 
   .pop {
     transition: 0.2s;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 
+    0px 0px 5px 0px rgb(247, 228, 192);
   }
 
   .card-pop:hover {
@@ -591,6 +638,10 @@ footer {
     .pop:hover {
         transform: scale(77%);
         transition: 0.2s;
+        box-shadow: 
+        0px 0px 5px 0px rgb(247, 228, 192),
+        0px 0px 10px 0px rgb(247, 228, 192),
+        0px 0px 20px 0px rgb(247, 228, 192);
       }
 }
 
@@ -598,6 +649,10 @@ footer {
     .pop:hover {
         transform: scale(107%);
         transition: 0.2s;
+        box-shadow: 
+        0px 0px 5px 0px rgb(247, 228, 192),
+        0px 0px 10px 0px rgb(247, 228, 192),
+        0px 0px 20px 0px rgb(247, 228, 192);
       }
 }
 
@@ -660,6 +715,7 @@ html, body {
 
 body {
     position: relative;
+    background-color: black;
 }
 
 .hide {
@@ -782,4 +838,27 @@ body {
     background-repeat: no-repeat;
     height: 100%;
     min-height: 400px;
+}
+
+@keyframes appearDown {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.appearDown {
+    animation-name: appearDown;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    opacity: 0;
+}
+
+.text-color {
+    color: rgb(255, 255, 255);
 }
