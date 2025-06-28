@@ -49,3 +49,44 @@ hamburgerIcons.forEach(icon => {
     });
 });
 
+
+
+// Stars
+particlesJS("particles-js", {
+    "particles": {
+      "number": {
+        "value": 100,
+        "density": { "enable": true, "value_area": 800 }
+      },
+      "color": { "value": "#ffffff" },
+      "shape": {
+        "type": "circle",
+        "stroke": { "width": 0, "color": "#000000" }
+      },
+      "opacity": {
+        "value": 0.7,
+        "random": true
+      },
+      "size": {
+        "value": 2,
+        "random": true
+      },
+      "line_linked": {
+        "enable": false  // <--- TURN THIS OFF
+        },
+      "move": {
+        "enable": true,
+        "speed": 0.5,
+        "direction": "none",
+        "out_mode": "bounce"
+      }
+    },
+    "interactivity": {
+      "detect_on": "canvas",
+      "events": {
+        "onhover": { "enable": false },
+        "onclick": { "enable": false }
+      }
+    },
+    "retina_detect": true
+});

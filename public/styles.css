@@ -81,8 +81,8 @@
     overflow: hidden;
     background-clip: border-box;
     position: relative;
-    background-color: white;
-    border: solid 10px var(--orange-primary);
+    background: radial-gradient(rgb(22, 9, 44) 0%, rgba(0, 0, 0, 0.5) 30%, rgba(7, 6, 39, 0.0) 70%, rgba(0, 0, 0, 0.0) 100%);
+    /* border: solid 10px var(--orange-primary); */
     flex-shrink: 0;
     position: relative;
 }
@@ -113,23 +113,27 @@
 }
 
 .bg-space {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.61);
+    z-index: 0;
 }
 
 .bg-space.color {
-    background: linear-gradient(black 0%, rgb(6, 5, 22) 30%, rgb(6, 5, 22) 70%, black 100%);
+    background: linear-gradient(rgba(0, 0, 0, 0.603) 0%, rgba(10, 8, 32, 0.603) 30%, rgba(10, 8, 32, 0.603) 80%, rgba(0, 0, 0, 0.603) 100%);
+    z-index: 0;
 }
 
 .bg-space.hero {
     position: relative;
     overflow: hidden;
     height: 100vh !important;
-    background: linear-gradient(rgb(6, 5, 22), black);
+    background: linear-gradient(rgba(13, 11, 48, 0.61), rgba(0, 0, 0, 0.603));
+    z-index: 0;
 }
 
 .bg-space.contact {
     min-height: 100vh !important;
-    background: linear-gradient(rgb(6, 5, 22), black);
+    background: linear-gradient(rgba(13, 11, 48, 0.61), rgba(0, 0, 0, 0.61));
+    z-index: 0;
 }
 
 .card.home {
@@ -277,7 +281,7 @@ footer {
 
 footer.home {
     /* background-color: var(--primary); */
-    background: linear-gradient(black, rgb(6, 5, 22));
+    background: linear-gradient(rgba(0, 0, 0, 0.603), rgba(13, 11, 48, 0.61));
 }
 
 @keyframes slideUp {
@@ -590,12 +594,12 @@ footer.home {
   }
 
   .pop {
-    transition: 0.2s;
+    transition: transform 0.5s ease-in-out, box-shadow 1s ease-in-out;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
     padding: 10px;
     box-shadow: 
-    0px 0px 5px 0px rgb(247, 228, 192);
+    0px 0px 5px 0px rgb(176, 136, 240);
   }
 
   .card-pop:hover {
@@ -635,9 +639,9 @@ footer.home {
         transform: scale(77%);
         transition: 0.2s;
         box-shadow: 
-        0px 0px 5px 0px rgb(247, 228, 192),
-        0px 0px 10px 0px rgb(247, 228, 192),
-        0px 0px 20px 0px rgb(247, 228, 192);
+        0px 0px 5px 0px rgb(176, 136, 240),
+        0px 0px 10px 0px rgb(176, 136, 240),
+        0px 0px 20px 0px rgb(176, 136, 240);
       }
 }
 
@@ -646,9 +650,9 @@ footer.home {
         transform: scale(107%);
         transition: 0.2s;
         box-shadow: 
-        0px 0px 5px 0px rgb(247, 228, 192),
-        0px 0px 10px 0px rgb(247, 228, 192),
-        0px 0px 20px 0px rgb(247, 228, 192);
+        0px 0px 5px 0px rgb(176, 136, 240),
+        0px 0px 10px 0px rgb(176, 136, 240),
+        0px 0px 20px 0px rgb(176, 136, 240);
       }
 }
 
@@ -745,8 +749,8 @@ body {
         overflow: hidden;
         background-clip: border-box;
         position: relative;
-        background-color: white;
-        border: solid 10px var(--orange-primary);
+        /* background-color: white; */
+        /* border: solid 10px var(--orange-primary); */
     }
     
     .profile-pic {
@@ -766,8 +770,8 @@ body {
         overflow: hidden;
         background-clip: border-box;
         position: relative;
-        background-color: white;
-        border: solid 10px var(--orange-primary);
+        /* background-color: white; */
+        /* border: solid 10px var(--orange-primary); */
     }
     
     .profile-pic {
@@ -860,9 +864,20 @@ body {
 }
 
 .darken-nav {
-    background: linear-gradient(rgb(6, 5, 22), black);
+    background: linear-gradient(rgba(13, 11, 48, 0.803), rgba(0, 0, 0, 0.803));
 }
 
 .nav-transparent {
     background-color: transparent;
+}
+
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: black;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    pointer-events: none;
 }
