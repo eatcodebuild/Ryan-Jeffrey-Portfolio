@@ -946,3 +946,55 @@ transition: transform 0.3s ease;
 from { transform: rotateY(0deg); }
 to { transform: rotateY(360deg); }
 }
+
+.page-container {
+    position: relative;
+    height: 95vh;
+    max-width: 700px;
+    width: 100%;
+    background-color: white !important;
+    z-index: 1000;
+    border-radius: 2px;
+    box-shadow: 
+        0px 0px 5px 0px rgb(176, 136, 240, 0.5),
+        0px 0px 10px 0px rgb(176, 136, 240, 0.5),
+        0px 0px 30px 0px rgb(176, 136, 240, 0.5);
+}
+
+.elementA {
+    position: absolute;
+    background-color: #1b2027;
+    height: 100px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+.elementB {
+    position: absolute;
+}
+
+.elementC {
+    position: absolute;
+}
+
+.header-bg {
+    background-color: #1b2027;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;
+}
+
+.header-bg h1 {
+    font-weight: 100;
+    letter-spacing: 10px;
+    font-size: calc(0.8rem + 1.5vw);
+}
+
+ .header-bg p {
+    font-weight: 200;
+    letter-spacing: 9px;
+    padding-right: 7px;
+    font-size: calc(0.5px + 1vw);
+ }

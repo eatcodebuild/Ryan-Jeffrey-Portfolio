@@ -30,16 +30,12 @@ app.get('/contact', (req, res) => {
     res.sendFile(path.join(__dirname, 'public/contact.html'))
 });
 
-app.get('/blog', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public/blog.html'))
-});
-
 app.get('/projects', (req, res) => {
     res.sendFile(path.join(__dirname, 'public/projects.html'))
 });
 
-app.get('/testimonials', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public/testimonials.html'))
+app.get('/resume', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public/resume.html'))
 });
 
 // Handles contact form ↓
