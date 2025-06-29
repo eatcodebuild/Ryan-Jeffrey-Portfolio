@@ -118,7 +118,7 @@
 }
 
 .bg-space.color {
-    background: linear-gradient(rgba(0, 0, 0, 0.303) 0%, rgba(10, 8, 32, 0.603) 30%, rgba(10, 8, 32, 0.303) 80%, rgba(0, 0, 0, 0.603) 100%);
+    background: linear-gradient(rgba(0, 0, 0, 0.353) 0%, rgba(10, 8, 32, 0.703) 30%, rgba(10, 8, 32, 0.353) 80%, rgba(0, 0, 0, 0.603) 100%);
     z-index: 0;
 }
 
