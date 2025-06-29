@@ -34,10 +34,6 @@ app.get('/projects', (req, res) => {
     res.sendFile(path.join(__dirname, 'public/projects.html'))
 });
 
-app.get('/resume', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public/resume.html'))
-});
-
 // Handles contact form ↓
 
 app.post('/send-email', async (req, res) => {
