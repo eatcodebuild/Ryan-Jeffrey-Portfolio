@@ -61,62 +61,60 @@
             </a>
         </div>
     </nav>
+        
+    <!-- Large screen hero ↓ -->
+
+    <div class="bg-space hero d-none d-md-block d-flex justify-content-center align-items-center">
+        <div class="container d-flex align-items-center justify-content-center h-100">
+            <div class="d-flex justify-content-between align-items-center gap-5 h-100">
+                <div class="profile-frame emerge">
+                    <img class="profile-pic" src="/Images/selfie-small.webp" alt="Ryan Jeffrey Face" loading="eager">
+                </div>
+                <div class="col">
+                    <img class="fadeIn" src="/Images/dash-svgrepo-com.svg" alt="dash" height="40px" width="auto">
+                    <h1 class="display-2 text-white slideInRight">Hi, I'm Ryan!</h1>
+                    <h2 class="display-3 text-white slideInLeft">A Full Stack Web Developer & Trainer and Assessor</h2>
+                    <div class="d-flex justify-content-start align-items-center gap-3 mt-5">
+                        <a href="/about">
+                            <button id="portfolio" type="button" class="btn btn-outline-primary rounded-3 px-4 slideUp portfolio">Explore</button>
+                        </a>
+                        <a href="/contact">
+                            <button id="letsConnect" type="button" class="btn btn-primary hero rounded-3 px-4 slideUp letsConnect">Connect</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Small screen hero ↓ -->
+
+    <div class="bg-space hero d-block d-md-none small d-flex justify-content-center align-items-center">
+        <div class="container h-100 pb-5">
+            <div class="d-flex justify-content-center align-items-center flex-column gap-5 h-100">
+                <div class="profile-frame emerge">
+                    <img class="profile-pic" src="/Images/selfie-small.webp" alt="Ryan Jeffrey Face" loading="eager">
+                </div>
+                <div class="helloBox">
+                    <h1 class="display-2 text-white mt-5 slideUp delayed text-center">Hi, I'm Ryan!</h1>
+                    <div class="d-flex justify-content-center align-items-center gap-3 mt-5">
+                        <a href="/about">
+                            <button type="button" class="btn btn-outline-primary rounded-3 px-4 slideUpDiagonallyLeft">Explore</button>
+                        </a>
+                        <a href="/contact">
+                            <button type="button" class="btn btn-primary rounded-3 px-4 hero slideUpDiagonallyRight">Connect</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Main content ↓ -->
-
-    <main> 
-        
-        <!-- Large screen hero ↓ -->
-
-        <div class="bg-space hero d-none d-md-block d-flex justify-content-center align-items-center">
-            <div class="container d-flex align-items-center justify-content-center h-100">
-                <div class="d-flex justify-content-between align-items-center gap-5 h-100">
-                    <div class="profile-frame emerge">
-                        <img class="profile-pic" src="/Images/selfie-small.webp" alt="Ryan Jeffrey Face" loading="eager">
-                    </div>
-                    <div class="col">
-                        <img class="fadeIn" src="/Images/dash-svgrepo-com.svg" alt="dash" height="40px" width="auto">
-                        <h1 class="display-2 text-white slideInRight">Hi, I'm Ryan!</h1>
-                        <h2 class="display-3 text-white slideInLeft">A Full Stack Web Developer & Trainer and Assessor</h2>
-                        <div class="d-flex justify-content-start align-items-center gap-3 mt-5">
-                            <a href="/about">
-                                <button id="portfolio" type="button" class="btn btn-outline-primary rounded-3 px-4 slideUp portfolio">Explore</button>
-                            </a>
-                            <a href="/contact">
-                                <button id="letsConnect" type="button" class="btn btn-primary hero rounded-3 px-4 slideUp letsConnect">Connect</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Small screen hero ↓ -->
-
-        <div class="bg-space hero d-block d-md-none small d-flex justify-content-center align-items-center">
-            <div class="container h-100 pb-5">
-                <div class="d-flex justify-content-center align-items-center flex-column gap-5 h-100">
-                    <div class="profile-frame emerge">
-                        <img class="profile-pic" src="/Images/selfie-small.webp" alt="Ryan Jeffrey Face" loading="eager">
-                    </div>
-                    <div class="helloBox">
-                        <h1 class="display-2 text-white mt-5 slideUp delayed text-center">Hi, I'm Ryan!</h1>
-                        <div class="d-flex justify-content-center align-items-center gap-3 mt-5">
-                            <a href="/about">
-                                <button type="button" class="btn btn-outline-primary rounded-3 px-4 slideUpDiagonallyLeft">Explore</button>
-                            </a>
-                            <a href="/contact">
-                                <button type="button" class="btn btn-primary rounded-3 px-4 hero slideUpDiagonallyRight">Connect</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <main class="bg-space"> 
 
         <!-- Welcome ↓ -->
-
-        <div class="bg-space">
+        <div>
             <div class="px-3 px-md-5 py-5">
                 <div class="container py-lg-5 scroll-up text-color">
                     <h2 class="display-4 mb-5">Welcome!</h2>
@@ -141,72 +139,69 @@
                 </div>
             </div>
 
-            <div class="bg-space color">
-                <!-- ↓ Expertise ↓ -->
-                <div id="Expertise" class="px-3 px-md-5 py-5">
-                    <div class="container py-lg-5 text-color">
-                        <h2 class="display-4 mb-5 scroll-up">Expertise</h2>
-                        <div class="row row-cols-1 row-cols-lg-3 gap-4 gap-lg-0">
-                            <div class="col scroll-left">
-                                <div class="card bg-orange shadow rounded-4 p-5">
-                                    <img class="mb-3" src="/Images/stack-svgrepo-com (1).svg" alt="" height="100px">
-                                    <h2 class="text-center">Full Stack Web Development</h2>
-                                </div>
-                            </div>
-                            <div class="col scroll-up">
-                                <div class="card bg-orange shadow rounded-4 p-5">
-                                    <img class="mb-3" src="/Images/responsive-marketing-svgrepo-com.svg" alt="" height="100px">
-                                    <h2 class="text-center">Responsive Web Design</h2>
-                                </div>
-                            </div>
-                            <div class="col scroll-right">
-                                <div class="card bg-orange shadow rounded-4 p-5">
-                                    <img class="mb-3" src="/Images/automation-decision-svgrepo-com.svg" alt="" height="100px">
-                                    <h2 class="text-center">Automation & Optimization</h2>
-                                </div>
+            <!-- ↓ Expertise ↓ -->
+            <div id="Expertise" class="bg-space color px-3 px-md-5 py-5">
+                <div class="container py-lg-5 text-color">
+                    <h2 class="display-4 mb-5 scroll-up">Expertise</h2>
+                    <div class="row row-cols-1 row-cols-lg-3 gap-4 gap-lg-0">
+                        <div class="col scroll-left">
+                            <div class="card bg-orange shadow rounded-4 p-5">
+                                <img class="mb-3" src="/Images/stack-svgrepo-com (1).svg" alt="" height="100px">
+                                <h2 class="text-center">Full Stack Web Development</h2>
                             </div>
                         </div>
-                        <div class="d-flex justify-content-center align-items-center mt-5">
-                            <a href="/about#skills">
-                                <button type="button" class="btn btn-primary rounded-3 px-4 shadow-sm scroll-up mt-2 moveSVG">
-                                    <div class="d-flex gap-1 justify-content-center align-items-center">
-                                        <span>More</span>
-                                        <img src="/Images/right-chevron-svgrepo-com.svg" alt="chevron" height="20px" width="auto">
-                                    </div>
-                                </button>
-                            </a>
+                        <div class="col scroll-up">
+                            <div class="card bg-orange shadow rounded-4 p-5">
+                                <img class="mb-3" src="/Images/responsive-marketing-svgrepo-com.svg" alt="" height="100px">
+                                <h2 class="text-center">Responsive Web Design</h2>
+                            </div>
+                        </div>
+                        <div class="col scroll-right">
+                            <div class="card bg-orange shadow rounded-4 p-5">
+                                <img class="mb-3" src="/Images/automation-decision-svgrepo-com.svg" alt="" height="100px">
+                                <h2 class="text-center">Automation & Optimization</h2>
+                            </div>
                         </div>
                     </div>
+                    <div class="d-flex justify-content-center align-items-center mt-5">
+                        <a href="/about#skills">
+                            <button type="button" class="btn btn-primary rounded-3 px-4 shadow-sm scroll-up mt-2 moveSVG">
+                                <div class="d-flex gap-1 justify-content-center align-items-center">
+                                    <span>More</span>
+                                    <img src="/Images/right-chevron-svgrepo-com.svg" alt="chevron" height="20px" width="auto">
+                                </div>
+                            </button>
+                        </a>
+                    </div>
                 </div>
+            </div>
 
                 <!-- ↓ Technologies ↓ -->
 
-                <section id="technologies" class="px-3 px-md-5 py-5" style="margin: 100px 0px;">
-                    <div class="py-lg-5 scroll-up">
-                        <div class="d-flex justify-content-center align-items-center gap-md-5 flex-wrap">
-                            <!-- Add id="carousel" here on the container holding images -->
-                            <div id="carousel">
-                            <img class="pop resize" src="/Images/ClickUp-Logo3-1024x577.png" alt="ClickUp Logo"/>
-                            <img class="pop resize" src="/Images/Asana-Emblem.png" alt="Asana Logo"/>
-                            <img class="pop resize" src="/Images/html-5-svgrepo-com.svg" alt="HTML Logo"/>
-                            <img class="pop resize" src="/Images/css-3-svgrepo-com.svg" alt="CSS Logo"/>
-                            <img class="pop resize" src="/Images/javascript-svgrepo-com.svg" alt="JavaScript Logo"/>
-                            <img class="pop resize" src="/Images/nodejs-svgrepo-com.svg" alt="Node.js Logo"/>
-                            <img class="pop resize mb-4 mb-md-0 mt-3 mt-md-0" src="/Images/ExpressJS.png" alt="Express.js Logo"/>
-                            <img class="pop resize mb-4 mb-md-0" src="/Images/mongodb-logo-png-1024x276.png" alt="MongoDB Logo"/>
-                            <img class="pop resize mb-4 mb-md-0" src="/Images/Canva-logo.webp" alt="Canva Logo"/>
-                            <img class="pop resize mb-4 mb-md-0" src="/Images/figma-svgrepo-com.svg" alt="Figma Logo"/>
-                            <img class="pop resize" src="/Images/git.png" alt="Git Logo"/>
-                            <img class="pop resize" src="/Images/vs code.png" alt="VS Code Logo"/>
-                            <img class="pop resize" src="/Images/github-svgrepo-com.svg" alt="GitHub Logo"/>
-                            <img class="pop resize" src="/Images/bootstrap5-logo.png" alt="Bootstrap Logo"/>
-                            <img class="pop resize" src="/Images/Vercel-logo-01.png" alt="Vercel Logo"/>
-                            </div>
-                        </div>
+            <section id="technologies" class="px-3 px-md-5 py-5" style="margin: 150px 0px;">
+                <div class="py-lg-5 scroll-up">
+                    <div class="d-flex justify-content-center align-items-center gap-md-5 flex-wrap">
+                        <div id="carousel">
+                        <img class="pop resize" src="/Images/ClickUp-Logo3-1024x577.png" alt="ClickUp Logo"/>
+                        <img class="pop resize" src="/Images/Asana-Emblem.png" alt="Asana Logo"/>
+                        <img class="pop resize" src="/Images/html-5-svgrepo-com.svg" alt="HTML Logo"/>
+                        <img class="pop resize" src="/Images/css-3-svgrepo-com.svg" alt="CSS Logo"/>
+                        <img class="pop resize" src="/Images/javascript-svgrepo-com.svg" alt="JavaScript Logo"/>
+                        <img class="pop resize" src="/Images/nodejs-svgrepo-com.svg" alt="Node.js Logo"/>
+                        <img class="pop resize" src="/Images/ExpressJS.png" alt="Express.js Logo"/>
+                        <img class="pop resize" src="/Images/mongodb-logo-png-1024x276.png" alt="MongoDB Logo"/>
+                        <img class="pop resize" src="/Images/Canva-logo.webp" alt="Canva Logo"/>
+                        <img class="pop resize" src="/Images/figma-svgrepo-com.svg" alt="Figma Logo"/>
+                        <img class="pop resize" src="/Images/git.png" alt="Git Logo"/>
+                        <img class="pop resize" src="/Images/vs code.png" alt="VS Code Logo"/>
+                        <img class="pop resize" src="/Images/github-svgrepo-com.svg" alt="GitHub Logo"/>
+                        <img class="pop resize" src="/Images/bootstrap5-logo.png" alt="Bootstrap Logo"/>
+                        <img class="pop resize" src="/Images/Vercel-logo-01.png" alt="Vercel Logo"/>
                         </div>
                     </div>
-                </section>
-            </div>
+                    </div>
+                </div>
+            </section>
 
             <!-- ↓ Projects ↓ -->
             

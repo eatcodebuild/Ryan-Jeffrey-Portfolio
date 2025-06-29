@@ -64,7 +64,7 @@ particlesJS("particles-js", {
         "stroke": { "width": 0, "color": "#000000" }
       },
       "opacity": {
-        "value": 0.7,
+        "value": 1,
         "random": true
       },
       "size": {
