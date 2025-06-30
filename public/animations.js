@@ -55,7 +55,7 @@ hamburgerIcons.forEach(icon => {
 particlesJS("particles-js", {
     "particles": {
       "number": {
-        "value": 100,
+        "value": 200,
         "density": { "enable": true, "value_area": 800 }
       },
       "color": { "value": "#ffffff" },
@@ -76,7 +76,7 @@ particlesJS("particles-js", {
         },
       "move": {
         "enable": true,
-        "speed": 1,
+        "speed": 1.5,
         "direction": "none",
         "out_mode": "bounce"
       }
