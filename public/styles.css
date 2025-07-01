@@ -165,7 +165,7 @@
     background-position: center center;
     background-color: transparent;
     height: 300px;
-    background-image: url("data:image/svg+xml,%3Csvg width='800px' height='800px' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='SVGRepo_bgCarrier' stroke-width='0'/%3E%3Cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cg id='SVGRepo_iconCarrier'%3E%3Cpath d='M4 2C3.20435 2 2.44129 2.31607 1.87868 2.87868C1.31607 3.44129 1 4.20435 1 5V19C1 19.7957 1.31607 20.5587 1.87868 21.1213C2.44129 21.6839 3.20435 22 4 22H20C20.7957 22 21.5587 21.6839 22.1213 21.1213C22.6839 20.5587 23 19.7957 23 19V8C23 7.20435 22.6839 6.44129 22.1213 5.87868C21.5587 5.31607 20.7957 5 20 5H11.5352L10.1289 2.8906C9.75799 2.3342 9.13352 2 8.46482 2H4Z' fill='%23bbafff1e'/%3E%3C/g%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg width='800px' height='800px' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%238857a5; stop-opacity:0.8'%3E%3C/stop%3E%3Cstop offset='100%25' style='stop-color:%23163579; stop-opacity:0.8'%3E%3C/stop%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M4 2C3.20435 2 2.44129 2.31607 1.87868 2.87868C1.31607 3.44129 1 4.20435 1 5V19C1 19.7957 1.31607 20.5587 1.87868 21.1213C2.44129 21.6839 3.20435 22 4 22H20C20.7957 22 21.5587 21.6839 22.1213 21.1213C22.6839 20.5587 23 19.7957 23 19V8C23 7.20435 22.6839 6.44129 22.1213 5.87868C21.5587 5.31607 20.7957 5 20 5H11.5352L10.1289 2.8906C9.75799 2.3342 9.13352 2 8.46482 2H4Z' fill='url(%23grad)'%3E%3C/path%3E%3C/svg%3E");
 }
 
 .selfieBox {
@@ -780,51 +780,6 @@ body {
     color: var(--orange-primary);
 }
 
-#coastal-joinery-project-thumbnail {
-    background-image: url(/Images/Coastaljoinery.png);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100%;
-    min-height: 400px;
-}
-
-#campout-project-thumbnail {
-    background-image: url(/Images/campout.png);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100%;
-    min-height: 400px;
-}
-
-#bmi-calculator-project-thumbnail {
-    background-image: url(/Images/bmi-calculator.png);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100%;
-    min-height: 400px;
-}
-
-#toDoApp-project-thumbnail {
-    background-image: url(/Images/todo.png);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100%;
-    min-height: 400px;
-}
-
-#yellowCircles-project-thumbnail {
-    background-image: url(/Images/3YC.png);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100%;
-    min-height: 400px;
-}
-
 @keyframes appearDown {
     0% {
         transform: translateY(-100px);
@@ -987,6 +942,14 @@ to { transform: rotateY(360deg); }
 
 .text-project {
     color: #ffffff;
-    font-size: 30px;
+    font-size: 25px;
     padding-top: 20px;
+    max-width: 80%;
+}
+
+.space-shadow {
+    box-shadow: 
+        0px 0px 5px 0px rgb(176, 136, 240, 0.5),
+        0px 0px 10px 0px rgb(176, 136, 240, 0.5),
+        0px 0px 30px 0px rgb(176, 136, 240, 0.5);
 }

@@ -72,11 +72,11 @@ particlesJS("particles-js", {
         "random": true
       },
       "line_linked": {
-        "enable": false  // <--- TURN THIS OFF
+        "enable": false
         },
       "move": {
         "enable": true,
-        "speed": 1.5,
+        "speed": 1,
         "direction": "none",
         "out_mode": "bounce"
       }
