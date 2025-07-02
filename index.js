@@ -34,6 +34,10 @@ app.get('/projects', (req, res) => {
     res.sendFile(path.join(__dirname, 'public/projects.html'))
 });
 
+app.get('/sitemap', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public/sitemap.xml'))
+});
+
 // Handles contact form ↓
 
 app.post('/send-email', async (req, res) => {
