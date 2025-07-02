@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://www.ryancjeffrey.com/</loc>
+  <lastmod>2018-10-20T01:46:40+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.ryancjeffrey.com/about</loc>
+  <lastmod>2018-10-20T01:46:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.ryancjeffrey.com/projects</loc>
+  <lastmod>2018-10-20T01:46:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.ryancjeffrey.com/contact</loc>
+  <lastmod>2018-10-20T01:46:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.ryancjeffrey.com/PDF's/Resume%20of%20Ryan%20Jeffrey.pdf</loc>
+  <lastmod>2018-10-20T01:46:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.ryancjeffrey.com/PDF's/Diploma%20of%20IT%20(Back%20End%20Web%20Development).pdf</loc>
+  <lastmod>2018-10-20T01:46:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.ryancjeffrey.com/PDF's/Certificate%20IV%20in%20Training%20and%20Assessment%20TAE40116%20-%20CERT.pdf</loc>
+  <lastmod>2018-10-20T01:46:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.ryancjeffrey.com/PDF's/Statement%20of%20Attainment%20-%20HLTAID011%2034051.pdf</loc>
+  <lastmod>2018-10-20T01:46:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
