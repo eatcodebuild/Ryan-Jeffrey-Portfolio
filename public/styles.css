@@ -236,6 +236,7 @@ nav.home {
 .btn-outline-primary {
     border-color: #ffffff !important;
     color: white !important;
+    overflow: hidden;
 }
 
 .btn-outline-primary:hover {
@@ -957,4 +958,9 @@ font-size: calc(0.5px + 1vw);
         0px 0px 5px 0px rgb(176, 136, 240, 0.5),
         0px 0px 10px 0px rgb(176, 136, 240, 0.5),
         0px 0px 30px 0px rgb(176, 136, 240, 0.5);
+}
+
+#skills ul {
+    overflow-y: scroll;
+    max-height: 600px;
 }
