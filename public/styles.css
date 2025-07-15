@@ -962,5 +962,7 @@ font-size: calc(0.5px + 1vw);
 
 #skills ul {
     overflow-y: scroll;
-    max-height: 600px;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(86, 0, 126, 0.219) transparent;
+    max-height: 500px;
 }
