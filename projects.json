@@ -9,10 +9,10 @@
     "has_repo": true
   },
   {
-    "title": "Project Net Profit Calculator",
+    "title": "Project Pricing Calculators",
     "description_para_1": "The pricing calculator was built using HTML, CSS, and vanilla JavaScript, providing a fast, lightweight, and responsive user experience without the overhead of additional libraries or frameworks. I chose this tech stack to ensure the tool would load quickly, work across all modern browsers, and remain easy to maintain and customize. ",
     "description_para_2": "JavaScript handles the dynamic calculations and input validation, while CSS was used to create a clean, intuitive user interface that aligns with the overall branding of 3 Yellow Circles. This project demonstrates my ability to build interactive, front-end tools that deliver real value to users without relying on external dependencies. ",
-    "project_link": "https://www.3yellowcircles.com.au/pricing-calculator/",
+    "project_link": "https://www.3yellowcircles.com.au/gross-profit-calculator/",
     "github_link": null,
     "img": "/Images/project-calculator.png",
     "has_repo": false
