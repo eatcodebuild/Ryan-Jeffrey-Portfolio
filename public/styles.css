@@ -909,6 +909,9 @@ body {
 #carousel img:nth-child(17) {
   transform: rotateY(180deg) translateZ(200px) translateY(-170px);
 }
+#carousel img:nth-child(18) {
+  transform: rotateY(90deg) translateZ(400px) translateY(-200px);
+}
 
 /* Spin animation */
 @keyframes spin {
