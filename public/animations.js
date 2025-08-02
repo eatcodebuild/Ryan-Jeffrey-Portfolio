@@ -77,7 +77,7 @@ function checkScroll() {
 }
 
 document.addEventListener("DOMContentLoaded", async () => {
-  await loadProjects();
+  if (window.location.pathname === "/projects") await loadProjects();
   checkScroll();
   window.addEventListener("scroll", checkScroll);
 });
