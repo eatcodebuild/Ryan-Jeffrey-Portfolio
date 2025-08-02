@@ -1,337 +1,359 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-
+  <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-TJS2EK17MV"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', 'G-TJS2EK17MV');
+      gtag("config", "G-TJS2EK17MV");
     </script>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="ryan jeffrey, portfolio, ryan c jeffrey, ryan's website, portfolio website">
-    <meta name="description" content="Hello! Welcome to my website portfolio! Take a look around to explore my work, skills & experience.">
-    <meta name="robots" content="index,follow">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="ryan jeffrey, portfolio, ryan c jeffrey, ryan's website, portfolio website" />
+    <meta name="description" content="Hello! Welcome to my website portfolio! Take a look around to explore my work, skills & experience." />
+    <meta name="robots" content="index,follow" />
     <title>Ryan Jeffrey | Home</title>
+    <link rel="preload" as="image" href="/Images/selfie-small.webp" type="image/webp" />
 
-    <style>@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');</style>
-    <style>@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');</style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+    </style>
 
-    <link rel="canonical" href="https://www.ryancjeffrey.com/">
+    <link rel="canonical" href="https://www.ryancjeffrey.com/" />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="/styles.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/styles.css" />
 
-    <link rel="shortcut icon" href="/Images/favicon-32x32.png" type="image/x-icon">
-    
+    <link rel="shortcut icon" href="/Images/favicon-32x32.png" type="image/x-icon" />
+
     <script defer src="/animations.js"></script>
-    <meta name="google-site-verification" content="YWfcMULuTjXetgYXqu70eLK2C-MU28MGKAz8DOB6AuE"/>
+    <meta name="google-site-verification" content="YWfcMULuTjXetgYXqu70eLK2C-MU28MGKAz8DOB6AuE" />
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-</head>
-<body class="inter">
+  </head>
+  <body class="inter">
     <div id="particles-js"></div>
 
     <!-- navbar ↓ -->
 
     <nav class="home nav-transparent navbar navbar-expand-lg appearDown">
-        <div class="container">
-            <a class="navbar-brand" href="/">
-                <img src="/Images/White RJ.png" alt="logo" height="40px" width="auto">
-            </a>
-            <a href="tel:+61422611786" class="d-block d-lg-none">
-                <button type="button" class="btn btn-primary rounded-3">
-                    <div class="d-flex justify-content-center align-items-center gap-2">
-                        <img src="/Images/phone-svgrepo-com.svg" alt="phone img" height="25px" width="auto">
-                        <span>Call me</span>
-                    </div>
-                </button>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span><img src="/Images/hamburger icon.svg" alt="hamburger icon" height="40px" width="auto"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto me-4 gap-1">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/contact">Contact</a>
-                    </li>
-                    <li class="nav-item d-block d-lg-none">
-                        <a class="nav-link" href="./PDF's/Resume of Ryan Jeffrey.pdf" target="_blank" rel="noopener noreferrer">Download resume</a>
-                    </li>
-                </ul>
-                <div class="d-none d-lg-block">
-                    <a href="./PDF's/Resume of Ryan Jeffrey.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary">Download resume</a>
-                    <a href="tel:+61422611786" class="btn btn-primary">
-                        <div class="d-flex justify-content-center align-items-center gap-2">
-                            <img src="/Images/phone-svgrepo-com.svg" alt="phone img" height="25px" width="auto">
-                            <span>Call me</span>
-                        </div>
-                    </a>
-                </div>
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <img src="/Images/White RJ.png" alt="logo" height="40px" width="auto" />
+        </a>
+        <a href="tel:+61422611786" class="d-block d-lg-none">
+          <button type="button" class="btn btn-primary rounded-3">
+            <div class="d-flex justify-content-center align-items-center gap-2">
+              <img src="/Images/phone-svgrepo-com.svg" alt="phone img" height="25px" width="auto" />
+              <span>Call me</span>
             </div>
+          </button>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span><img src="/Images/hamburger icon.svg" alt="hamburger icon" height="40px" width="auto" /></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto me-4 gap-1">
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact">Contact</a>
+            </li>
+            <li class="nav-item d-block d-lg-none">
+              <a class="nav-link" href="./PDF's/Resume of Ryan Jeffrey.pdf" target="_blank" rel="noopener noreferrer">Download resume</a>
+            </li>
+          </ul>
+          <div class="d-none d-lg-block">
+            <a href="./PDF's/Resume of Ryan Jeffrey.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary">Download resume</a>
+            <a href="tel:+61422611786" class="btn btn-primary">
+              <div class="d-flex justify-content-center align-items-center gap-2">
+                <img src="/Images/phone-svgrepo-com.svg" alt="phone img" height="25px" width="auto" />
+                <span>Call me</span>
+              </div>
+            </a>
+          </div>
         </div>
+      </div>
     </nav>
-        
+
     <!-- Large screen hero ↓ -->
 
     <div class="bg-space hero d-none d-md-block d-flex justify-content-center align-items-center">
-        <div class="container d-flex align-items-center justify-content-center h-100">
-            <div class="d-flex justify-content-between align-items-center gap-5 h-100">
-                <div class="profile-frame emerge">
-                    <img class="profile-pic" src="/Images/selfie-small.webp" alt="Ryan Jeffrey Face" loading="eager">
-                </div>
-                <div class="col">
-                    <img class="fadeIn" src="/Images/dash-svgrepo-com.svg" alt="dash" height="40px" width="auto">
-                    <h1 class="display-2 text-white slideInRight">Hi, I'm Ryan!</h1>
-                    <h2 class="display-3 text-white slideInLeft">A Full Stack Web Developer & Trainer and Assessor</h2>
-                    <div class="d-flex justify-content-start align-items-center gap-3 mt-5">
-                        <a href="/about">
-                            <button id="portfolio" type="button" class="btn btn-outline-primary rounded-3 px-4 slideUp portfolio">Explore</button>
-                        </a>
-                        <a href="/contact">
-                            <button id="letsConnect" type="button" class="btn btn-primary hero rounded-3 px-4 slideUp letsConnect">Connect</button>
-                        </a>
-                    </div>
-                </div>
+      <div class="container d-flex align-items-center justify-content-center h-100">
+        <div class="d-flex justify-content-between align-items-center gap-5 h-100">
+          <div class="profile-frame emerge">
+            <img class="profile-pic" src="/Images/selfie-small.webp" alt="Ryan Jeffrey Face" loading="eager" />
+          </div>
+          <div class="col">
+            <img class="fadeIn" src="/Images/dash-svgrepo-com.svg" alt="dash" height="40px" width="auto" />
+            <h1 class="display-2 text-white slideInRight">Hi, I'm Ryan!</h1>
+            <h2 class="display-3 text-white slideInLeft">A Full Stack Web Developer & Trainer and Assessor</h2>
+            <div class="d-flex justify-content-start align-items-center gap-3 mt-5">
+              <a href="/about">
+                <button id="portfolio" type="button" class="btn btn-outline-primary rounded-3 px-4 slideUp portfolio">Explore</button>
+              </a>
+              <a href="/contact">
+                <button id="letsConnect" type="button" class="btn btn-primary hero rounded-3 px-4 slideUp letsConnect">Connect</button>
+              </a>
             </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- Small screen hero ↓ -->
 
     <div class="bg-space hero d-block d-md-none small d-flex justify-content-center align-items-center">
-        <div class="container h-100 pb-5">
-            <div class="d-flex justify-content-center align-items-center flex-column gap-5 h-100">
-                <div class="profile-frame emerge">
-                    <img class="profile-pic" src="/Images/selfie-small.webp" alt="Ryan Jeffrey Face" loading="eager">
-                </div>
-                <div class="helloBox">
-                    <h1 class="display-2 text-white mt-5 slideUp delayed text-center">Hi, I'm Ryan!</h1>
-                    <div class="d-flex justify-content-center align-items-center gap-3 mt-5">
-                        <a href="/about">
-                            <button type="button" class="btn btn-outline-primary rounded-3 px-4 slideUpDiagonallyLeft">Explore</button>
-                        </a>
-                        <a href="/contact">
-                            <button type="button" class="btn btn-primary rounded-3 px-4 hero slideUpDiagonallyRight">Connect</button>
-                        </a>
-                    </div>
-                </div>
+      <div class="container h-100 pb-5">
+        <div class="d-flex justify-content-center align-items-center flex-column gap-5 h-100">
+          <div class="profile-frame emerge">
+            <img class="profile-pic" src="/Images/selfie-small.webp" alt="Ryan Jeffrey Face" loading="eager" />
+          </div>
+          <div class="helloBox">
+            <h1 class="display-2 text-white mt-5 slideUp delayed text-center">Hi, I'm Ryan!</h1>
+            <div class="d-flex justify-content-center align-items-center gap-3 mt-5">
+              <a href="/about">
+                <button type="button" class="btn btn-outline-primary rounded-3 px-4 slideUpDiagonallyLeft">Explore</button>
+              </a>
+              <a href="/contact">
+                <button type="button" class="btn btn-primary rounded-3 px-4 hero slideUpDiagonallyRight">Connect</button>
+              </a>
             </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- Main content ↓ -->
-    <main class="bg-space"> 
-
-        <!-- Welcome ↓ -->
-        <div>
-            <div class="px-3 px-md-5 py-5">
-                <div class="container py-lg-5 scroll-up text-color">
-                    <h2 class="display-4 mb-5">Welcome!</h2>
-                    <h4 class="mb-3">Hi, I'm Ryan - Full stack developer & Problem Solver</h4>
-                    <p class="lead">
-                        Welcome to my space on the web! I'm a passionate dev with a knack for creating sleek, functional, and user-friendly digital experiences.
-                    </p>
-                    <p class="lead">
-                        With a background in full stack web development, woodworking, project management, and teaching, I bring a unique blend of creativity, precision, and leadership to every project.
-                        I specialise in building stunning, end-to-end web applications utilising HTML, CSS, JavaScript, Node.js, Express.js, and MongoDB, delivering clean, efficient, and user-focused solutions.
-                    </p>
-                    <p class="lead">Whether it's building a dynamic web application, optimizing workflows, or designing intuitive user interfaces, I thrive on turning ideas into reality.</p>
-                    <p class="lead">Let's launch something great together!</p>
-                    <a href="/about">
-                        <button type="button" class="btn btn-primary rounded-3 px-4 shadow-sm mt-4 moveSVG">
-                            <div class="d-flex gap-1 justify-content-center align-items-center">
-                                <span>Discover more</span>
-                                <img src="/Images/right-chevron-svgrepo-com.svg" alt="chevron" height="20px" width="auto">
-                            </div>
-                        </button>
-                    </a>
+    <main class="bg-space">
+      <!-- Welcome ↓ -->
+      <div>
+        <div class="px-3 px-md-5 py-5">
+          <div class="container py-lg-5 scroll-up text-color">
+            <h2 class="display-4 mb-5">Welcome!</h2>
+            <h4 class="mb-3">Hi, I'm Ryan - Full stack developer & Problem Solver</h4>
+            <p class="lead">Welcome to my space on the web! I'm a passionate dev with a knack for creating sleek, functional, and user-friendly digital experiences.</p>
+            <p class="lead">
+              With a background in full stack web development, woodworking, project management, and teaching, I bring a unique blend of creativity, precision, and leadership to
+              every project. I specialise in building stunning, end-to-end web applications utilising HTML, CSS, JavaScript, Node.js, Express.js, and MongoDB, delivering clean,
+              efficient, and user-focused solutions.
+            </p>
+            <p class="lead">
+              Whether it's building a dynamic web application, optimizing workflows, or designing intuitive user interfaces, I thrive on turning ideas into reality.
+            </p>
+            <p class="lead">Let's launch something great together!</p>
+            <a href="/about">
+              <button type="button" class="btn btn-primary rounded-3 px-4 shadow-sm mt-4 moveSVG">
+                <div class="d-flex gap-1 justify-content-center align-items-center">
+                  <span>Discover more</span>
+                  <img src="/Images/right-chevron-svgrepo-com.svg" alt="chevron" height="20px" width="auto" />
                 </div>
-            </div>
-
-            <!-- ↓ Expertise ↓ -->
-            <div id="Expertise" class="bg-space color px-3 px-md-5 py-5">
-                <div class="container py-lg-5 text-color">
-                    <h2 class="display-4 mb-5 scroll-up">Expertise</h2>
-                    <div class="row row-cols-1 row-cols-lg-3 gap-4 gap-lg-0">
-                        <div class="col scroll-left">
-                            <div class="card bg-orange shadow rounded-4 p-5">
-                                <img class="mb-3" src="/Images/stack-svgrepo-com (1).svg" alt="" height="100px">
-                                <h2 class="text-center">Full Stack Web Development</h2>
-                            </div>
-                        </div>
-                        <div class="col scroll-up">
-                            <div class="card bg-orange shadow rounded-4 p-5">
-                                <img class="mb-3" src="/Images/responsive-marketing-svgrepo-com.svg" alt="" height="100px">
-                                <h2 class="text-center">Responsive Web Design</h2>
-                            </div>
-                        </div>
-                        <div class="col scroll-right">
-                            <div class="card bg-orange shadow rounded-4 p-5">
-                                <img class="mb-3" src="/Images/automation-decision-svgrepo-com.svg" alt="" height="100px">
-                                <h2 class="text-center">Automation & Optimization</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex justify-content-center align-items-center mt-5">
-                        <a href="/about#skills">
-                            <button type="button" class="btn btn-primary rounded-3 px-4 shadow-sm scroll-up mt-2 moveSVG">
-                                <div class="d-flex gap-1 justify-content-center align-items-center">
-                                    <span>More</span>
-                                    <img src="/Images/right-chevron-svgrepo-com.svg" alt="chevron" height="20px" width="auto">
-                                </div>
-                            </button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-                <!-- ↓ Technologies ↓ -->
-
-            <section id="technologies" class="px-3 px-md-5 py-5" style="margin: 150px 0px;">
-                <div class="py-lg-5 scroll-up">
-                    <div class="d-flex justify-content-center align-items-center gap-md-5 flex-wrap">
-                        <div id="carousel">
-                            <img class="pop resize" src="/Images/ClickUp-Logo3-1024x577.png" alt="ClickUp Logo"/>
-                            <img class="pop resize" src="/Images/Asana-Emblem.png" alt="Asana Logo"/>
-                            <img class="pop resize" src="/Images/html-5-svgrepo-com.svg" alt="HTML Logo"/>
-                            <img class="pop resize" src="/Images/css-3-svgrepo-com.svg" alt="CSS Logo"/>
-                            <img class="pop resize" src="/Images/javascript-svgrepo-com.svg" alt="JavaScript Logo"/>
-                            <img class="pop resize" src="/Images/nodejs-svgrepo-com.svg" alt="Node.js Logo"/>
-                            <img class="pop resize" src="/Images/ExpressJS.png" alt="Express.js Logo"/>
-                            <img class="pop resize" src="/Images/mongodb-logo-png-1024x276.png" alt="MongoDB Logo"/>
-                            <img class="pop resize" src="/Images/Canva-logo.webp" alt="Canva Logo"/>
-                            <img class="pop resize" src="/Images/figma-svgrepo-com.svg" alt="Figma Logo"/>
-                            <img class="pop resize" src="/Images/git.png" alt="Git Logo"/>
-                            <img class="pop resize" src="/Images/vs code.png" alt="VS Code Logo"/>
-                            <img class="pop resize" src="/Images/github-svgrepo-com.svg" alt="GitHub Logo"/>
-                            <img class="pop resize" src="/Images/bootstrap5-logo.png" alt="Bootstrap Logo"/>
-                            <img class="pop resize" src="/Images/Vercel-logo-01.png" alt="Vercel Logo"/>
-                            <img class="pop resize" src="/Images/render-logo.jpg" alt="Render Logo"/>
-                            <img class="pop resize" src="/Images/uizard.png" alt="Render Logo"/>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- ↓ Projects ↓ -->
-            
-            <div id="projects" class="px-3 px-md-5 py-5">
-                <div class="container py-lg-5 text-color">
-                    <h2 class="display-4 mb-5 scroll-up">Recent Projects</h2>
-                    <div class="row justify-content-center">
-                        <div class="col-md-4 mb-4 mb-lg-5 scroll-left">
-                            <a href="https://www.3yellowcircles.com.au/" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
-                                <div class="card card-pop d-flex justify-content-center align-items-center">
-                                    <p class="text-center text-project">Web Design Agency</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-4 mb-4 mb-lg-3 scroll-up">
-                            <a href="https://full-stack-to-do-app-backend.vercel.app/" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
-                                <div class="card card-pop d-flex justify-content-center align-items-center">
-                                    <p class="text-center text-project">Task Manager</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-4 mb-4 mb-lg-3 scroll-right">
-                            <a href="https://www.3yellowcircles.com.au/pricing-calculator/" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
-                                <div class="card card-pop d-flex justify-content-center align-items-center">
-                                    <p class="text-center text-project">Costing Calculator</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="d-flex justify-content-center align-items-center">
-                        <a href="/projects">
-                            <button type="button" class="btn btn-primary rounded-3 px-4 shadow-sm scroll-up mt-2 moveSVG">
-                                <div class="d-flex gap-1 justify-content-center align-items-center">
-                                    <span>View all</span>
-                                    <img src="/Images/right-chevron-svgrepo-com.svg" alt="chevron" height="20px" width="auto">
-                                </div>
-                            </button>
-                        </a>
-                    </div>
-                </div>
-            </div>
+              </button>
+            </a>
+          </div>
         </div>
 
+        <!-- ↓ Expertise ↓ -->
+        <div id="Expertise" class="bg-space color px-3 px-md-5 py-5">
+          <div class="container py-lg-5 text-color">
+            <h2 class="display-4 mb-5 scroll-up">Expertise</h2>
+            <div class="row row-cols-1 row-cols-lg-3 gap-4 gap-lg-0">
+              <div class="col scroll-left">
+                <div class="card bg-orange shadow rounded-4 p-5">
+                  <img class="mb-3" src="/Images/stack-svgrepo-com (1).svg" alt="" height="100px" />
+                  <h2 class="text-center">Full Stack Web Development</h2>
+                </div>
+              </div>
+              <div class="col scroll-up">
+                <div class="card bg-orange shadow rounded-4 p-5">
+                  <img class="mb-3" src="/Images/responsive-marketing-svgrepo-com.svg" alt="" height="100px" />
+                  <h2 class="text-center">Responsive Web Design</h2>
+                </div>
+              </div>
+              <div class="col scroll-right">
+                <div class="card bg-orange shadow rounded-4 p-5">
+                  <img class="mb-3" src="/Images/automation-decision-svgrepo-com.svg" alt="" height="100px" />
+                  <h2 class="text-center">Automation & Optimization</h2>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center mt-5">
+              <a href="/about#skills">
+                <button type="button" class="btn btn-primary rounded-3 px-4 shadow-sm scroll-up mt-2 moveSVG">
+                  <div class="d-flex gap-1 justify-content-center align-items-center">
+                    <span>More</span>
+                    <img src="/Images/right-chevron-svgrepo-com.svg" alt="chevron" height="20px" width="auto" />
+                  </div>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ↓ Technologies ↓ -->
+
+        <section id="technologies" class="px-3 px-md-5 py-5" style="margin: 150px 0px">
+          <div class="py-lg-5 scroll-up">
+            <div class="d-flex justify-content-center align-items-center gap-md-5 flex-wrap">
+              <div id="carousel">
+                <img class="pop resize" src="/Images/ClickUp-Logo3-1024x577.png" alt="ClickUp Logo" />
+                <img class="pop resize" src="/Images/Asana-Emblem.png" alt="Asana Logo" />
+                <img class="pop resize" src="/Images/html-5-svgrepo-com.svg" alt="HTML Logo" />
+                <img class="pop resize" src="/Images/css-3-svgrepo-com.svg" alt="CSS Logo" />
+                <img class="pop resize" src="/Images/javascript-svgrepo-com.svg" alt="JavaScript Logo" />
+                <img class="pop resize" src="/Images/nodejs-svgrepo-com.svg" alt="Node.js Logo" />
+                <img class="pop resize" src="/Images/ExpressJS.png" alt="Express.js Logo" />
+                <img class="pop resize" src="/Images/mongodb-logo-png-1024x276.png" alt="MongoDB Logo" />
+                <img class="pop resize" src="/Images/Canva-logo.webp" alt="Canva Logo" />
+                <img class="pop resize" src="/Images/figma-svgrepo-com.svg" alt="Figma Logo" />
+                <img class="pop resize" src="/Images/git.png" alt="Git Logo" />
+                <img class="pop resize" src="/Images/vs code.png" alt="VS Code Logo" />
+                <img class="pop resize" src="/Images/github-svgrepo-com.svg" alt="GitHub Logo" />
+                <img class="pop resize" src="/Images/bootstrap5-logo.png" alt="Bootstrap Logo" />
+                <img class="pop resize" src="/Images/Vercel-logo-01.png" alt="Vercel Logo" />
+                <img class="pop resize" src="/Images/render-logo.jpg" alt="Render Logo" />
+                <img class="pop resize" src="/Images/uizard.png" alt="Render Logo" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ↓ Projects ↓ -->
+
+        <div id="projects" class="px-3 px-md-5 py-5">
+          <div class="container py-lg-5 text-color">
+            <h2 class="display-4 mb-5 scroll-up">Recent Projects</h2>
+            <div class="row justify-content-center">
+              <div class="col-md-4 mb-4 mb-lg-5 scroll-left">
+                <a href="https://www.3yellowcircles.com.au/" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+                  <div class="card card-pop d-flex justify-content-center align-items-center">
+                    <p class="text-center text-project">Web Design Agency</p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-4 mb-4 mb-lg-3 scroll-up">
+                <a href="https://full-stack-to-do-app-backend.vercel.app/" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+                  <div class="card card-pop d-flex justify-content-center align-items-center">
+                    <p class="text-center text-project">Task Manager</p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-4 mb-4 mb-lg-3 scroll-right">
+                <a href="https://www.3yellowcircles.com.au/pricing-calculator/" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+                  <div class="card card-pop d-flex justify-content-center align-items-center">
+                    <p class="text-center text-project">Costing Calculator</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+              <a href="/projects">
+                <button type="button" class="btn btn-primary rounded-3 px-4 shadow-sm scroll-up mt-2 moveSVG">
+                  <div class="d-flex gap-1 justify-content-center align-items-center">
+                    <span>View all</span>
+                    <img src="/Images/right-chevron-svgrepo-com.svg" alt="chevron" height="20px" width="auto" />
+                  </div>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <!-- ↓ Footer ↓ -->
 
     <footer class="pt-5 home">
-        <div class="pt-5 px-3 container">
-            <div class="d-flex justify-content-between flex-column gap-5 gap-lg-0 flex-lg-row align-items-lg-center align-items-start px-3 mb-5">
-                <a href="/">
-                    <img src="/Images/White RJ.png" alt="logo" height="60px" width="auto">
-                </a>
-                <div class="d-flex align-items-center gap-4 pt-5 pt-lg-0">
-                    <a href="https://www.instagram.com/ryancjeffrey/" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
-                        <img src="/Images/instagram-white.svg" alt="Instagram" height="25px" width="auto">
-                    </a>
-                    <a href="https://www.linkedin.com/in/ryan-jeffrey-b21327247/" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
-                        <img src="/Images/linkedin-circle-white.svg" alt="LinkedIn" height="25px" width="auto">
-                    </a>
-                    <a href="https://github.com/eatcodebuild" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
-                        <img src="/Images/github-white.svg" alt="Github" height="25px" width="auto">
-                    </a>
-                </div>
-                <div class="row justify-content-start py-5 py-lg-0">
-                    <div class="col d-flex flex-column align-items-start align-items-lg-end gap-3">
-                        <a class="nav-link text-center text-lg-end text-white" href="/">Home</a>
-                        <a class="nav-link text-center text-lg-end text-white" href="/about">About</a>
-                    </div>
-                    <div class="col d-flex flex-column align-items-start align-items-lg-end gap-3">
-                        <a class="nav-link text-center text-lg-end text-white" href="/projects">Projects</a>
-                        <a class="nav-link text-center text-lg-end text-white" href="/contact">Contact</a>
-                    </div>
-                    <div class="col d-flex flex-column align-items-start align-items-lg-end gap-3">
-                        <a class="nav-link text-center text-lg-end text-white" href="/about#experience">Experience</a>
-                        <a class="nav-link text-center text-lg-end text-white" href="/about#certifications">Certifications</a>
-                    </div>
-                </div>
+      <div class="pt-5 px-3 container">
+        <div class="d-flex justify-content-between flex-column gap-5 gap-lg-0 flex-lg-row align-items-lg-center align-items-start px-3 mb-5">
+          <a href="/">
+            <img src="/Images/White RJ.png" alt="logo" height="60px" width="auto" />
+          </a>
+          <div class="d-flex align-items-center gap-4 pt-5 pt-lg-0">
+            <a href="https://www.instagram.com/ryancjeffrey/" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+              <img src="/Images/instagram-white.svg" alt="Instagram" height="25px" width="auto" />
+            </a>
+            <a href="https://www.linkedin.com/in/ryan-jeffrey-b21327247/" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+              <img src="/Images/linkedin-circle-white.svg" alt="LinkedIn" height="25px" width="auto" />
+            </a>
+            <a href="https://github.com/eatcodebuild" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+              <img src="/Images/github-white.svg" alt="Github" height="25px" width="auto" />
+            </a>
+          </div>
+          <div class="row justify-content-start py-5 py-lg-0">
+            <div class="col d-flex flex-column align-items-start align-items-lg-end gap-3">
+              <a class="nav-link text-center text-lg-end text-white" href="/">Home</a>
+              <a class="nav-link text-center text-lg-end text-white" href="/about">About</a>
             </div>
-            <div class="row d-flex justify-content-between align-items-center pt-3 pt-lg-5 mb-5">
-                <div class="col-lg-5 mb-5 mb-lg-0">
-                    <div class="d-flex flex-column align-items-start gap-2 px-3">
-                        <div class="d-flex align-items-center gap-4">
-                            <img src="/Images/phone-svgrepo-com.svg" alt="phone img" height="25px" width="auto">
-                            <a class="text-dark text-white text-decoration-none" href="tel:+61422611786">0422 611 786</a>
-                        </div>
-                        <div class="d-flex align-items-center gap-4">
-                            <img src="/Images/mail-svgrepo-com.svg" alt="phone img" height="25px" width="auto">
-                            <a href="mailto: r.jeffrey@live.com.au" class="text-white text-decoration-none">r.jeffrey@live.com.au</a>
-                        </div>
-                        <div class="d-flex align-items-center gap-4">
-                            <img src="/Images/place-point-svgrepo-com.svg" alt="phone img" height="25px" width="auto">
-                            <p class="mb-0 text-white">Cooranbong 2265, NSW, Australia</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-5 mt-5 mt-lg-0 d-flex justify-content-center align-items-center">
-                    <div class="border rounded-1 shadow p-4 h-100 w-100">
-                        <h3 class="display-6 text-white mb-4">Need help with a project?</h3>
-                        <a class="btn btn-primary" href="/contact">Send me a message</a>
-                    </div>
-                </div>
+            <div class="col d-flex flex-column align-items-start align-items-lg-end gap-3">
+              <a class="nav-link text-center text-lg-end text-white" href="/projects">Projects</a>
+              <a class="nav-link text-center text-lg-end text-white" href="/contact">Contact</a>
             </div>
-            <div class="pt-3">
-                <p class="text-white text-start text-lg-center mt-5 mb-1 small"> Ryan Jeffrey - Full Stack Developer</p>
-                <p class="text-white text-start text-lg-center small mb-0 pb-2">&COPY; 2025 | Let's Connect!</p>
+            <div class="col d-flex flex-column align-items-start align-items-lg-end gap-3">
+              <a class="nav-link text-center text-lg-end text-white" href="/about#experience">Experience</a>
+              <a class="nav-link text-center text-lg-end text-white" href="/about#certifications">Certifications</a>
             </div>
+          </div>
         </div>
+        <div class="row d-flex justify-content-between align-items-center pt-3 pt-lg-5 mb-5">
+          <div class="col-lg-5 mb-5 mb-lg-0">
+            <div class="d-flex flex-column align-items-start gap-2 px-3">
+              <div class="d-flex align-items-center gap-4">
+                <img src="/Images/phone-svgrepo-com.svg" alt="phone img" height="25px" width="auto" />
+                <a class="text-dark text-white text-decoration-none" href="tel:+61422611786">0422 611 786</a>
+              </div>
+              <div class="d-flex align-items-center gap-4">
+                <img src="/Images/mail-svgrepo-com.svg" alt="phone img" height="25px" width="auto" />
+                <a href="mailto: r.jeffrey@live.com.au" class="text-white text-decoration-none">r.jeffrey@live.com.au</a>
+              </div>
+              <div class="d-flex align-items-center gap-4">
+                <img src="/Images/place-point-svgrepo-com.svg" alt="phone img" height="25px" width="auto" />
+                <p class="mb-0 text-white">Cooranbong 2265, NSW, Australia</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 mt-5 mt-lg-0 d-flex justify-content-center align-items-center">
+            <div class="border rounded-1 shadow p-4 h-100 w-100">
+              <h3 class="display-6 text-white mb-4">Need help with a project?</h3>
+              <a class="btn btn-primary" href="/contact">Send me a message</a>
+            </div>
+          </div>
+        </div>
+        <div class="pt-3">
+          <p class="text-white text-start text-lg-center mt-5 mb-1 small">Ryan Jeffrey - Full Stack Developer</p>
+          <p class="text-white text-start text-lg-center small mb-0 pb-2">&COPY; 2025 | Let's Connect!</p>
+        </div>
+      </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
