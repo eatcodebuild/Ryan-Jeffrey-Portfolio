@@ -1,5 +1,4 @@
 const express = require("express");
-const bodyParser = require("body-parser");
 const cors = require("cors");
 const dotenv = require("dotenv");
 const path = require("path");
@@ -10,6 +9,9 @@ const fs = require("fs");
 dotenv.config();
 
 const app = express();
+
+app.set("view engine", "ejs");
+app.set("views", path.join(__dirname, "/views"));
 
 app.use(cors());
 app.use(express.json());
@@ -35,9 +37,18 @@ app.get("/projects", (req, res) => {
   res.sendFile(path.join(__dirname, "public/projects.html"));
 });
 
-app.get("/sitemap", (req, res) => {
-  res.sendFile(path.join(__dirname, "public/sitemap.xml"));
+app.get("/blog", (req, res) => {
+  res.sendFile(path.join(__dirname, "public/blog.html"));
 });
+
+// // MongoDB
+// (async () => {
+//   try {
+//   } catch (err) {
+//     console.error("Error:", err);
+//     process.exit(1);
+//   }
+// })();
 
 // Handles contact form ↓
 
@@ -50,8 +61,8 @@ app.post("/send-email", async (req, res) => {
       port: 587,
       secure: false,
       auth: {
-        user: "contact.ryanjeffrey@gmail.com",
-        pass: "dhqrewcjriabvgsh",
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS,
       },
     });
 
@@ -77,6 +88,31 @@ app.get("/get/projects", (req, res) => {
       return res.status(500).json({ error: "Failed to read file" });
     }
     res.json(JSON.parse(data));
+  });
+});
+
+app.get("/get/blogs", (req, res) => {
+  fs.readFile(path.join(__dirname, "blogs.json"), "utf8", (err, data) => {
+    if (err) {
+      return res.status(500).json({ error: "Failed to read file" });
+    }
+    res.json(JSON.parse(data));
+  });
+});
+
+app.get("/blog/:id", (req, res) => {
+  const blogId = parseInt(req.params.id, 10);
+  fs.readFile(path.join(__dirname, "blogs.json"), "utf8", (err, data) => {
+    if (err) {
+      return res.status(500).json({ error: "Failed to read file" });
+    }
+    const blogs = JSON.parse(data); // Parse JSON string to array
+    const blog = blogs.find((b) => b.id === blogId);
+    if (!blog) {
+      return res.status(404).send("Blog not found");
+    }
+    // Render your EJS page with the found blog
+    res.render("blogPost", { blog });
   });
 });
 

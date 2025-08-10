@@ -61,8 +61,38 @@ async function loadProjects() {
   });
 }
 
-// Scroll to appear function ↓
+async function displayBlogs() {
+  const response = await fetch("http://localhost:3000/get/blogs");
+  const blogs = await response.json();
 
+  function formatBlogs(blog) {
+    const div = document.createElement("div");
+    div.classList.add("col-12", "col-md-6", "col-lg-12", "scroll-up");
+    div.innerHTML = `
+      <div class="gradient-bg text-white rounded p-3 card-pop h-100">
+        <div class="row">
+          <div class="col-lg-3 mb-4 mb-lg-0">
+            <img src="${blog.img}" alt="Blog Image" class="rounded shadow blog-img" />
+          </div>
+          <div class="col-lg-9">
+            <h2 class="pb-3 display-6 border-bottom">${blog.title}</h2>
+            <p class="fw-semibold">${blog.datePosted}</p>
+            <p>${blog.text.length > 150 ? blog.text.slice(0, 150) + "…" : blog.text}</p>
+            <a href="/blog/${blog.id}" class="btn btn-primary mt-2">Read more</a>
+          </div>
+        </div>
+      </div>
+    `;
+    return div;
+  }
+  const blogsList = document.getElementById("blogsList");
+  blogsList.innerHTML = "";
+  blogs.forEach((blog) => {
+    blogsList.appendChild(formatBlogs(blog));
+  });
+}
+
+// Scroll to appear function ↓
 function checkScroll() {
   const scrollItems = document.querySelectorAll(".scroll-up, .scroll-left, .scroll-right");
   const triggerBottom = window.innerHeight * 0.85;
@@ -78,6 +108,7 @@ function checkScroll() {
 
 document.addEventListener("DOMContentLoaded", async () => {
   if (window.location.pathname === "/projects") await loadProjects();
+  if (window.location.pathname === "/blog") await displayBlogs();
   checkScroll();
   window.addEventListener("scroll", checkScroll);
 });

@@ -3,7 +3,6 @@
   --orange-hover: #1b2027;
   --orange-active: #243941;
   --primary: #000000;
-  --primary-hover: #238a81;
   --dark-grey: #1b2027;
   --light-grey: rgb(239, 239, 239);
 }
@@ -820,7 +819,7 @@ body {
 }
 
 .bg-space-purple {
-  background: radial-gradient(rgba(13, 11, 48, 0.404) 0%, rgba(13, 11, 48, 0.404) 30%, rgba(10, 8, 32, 0) 70%, rgba(0, 0, 0, 0) 100%);
+  background: radial-gradient(rgba(25, 11, 48, 0.504) 30%, rgba(10, 8, 32, 0) 70%, rgba(0, 0, 0, 0) 100%);
 }
 
 /* Container to center and provide perspective */
@@ -934,47 +933,6 @@ body {
   box-shadow: 0px 0px 5px 0px rgb(176, 136, 240, 0.5), 0px 0px 10px 0px rgb(176, 136, 240, 0.5), 0px 0px 30px 0px rgb(176, 136, 240, 0.5);
 }
 
-/* resume.html styles
-.elementA {
-    position: absolute;
-    background-color: #1b2027;
-    height: 100px;
-    width: 100%;
-    top: 0px;
-    left: 0px;
-    z-index: 1;
-}
-
-.elementB {
-    position: absolute;
-}
-
-.elementC {
-    position: absolute;
-}
-
-.header-bg {
-    background-color: #1b2027;
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;
-    color: white;
-}
-
-.header-bg h1 {
-    font-weight: 100;
-    letter-spacing: 10px;
-    font-size: calc(0.8rem + 1.5vw);
-}
-
-.header-bg p {
-font-weight: 200;
-letter-spacing: 9px;
-padding-right: 7px;
-font-size: calc(0.5px + 1vw);
-}
-
-*/
-
 .text-project {
   color: #ffffff;
   font-size: 25px;
@@ -991,4 +949,74 @@ font-size: calc(0.5px + 1vw);
   scrollbar-width: thin;
   scrollbar-color: rgba(86, 0, 126, 0.219) transparent;
   max-height: 500px;
+}
+
+.gradient-bg {
+  background: radial-gradient(circle 180px at 20% 30%, rgba(174, 0, 255, 0.1), transparent), radial-gradient(circle 220px at 80% 80%, rgba(255, 0, 200, 0.1), transparent),
+    linear-gradient(135deg, rgba(1, 81, 255, 0.05), rgba(0, 47, 255, 0.12));
+}
+
+.blog-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#backButton {
+  transition: 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+#backButton:hover {
+  text-decoration: underline;
+}
+
+@keyframes foldDown {
+  0% {
+    transform: rotateX(90deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+}
+
+.foldDown {
+  opacity: 0;
+  animation-name: foldDown;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.foldDown.back {
+  animation-delay: 0.5s;
+}
+
+.text-primary {
+  color: var(--orange-primary) !important;
+}
+
+.spaceOccupiedByNav {
+  padding-top: 66px;
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.zoomIn {
+  opacity: 0;
+  animation-name: zoomIn;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
