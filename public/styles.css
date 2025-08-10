@@ -1020,3 +1020,9 @@ body {
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
+
+@media (max-width: 768px) {
+  article > p {
+    font-size: 1rem !important;
+  }
+}
