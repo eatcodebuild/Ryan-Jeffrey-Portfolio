@@ -26,19 +26,19 @@ app.use("/", contactFormRoutes);
 app.use("/", projectRoutes);
 app.use("/", blogRoutes);
 
-// (async () => {
-//   try {
-//     await mongoose.connect(process.env.MONGO_URI);
-//     console.log("✅ Connected to database");
+(async () => {
+  try {
+    await mongoose.connect(process.env.MONGO_URI);
+    console.log("✅ Connected to database");
 
-//     app.listen(port, () => {
-//       console.log(`✅ Listening on http://localhost:${port}`);
-//     });
-//   } catch (err) {
-//     console.error("Error:", err);
-//     process.exit(1);
-//   }
-// })();
+    app.listen(port, () => {
+      console.log(`✅ Listening on http://localhost:${port}`);
+    });
+  } catch (err) {
+    console.error("Error:", err);
+    process.exit(1);
+  }
+})();
 
 app.listen(port, () => {
   console.log(`✅ Listening on http://localhost:${port}`);
