@@ -79,7 +79,7 @@ async function displayBlogs() {
           <div class="col-lg-9">
             <h2 class="pb-3 display-6 border-bottom">${blog.title}</h2>
             <p class="fw-semibold">${blog.datePosted}</p>
-            <p>${blog.text.length > 150 ? blog.text.slice(0, 150) + "…" : blog.text}</p>
+            <p>${blog.articleA.length > 150 ? blog.articleA.slice(0, 150) + "…" : blog.articleA}</p>
             <a href="/blog/${blog.id}" class="btn btn-primary mt-2">Read more</a>
           </div>
         </div>
