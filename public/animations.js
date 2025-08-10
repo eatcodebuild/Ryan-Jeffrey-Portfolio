@@ -1,5 +1,7 @@
+const URL = "https://www.ryancjeffrey.com";
+
 async function loadProjects() {
-  const response = await fetch("https://www.ryancjeffrey.com/get/projects");
+  const response = await fetch(`${URL}/get/projects`);
   const projects = await response.json();
   console.log(projects.length);
 
@@ -62,7 +64,7 @@ async function loadProjects() {
 }
 
 async function displayBlogs() {
-  const response = await fetch("http://localhost:3000/get/blogs");
+  const response = await fetch(`${URL}/get/blogs`);
   const blogs = await response.json();
 
   function formatBlogs(blog) {
