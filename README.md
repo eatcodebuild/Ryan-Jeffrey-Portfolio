@@ -78,4 +78,4 @@ Thank you for reviewing my portfolio website’s architecture and technical appr
 
 _Ryan Jeffrey_  
 Full-Stack Developer  
-[GitHub](https://github.com/eatcodebuild) | [LinkedIn](https://linkedin.com/in/ryanjeffrey)
+[GitHub](https://github.com/eatcodebuild) | [LinkedIn](https://www.linkedin.com/in/ryan-c-jeffrey/)
