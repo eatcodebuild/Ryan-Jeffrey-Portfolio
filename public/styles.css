@@ -1083,18 +1083,18 @@ body {
 @keyframes appearGrow {
   0% {
     opacity: 0;
-    transform: scale(0) rotateX(1080deg) rotateY(360deg) rotateZ(360deg);
+    transform: scale(0) rotateX(1080deg);
   }
 
   100% {
     opacity: 1;
-    transform: scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    transform: scale(1) rotateX(0deg);
   }
 }
 
 .appearGrow {
   animation-name: appearGrow;
-  animation-duration: 7s;
+  animation-duration: 5s;
   animation-delay: 0s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
