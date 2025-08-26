@@ -4,6 +4,7 @@ function showContent() {
   const starfield = document.getElementById("starfield");
   const particles = document.getElementById("particles-js");
   const messageText = document.getElementById("messageText");
+  const body = document.getElementsByTagName("body")[0];
   const su = document.querySelectorAll(".su");
   const sl = document.querySelectorAll(".sl");
   const sr = document.querySelectorAll(".sr");
@@ -17,6 +18,7 @@ function showContent() {
       particles.classList.add("fade");
       starfield.classList.add("fadeOut");
       homeContent.classList.remove("d-none");
+      body.classList.remove("noScroll");
       if (!homeContent.classList.contains("d-none")) {
         su.forEach((el) => el.classList.add("scroll-up"));
         sl.forEach((el) => el.classList.add("scroll-left"));
@@ -26,9 +28,11 @@ function showContent() {
   });
 }
 
-setTimeout(() => {
-  showContent();
-}, 9000);
+window.addEventListener("DOMContentLoaded", () => {
+  setTimeout(() => {
+    showContent();
+  }, 9000);
+});
 
 const canvas = document.getElementById("starfield");
 const ctx = canvas.getContext("2d");
