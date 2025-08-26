@@ -1102,7 +1102,7 @@ body {
 
 #messageText {
   color: rgb(255, 255, 255);
-  text-shadow: 0px 0px 15px rgb(109, 15, 197), 0px 0px 30px rgb(82, 15, 197);
+  text-shadow: 0px 0px 15px rgb(109, 15, 197), 0px 0px 30px rgb(82, 15, 197), 0px 0px 15px rgb(109, 15, 197), 0px 0px 50px rgb(82, 15, 197);
 }
 
 .noScroll {
