@@ -1,4 +1,5 @@
 const URL = "https://www.ryancjeffrey.com";
+// const URL = "http://localhost:3000";
 
 async function loadProjects() {
   const response = await fetch(`${URL}/get/projects`);
@@ -6,6 +7,7 @@ async function loadProjects() {
   console.log(projects.length);
 
   function projectLayout(project, index) {
+    const description = project.description.map((d) => `<p class="lead mb-4">${d}</p>`).join("");
     const div = document.createElement("div");
     div.classList.add("py-5", "bg-space");
     const directionClass = index % 2 === 0 ? "flex-lg-row" : "flex-lg-row-reverse";
@@ -14,12 +16,7 @@ async function loadProjects() {
           <div class="row align-items-stretch justify-content-center flex-column-reverse ${directionClass} align-items-center scroll-up px-3 px-lg-0">
               <div class="col-lg-6 col-xl-7 col-12 p-lg-4 text-color">
                   <h4 class="display-4 mb-4 mt-5 mt-lg-0">${project.title}</h4>
-                  <p class="lead mb-2">
-                      ${project.description_para_1}
-                  </p>
-                  <p class="lead mb-4"> 
-                      ${project.description_para_2}
-                  </p>
+                  <div>${description}</div>
                   <div class="d-flex gap-2">
                       <a class="text-decoration-none" href="${project.project_link}" target="_blank" rel="noopener noreferrer">
                           <button type="button" class="btn btn-primary rounded-3 px-4 shadow-sm mt-4 moveSVG">
@@ -79,7 +76,7 @@ async function displayBlogs() {
           <div class="col-lg-9">
             <h2 class="pb-3 display-6 border-bottom">${blog.title}</h2>
             <p class="fw-semibold">${blog.datePosted}</p>
-            <p>${blog.articleA.length > 150 ? blog.articleA.slice(0, 150) + "…" : blog.articleA}</p>
+            <p>${blog.articleParagraphs[0].length > 150 ? blog.articleParagraphs[0].slice(0, 150) + "…" : blog.articleParagraphs[0]}</p>
             <a href="/blog/${blog.id}" class="btn btn-primary mt-2">Read more</a>
           </div>
         </div>
@@ -109,8 +106,12 @@ function checkScroll() {
 }
 
 document.addEventListener("DOMContentLoaded", async () => {
-  if (window.location.pathname === "/projects") await loadProjects();
-  if (window.location.pathname === "/blog") await displayBlogs();
+  const path = window.location.pathname;
+
+  if (path === "/projects") await loadProjects();
+  else if (path === "/blog") await displayBlogs();
+  else if (path.startsWith("/blog/")) renderArticles();
+
   checkScroll();
   window.addEventListener("scroll", checkScroll);
 });
@@ -182,3 +183,19 @@ particlesJS("particles-js", {
   },
   retina_detect: true,
 });
+
+function renderArticles() {
+  const articleContainer = document.getElementById("articleContainer");
+  const articles = JSON.parse(articleContainer.getAttribute("data-articles"));
+
+  function displayArticles(article) {
+    const p = document.createElement("p");
+    p.classList.add("lead", "mb-5");
+    p.textContent = article;
+    articleContainer.appendChild(p);
+  }
+
+  articles.forEach((article) => {
+    displayArticles(article);
+  });
+}

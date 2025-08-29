@@ -1,8 +1,10 @@
 [
   {
     "title": "\"Ryan's Space\" Online Portfolio",
-    "description_para_1": "My personal portfolio website, ryancjeffrey.com, was built using HTML, CSS, and JavaScript, with Node.js and Express.js handling the backend routing of static pages. The site is deployed via Vercel, with CI/CD pipelines integrated through GitHub, ensuring that updates pushed to the repository are automatically deployed with minimal friction.",
-    "description_para_2": "This setup not only improves development efficiency but also demonstrates my familiarity with modern DevOps workflows. The site showcases both my technical skills and design sensibilities, providing a clean, responsive user experience while serving as a central hub for my professional projects and experience. ",
+    "description": [
+      "My personal portfolio website, ryancjeffrey.com, was built using HTML, CSS, and JavaScript, with Node.js and Express.js handling the backend routing of static pages. The site is deployed via Vercel, with CI/CD pipelines integrated through GitHub, ensuring that updates pushed to the repository are automatically deployed with minimal friction.",
+      "This setup not only improves development efficiency but also demonstrates my familiarity with modern DevOps workflows. The site showcases both my technical skills and design sensibilities, providing a clean, responsive user experience while serving as a central hub for my professional projects and experience."
+    ],
     "project_link": "https://www.ryancjeffrey.com",
     "github_link": "https://github.com/eatcodebuild/Ryan-Jeffrey-Portfolio",
     "img": "/Images/rj.com.png",
@@ -10,8 +12,10 @@
   },
   {
     "title": "Project Pricing Calculators",
-    "description_para_1": "The pricing calculator was built using HTML, CSS, and vanilla JavaScript, providing a fast, lightweight, and responsive user experience without the overhead of additional libraries or frameworks. I chose this tech stack to ensure the tool would load quickly, work across all modern browsers, and remain easy to maintain and customize. ",
-    "description_para_2": "JavaScript handles the dynamic calculations and input validation, while CSS was used to create a clean, intuitive user interface that aligns with the overall branding of 3 Yellow Circles. This project demonstrates my ability to build interactive, front-end tools that deliver real value to users without relying on external dependencies. ",
+    "description": [
+      "The pricing calculator was built using HTML, CSS, and vanilla JavaScript, providing a fast, lightweight, and responsive user experience without the overhead of additional libraries or frameworks. I chose this tech stack to ensure the tool would load quickly, work across all modern browsers, and remain easy to maintain and customize.",
+      "JavaScript handles the dynamic calculations and input validation, while CSS was used to create a clean, intuitive user interface that aligns with the overall branding of 3 Yellow Circles. This project demonstrates my ability to build interactive, front-end tools that deliver real value to users without relying on external dependencies."
+    ],
     "project_link": "https://www.3yellowcircles.com.au/gross-profit-calculator/",
     "github_link": null,
     "img": "/Images/project-calculator.png",
@@ -19,8 +23,10 @@
   },
   {
     "title": "3 Yellow Circles",
-    "description_para_1": "This is the official website for 3 Yellow Circles, built to attract and onboard clients quickly and easily. Developed using HTML, CSS, JavaScript, and Express.js, the site lets visitors book a discovery call or get started instantly via a simple form. ",
-    "description_para_2": "It's fully responsive, ensuring a smooth experience on any device, and includes essential pages like services, reviews, about, and contact. This project highlights a clean, user-focused design that supports business growth through accessible, mobile-friendly web development. ",
+    "description": [
+      "This is the official website for 3 Yellow Circles, built to attract and onboard clients quickly and easily. Developed using HTML, CSS, JavaScript, and Express.js, the site lets visitors book a discovery call or get started instantly via a simple form.",
+      "It's fully responsive, ensuring a smooth experience on any device, and includes essential pages like services, reviews, about, and contact. This project highlights a clean, user-focused design that supports business growth through accessible, mobile-friendly web development."
+    ],
     "project_link": "https://www.3yellowcircles.com.au/",
     "github_link": null,
     "img": "/Images/3YC.png",
@@ -28,8 +34,10 @@
   },
   {
     "title": "Tyler Black Concreting",
-    "description_para_1": "The Tyler Black Concreting website is a full-stack project built with HTML, CSS, JavaScript, and Express.js. It features a responsive, professional layout with clear navigation, highlighting services, completed projects, client reviews, and easy contact options. The design adapts seamlessly across desktop and mobile devices for a smooth user experience.",
-    "description_para_2": "The backend includes SMTP integration to securely handle contact form submissions and deliver inquiries directly to the client's inbox. Server-side routing and form validation ensure reliable operation, making the site a polished, production-ready solution for a small business online presence.",
+    "description": [
+      "The Tyler Black Concreting website is a full-stack project built with HTML, CSS, JavaScript, and Express.js. It features a responsive, professional layout with clear navigation, highlighting services, completed projects, client reviews, and easy contact options. The design adapts seamlessly across desktop and mobile devices for a smooth user experience.",
+      "The backend includes SMTP integration to securely handle contact form submissions and deliver inquiries directly to the client's inbox. Server-side routing and form validation ensure reliable operation, making the site a polished, production-ready solution for a small business online presence."
+    ],
     "project_link": "https://www.tylerblackconcreting.com/",
     "github_link": null,
     "img": "/Images/Tyler-black.png",
@@ -37,8 +45,10 @@
   },
   {
     "title": "Full Stack Task Management Application",
-    "description_para_1": " Here is a full-stack web application developed with the MEN stack. This To Do App is a full-stack web application with a frontend built using HTML, CSS, and JavaScript, and a backend powered by Node.js, Express.js, and MongoDB. It incorporates RESTful APIs for seamless data interaction between the client and server, enabling real-time updates and efficient data management. ",
-    "description_para_2": " Designed with scalability in mind, this application provides a user-friendly interface and a robust backend architecture, demonstrating expertise in frontend, backend, and API integration to deliver a high-performance, dynamic web experience. ",
+    "description": [
+      "Here is a full-stack web application developed with the MEN stack. This To Do App is a full-stack web application with a frontend built using HTML, CSS, and JavaScript, and a backend powered by Node.js, Express.js, and MongoDB. It incorporates RESTful APIs for seamless data interaction between the client and server, enabling real-time updates and efficient data management.",
+      "Designed with scalability in mind, this application provides a user-friendly interface and a robust backend architecture, demonstrating expertise in frontend, backend, and API integration to deliver a high-performance, dynamic web experience."
+    ],
     "project_link": "https://full-stack-to-do-app-backend.vercel.app/",
     "github_link": "https://github.com/eatcodebuild/Full-Stack-To-Do-App",
     "img": "/Images/todo.png",
@@ -46,8 +56,10 @@
   },
   {
     "title": "BMI Calculator",
-    "description_para_1": "This project is a single-document web application built using HTML, CSS, and JavaScript. ",
-    "description_para_2": "Although it is a simple, front-end-only project, it effectively demonstrates the power of the three core web development languages. I frequently use this project as a teaching tool to introduce my web development students to JavaScript fundamentals, including variables and basic interactivity. ",
+    "description": [
+      "This project is a single-document web application built using HTML, CSS, and JavaScript.",
+      "Although it is a simple, front-end-only project, it effectively demonstrates the power of the three core web development languages. I frequently use this project as a teaching tool to introduce my web development students to JavaScript fundamentals, including variables and basic interactivity."
+    ],
     "project_link": "https://bmi-calculator-tau-wheat.vercel.app/",
     "github_link": "https://github.com/eatcodebuild/BMI-Calculator",
     "img": "/Images/bmi-calculator.png",

@@ -120,9 +120,7 @@
             </div>
           </div>
           <article class="text-white scroll-up">
-            <p class="lead mb-5"><%= blog.articleA %></p>
-            <p class="lead mb-5"><%= blog.articleB %></p>
-            <p class="lead mb-5"><%= blog.articleC %></p>
+            <div id="articleContainer" data-articles="<%= JSON.stringify(blog.articleParagraphs) %>"></div>
             <div class="d-flex gap-2">
               <a href="/blog#blogs-top" class="btn btn-primary">Check out more posts</a>
               <a href="/contact" class="btn btn-outline-primary">Get in touch</a>
@@ -201,5 +199,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="../script.js"></script>
   </body>
 </html>
