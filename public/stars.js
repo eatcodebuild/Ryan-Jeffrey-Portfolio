@@ -28,10 +28,43 @@ function showContent() {
   });
 }
 
+function stayVisible() {
+  const message = document.getElementById("initializing");
+  const homeContent = document.getElementById("homeContent");
+  const starfield = document.getElementById("starfield");
+  const particles = document.getElementById("particles-js");
+  const messageText = document.getElementById("messageText");
+  const body = document.getElementsByTagName("body")[0];
+  const su = document.querySelectorAll(".su");
+  const sl = document.querySelectorAll(".sl");
+  const sr = document.querySelectorAll(".sr");
+
+  messageText.classList.remove("appearGrow");
+  message.classList.add("d-none");
+  if (message.classList.contains("d-none")) {
+    particles.classList.remove("d-none");
+    particles.classList.add("fade");
+    starfield.classList.add("fadeOut");
+    homeContent.classList.remove("d-none");
+    body.classList.remove("noScroll");
+    if (!homeContent.classList.contains("d-none")) {
+      su.forEach((el) => el.classList.add("scroll-up"));
+      sl.forEach((el) => el.classList.add("scroll-left"));
+      sr.forEach((el) => el.classList.add("scroll-right"));
+    }
+  }
+}
+
 window.addEventListener("DOMContentLoaded", () => {
-  setTimeout(() => {
-    showContent();
-  }, 9000);
+  if (!sessionStorage.getItem("introPlayed")) {
+    setTimeout(() => {
+      showContent();
+
+      sessionStorage.setItem("introPlayed", "true");
+    }, 9000);
+  } else {
+    stayVisible();
+  }
 });
 
 const canvas = document.getElementById("starfield");
