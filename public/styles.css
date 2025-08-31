@@ -111,6 +111,10 @@
   background-color: var(--primary);
 }
 
+.bg-primary {
+  background-color: var(--orange-primary) !important;
+}
+
 .bg-space {
   background-color: rgba(0, 0, 0, 0.61);
   z-index: 0;
@@ -1108,4 +1112,54 @@ body {
 .noScroll {
   overflow: hidden;
   height: 100dvh;
+}
+
+.link-hover {
+  text-decoration: none;
+}
+
+.link-hover:hover {
+  text-decoration: underline;
+}
+
+footer.admin {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background-color: transparent;
+  color: white;
+}
+
+nav.admin {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.bg-abyss {
+  background-color: #090b0f;
+}
+
+.bg-darkBlue {
+  background-color: #001525;
+}
+
+#passwordContainer {
+  position: relative;
+}
+
+#password {
+  padding-right: 40px;
+}
+
+#loginForm #eye {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  height: 20px;
+  transform: translateY(-50%);
+  cursor: pointer;
 }

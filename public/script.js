@@ -199,3 +199,13 @@ function renderArticles() {
     displayArticles(article);
   });
 }
+
+function toggleEye(e, i) {
+  if (i.type === "password") {
+    i.type = "text";
+    e.src = "./Images/eye-svgrepo-com.svg";
+  } else if (i.type === "text") {
+    i.type = "password";
+    e.src = "./Images/eye-closed-svgrepo-com.svg";
+  }
+}
