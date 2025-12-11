@@ -1163,3 +1163,83 @@ nav.admin {
   transform: translateY(-50%);
   cursor: pointer;
 }
+
+.techBadge {
+  --size: 20px;
+
+  padding: 5px 10px;
+  border: 0;
+  border-radius: 5px;
+  color: white;
+}
+
+.techBadge::before {
+  content: "";
+  vertical-align: text-bottom;
+  margin-right: 8px;
+  display: inline-block;
+  height: var(--size);
+  width: var(--size);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.techBadge.html {
+  background-color: rgb(151, 116, 92);
+}
+
+.techBadge.css {
+  background-color: rgb(37, 36, 51);
+}
+
+.techBadge.javascript {
+  background-color: rgb(71, 65, 30);
+}
+
+.techBadge.ejs {
+  background-color: rgb(12, 51, 36);
+}
+
+.techBadge.bootstrap {
+  background-color: rgb(6, 4, 43);
+}
+
+.techBadge.express {
+  background-color: rgb(128, 128, 128);
+}
+
+.techBadge.node {
+  background-color: rgb(1, 20, 7);
+}
+
+.techBadge.html::before {
+  background-image: url(/Images/html-5-svgrepo-com.svg);
+}
+
+.techBadge.css::before {
+  background-image: url(/Images/css-3-svgrepo-com.svg);
+}
+
+.techBadge.javascript::before {
+  background-image: url(/Images/javascript-svgrepo-com.svg);
+}
+
+.techBadge.express::before {
+  background-image: url(/Images/express-svgrepo-com-icon.svg);
+}
+
+.techBadge.node::before {
+  background-image: url(/Images/node-svgrepo-com.svg);
+}
+
+.techBadge.ejs::before {
+  background-image: url(/Images/ejs-svgrepo-com.svg);
+}
+
+.techBadge.mongodb::before {
+  background-image: url(/Images/mongo-svgrepo-com.svg);
+}
+
+.techBadge.bootstrap::before {
+  background-image: url(/Images/bootstrap.png);
+}

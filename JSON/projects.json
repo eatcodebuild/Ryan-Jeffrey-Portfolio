@@ -8,7 +8,8 @@
     "project_link": "https://www.ryancjeffrey.com",
     "github_link": "https://github.com/eatcodebuild/Ryan-Jeffrey-Portfolio",
     "img": "/Images/rj.com.png",
-    "has_repo": true
+    "has_repo": true,
+    "techStack": ["HTML", "CSS", "JavaScript", "EJS", "Bootstrap", "Express.js", "Node.js"]
   },
   {
     "title": "Project Pricing Calculators",
@@ -19,7 +20,8 @@
     "project_link": "https://www.3yellowcircles.com.au/gross-profit-calculator/",
     "github_link": null,
     "img": "/Images/project-calculator.png",
-    "has_repo": false
+    "has_repo": false,
+    "techStack": ["HTML", "CSS", "JavaScript", "Bootstrap"]
   },
   {
     "title": "3 Yellow Circles",
@@ -30,7 +32,20 @@
     "project_link": "https://www.3yellowcircles.com.au/",
     "github_link": null,
     "img": "/Images/3YC.png",
-    "has_repo": false
+    "has_repo": false,
+    "techStack": ["HTML", "CSS", "JavaScript", "Bootstrap", "Express.js", "Node.js"]
+  },
+  {
+    "title": "SWM Cabling Services",
+    "description": [
+      "The SWM Cabling Services website is a full-stack build using HTML, CSS, JavaScript, Bootstrap, and Express.js. It delivers a clean, modern layout that highlights key cabling and networking services with simple navigation and clear service sections. The design is fully responsive, providing consistent performance across desktop and mobile.",
+      "The backend uses Express.js with SMTP integration to securely process contact form enquiries. Server-side validation and organised routing ensure reliable form delivery and smooth operation. The result is a polished, production-ready site that gives SWM Cabling Services a professional online presence."
+    ],
+    "project_link": "https://www.swmcablingservices.com.au/",
+    "github_link": null,
+    "img": "/Images/swm.png",
+    "has_repo": false,
+    "techStack": ["HTML", "CSS", "JavaScript", "Bootstrap", "Express.js", "Node.js"]
   },
   {
     "title": "Tyler Black Concreting",
@@ -41,7 +56,8 @@
     "project_link": "https://www.tylerblackconcreting.com/",
     "github_link": null,
     "img": "/Images/Tyler-black.png",
-    "has_repo": false
+    "has_repo": false,
+    "techStack": ["HTML", "CSS", "JavaScript", "Bootstrap", "Express.js", "Node.js"]
   },
   {
     "title": "Full Stack Task Management Application",
@@ -52,7 +68,8 @@
     "project_link": "https://full-stack-to-do-app-backend.vercel.app/",
     "github_link": "https://github.com/eatcodebuild/Full-Stack-To-Do-App",
     "img": "/Images/todo.png",
-    "has_repo": true
+    "has_repo": true,
+    "techStack": ["HTML", "CSS", "JavaScript", "EJS", "Bootstrap", "mongodb", "Express.js", "Node.js"]
   },
   {
     "title": "BMI Calculator",
@@ -63,6 +80,7 @@
     "project_link": "https://bmi-calculator-tau-wheat.vercel.app/",
     "github_link": "https://github.com/eatcodebuild/BMI-Calculator",
     "img": "/Images/bmi-calculator.png",
-    "has_repo": true
+    "has_repo": true,
+    "techStack": ["HTML", "CSS", "JavaScript"]
   }
 ]

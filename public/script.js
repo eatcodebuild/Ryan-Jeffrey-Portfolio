@@ -8,6 +8,7 @@ async function loadProjects() {
 
   function projectLayout(project, index) {
     const description = project.description.map((d) => `<p class="lead mb-4">${d}</p>`).join("");
+    const techStack = project.techStack.map((t) => `<span class="techBadge ${t.replace(".js", "").toLowerCase()}">${t}</span>`).join("");
     const div = document.createElement("div");
     div.classList.add("py-5", "bg-space");
     const directionClass = index % 2 === 0 ? "flex-lg-row" : "flex-lg-row-reverse";
@@ -17,6 +18,7 @@ async function loadProjects() {
               <div class="col-lg-6 col-xl-7 col-12 p-lg-4 text-color">
                   <h4 class="display-4 mb-4 mt-5 mt-lg-0">${project.title}</h4>
                   <div>${description}</div>
+                  <div class="d-flex gap-2 flex-wrap my-4">${techStack}</div>
                   <div class="d-flex gap-2">
                       <a class="text-decoration-none" href="${project.project_link}" target="_blank" rel="noopener noreferrer">
                           <button type="button" class="btn btn-primary rounded-3 px-4 shadow-sm mt-4 moveSVG">
