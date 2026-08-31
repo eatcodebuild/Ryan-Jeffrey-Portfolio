@@ -1,5 +1,17 @@
 [
   {
+    "title": "Salon Diadem",
+    "description": [
+      "Salon Diadem is a boutique hair salon in Eglinton, Western Australia, and the site was built with Svelte, HTML, CSS, JavaScript, and Bootstrap to match the salon's luxe, minimalist branding. The layout leans on clean typography, generous whitespace, and full-bleed lifestyle photography to carry the brand story across the home, services, about, and contact pages, all fully responsive across desktop, tablet, and mobile.",
+      "The services section breaks down the salon's colour work, precision cuts, restorative treatments, nanoplasty, and packages, with each entry linking straight through to the salon's Phorest booking platform so enquiries convert into appointments without friction. Supporting sections such as client testimonials, trading hours, and the Sustainable Salons certification badge build trust, making this a polished, production-ready site that gives a small local business a genuinely premium online presence."
+    ],
+    "project_link": "https://www.salondiadem.com",
+    "github_link": null,
+    "img": "/Images/salondiadem.png",
+    "has_repo": false,
+    "techStack": ["HTML", "CSS", "JavaScript", "Bootstrap", "Svelte"]
+  },
+  {
     "title": "\"Ryan's Space\" Online Portfolio",
     "description": [
       "My personal portfolio website, ryancjeffrey.com, was built using HTML, CSS, and JavaScript, with Node.js and Express.js handling the backend routing of static pages. The site is deployed via Vercel, with CI/CD pipelines integrated through GitHub, ensuring that updates pushed to the repository are automatically deployed with minimal friction.",
