@@ -1212,6 +1212,10 @@ nav.admin {
   background-color: rgb(1, 20, 7);
 }
 
+.techBadge.svelte {
+  background-color: rgb(6, 31, 34);
+}
+
 .techBadge.html::before {
   background-image: url(/Images/html-5-svgrepo-com.svg);
 }
@@ -1242,4 +1246,8 @@ nav.admin {
 
 .techBadge.bootstrap::before {
   background-image: url(/Images/bootstrap.png);
+}
+
+.techBadge.svelte::before {
+  background-image: url(/Images/svelte.webp);
 }
