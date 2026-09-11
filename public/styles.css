@@ -1,5 +1,5 @@
 :root {
-  --orange-primary: #5e2e99;
+  --orange-primary: #1f7b7c;
   --orange-hover: #1b2027;
   --orange-active: #243941;
   --primary: #000000;
@@ -941,7 +941,7 @@ body {
   color: #ffffff;
   font-size: 25px;
   padding-top: 20px;
-  max-width: 80%;
+  max-width: 60%;
 }
 
 .space-shadow {
@@ -1031,41 +1031,6 @@ body {
   }
 }
 
-@keyframes initializing {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-#initializing span {
-  animation-name: initializing;
-  animation-duration: 1s;
-  opacity: 0;
-  animation-iteration-count: infinite;
-  animation-fill-mode: forwards;
-}
-
-#initializing span:nth-child(1) {
-  animation-delay: 4s;
-}
-
-#initializing span:nth-child(2) {
-  animation-delay: 4.2s;
-}
-
-#initializing span:nth-child(3) {
-  animation-delay: 4.4s;
-}
-
 @keyframes fadeOut {
   0% {
     opacity: 1;
@@ -1082,31 +1047,6 @@ body {
   animation-delay: 0s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-}
-
-@keyframes appearGrow {
-  0% {
-    opacity: 0;
-    transform: scale(0);
-  }
-
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-.appearGrow {
-  animation-name: appearGrow;
-  animation-duration: 5s;
-  animation-delay: 0s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-}
-
-#messageText {
-  color: rgb(255, 255, 255);
-  text-shadow: 0px 0px 15px rgb(109, 15, 197), 0px 0px 30px rgb(82, 15, 197), 0px 0px 15px rgb(109, 15, 197), 0px 0px 50px rgb(82, 15, 197);
 }
 
 .noScroll {
@@ -1200,6 +1140,10 @@ nav.admin {
   background-color: rgb(12, 51, 36);
 }
 
+.techBadge.mongodb {
+  background-color: rgb(3, 32, 21);
+}
+
 .techBadge.bootstrap {
   background-color: rgb(6, 4, 43);
 }
@@ -1214,6 +1158,22 @@ nav.admin {
 
 .techBadge.svelte {
   background-color: rgb(6, 31, 34);
+}
+
+.techBadge.tailwind {
+  background-color: rgb(11, 58, 75);
+}
+
+.techBadge.react {
+  background-color: rgb(42, 63, 89);
+}
+
+.techBadge.nextjs {
+  background-color: rgb(75, 72, 72);
+}
+
+.techBadge.sortablejs {
+  background-color: rgb(29, 39, 50);
 }
 
 .techBadge.html::before {
@@ -1250,4 +1210,20 @@ nav.admin {
 
 .techBadge.svelte::before {
   background-image: url(/Images/svelte.webp);
+}
+
+.techBadge.tailwind::before {
+  background-image: url(/Images/tailwindcss.png);
+}
+
+.techBadge.react::before {
+  background-image: url(/Images/react.webp);
+}
+
+.techBadge.nextjs::before {
+  background-image: url(/Images/nextjslogo.webp);
+}
+
+.techBadge.sortablejs::before {
+  background-image: url(/Images/sortable.png);
 }
