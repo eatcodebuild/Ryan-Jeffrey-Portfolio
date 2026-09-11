@@ -1140,6 +1140,10 @@ nav.admin {
   background-color: rgb(12, 51, 36);
 }
 
+.techBadge.mongodb {
+  background-color: rgb(3, 32, 21);
+}
+
 .techBadge.bootstrap {
   background-color: rgb(6, 4, 43);
 }
@@ -1154,6 +1158,22 @@ nav.admin {
 
 .techBadge.svelte {
   background-color: rgb(6, 31, 34);
+}
+
+.techBadge.tailwind {
+  background-color: rgb(11, 58, 75);
+}
+
+.techBadge.react {
+  background-color: rgb(42, 63, 89);
+}
+
+.techBadge.nextjs {
+  background-color: rgb(75, 72, 72);
+}
+
+.techBadge.sortablejs {
+  background-color: rgb(29, 39, 50);
 }
 
 .techBadge.html::before {
@@ -1190,4 +1210,20 @@ nav.admin {
 
 .techBadge.svelte::before {
   background-image: url(/Images/svelte.webp);
+}
+
+.techBadge.tailwind::before {
+  background-image: url(/Images/tailwindcss.png);
+}
+
+.techBadge.react::before {
+  background-image: url(/Images/react.webp);
+}
+
+.techBadge.nextjs::before {
+  background-image: url(/Images/nextjslogo.webp);
+}
+
+.techBadge.sortablejs::before {
+  background-image: url(/Images/sortable.png);
 }
