@@ -1,5 +1,29 @@
 [
   {
+    "title": "Recibry",
+    "description": [
+      "Recibry is a personal recipe library app built with React, Next.js, CSS, and Tailwind, designed to solve the common problem of recipes scattered across notes, screenshots, and bookmarked sites. The Library page gives users a single, account-based home for their collection, with a clean, minimal interface built around Tailwind's utility-first styling and Next.js handling routing and server-side rendering for fast, responsive performance across devices.",
+      "Each saved recipe supports photos, personal ratings, and private cooking notes, letting users build a genuinely personal cookbook rather than a generic list. A standout feature is PDF export, so any recipe can be pulled offline or printed for use in the kitchen. Combined with authenticated sign-in for individual libraries, Recibry demonstrates full-stack thinking around user data, content organization, and a practical, everyday use case."
+    ],
+    "project_link": "https://www.recibry.com",
+    "github_link": null,
+    "img": "/Images/Recibry.png",
+    "has_repo": false,
+    "techStack": ["React", "NextJS", "CSS", "Tailwind"]
+  },
+  {
+    "title": "EQC Resource Hub",
+    "description": [
+      "EQC Resource Hub is a centralised resource management platform built for trainers at the RTO I work for, solving the common problem of trainers going into class unprepared because resources are scattered across personal computers, messily renamed cloud folders, or missing entirely. Built with EJS, CSS, and vanilla JavaScript on a MongoDB backend, the hub is managed by college admins, who upload trainer-created resources along with an overview, recommended usage, screenshots, and how-to videos. Resources are categorised into six types and linked to subjects and courses, so trainers can browse or search by keyword to find what they need.",
+      "Instead of blindly downloading files like a shared drive, trainers open a resource viewer page to read the overview, watch videos, and check screenshots before downloading, along with who uploaded it and when. Role-based access control limits trainers to viewing and downloading while admins retain full control, and the UI uses SortableJS for drag-and-drop organisation. The hub is now used daily by around 60 trainers at the college."
+    ],
+    "project_link": "https://www.eqcresourcehub.com",
+    "github_link": null,
+    "img": "/Images/eqc-resource-hub.png",
+    "has_repo": false,
+    "techStack": ["EJS", "CSS", "bootstrap", "JavaScript", "SortableJS", "mongodb", "Express.js", "Node.js"]
+  },
+  {
     "title": "Salon Diadem",
     "description": [
       "Salon Diadem is a boutique hair salon in Eglinton, Western Australia, and the site was built with Svelte, HTML, CSS, JavaScript, and Bootstrap to match the salon's luxe, minimalist branding. The layout leans on clean typography, generous whitespace, and full-bleed lifestyle photography to carry the brand story across the home, services, about, and contact pages, all fully responsive across desktop, tablet, and mobile.",
