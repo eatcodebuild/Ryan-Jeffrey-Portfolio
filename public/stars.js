@@ -1,5 +1,5 @@
-const WARP_MS = 3000; // how long the hyperdrive runs before the page is revealed
-const START_SPEED = 100; // starting speed, eased down to 0 across WARP_MS
+const WARP_MS = 5000;
+const START_SPEED = 200;
 
 let revealed = false;
 
@@ -13,10 +13,6 @@ function revealContent() {
   const particles = document.getElementById("particles-js");
   const body = document.getElementsByTagName("body")[0];
 
-  // #initializing and the hero inside #homeContent share the same .bg-space.hero
-  // gradient, so swapping them within one frame is seamless. Fading the overlay
-  // out instead exposes the black canvas/body underneath for a full second,
-  // which reads as a blue -> black -> blue flash.
   message.classList.add("d-none");
   homeContent.classList.remove("d-none");
   particles.classList.add("fade");
@@ -27,8 +23,6 @@ function revealContent() {
   document.querySelectorAll(".sl").forEach((el) => el.classList.add("scroll-left"));
   document.querySelectorAll(".sr").forEach((el) => el.classList.add("scroll-right"));
 
-  // checkScroll() already ran on DOMContentLoaded, before the classes above
-  // existed — run it again so above-the-fold content doesn't wait for a scroll.
   if (typeof checkScroll === "function") checkScroll();
 }
 
@@ -40,7 +34,6 @@ canvas.height = window.innerHeight;
 const stars = [];
 const numStars = 500;
 
-// create stars
 for (let i = 0; i < numStars; i++) {
   stars.push({
     x: Math.random() * canvas.width - canvas.width / 2,
@@ -60,21 +53,13 @@ function startWarp(onComplete) {
       lastTime = now;
     }
 
-    // Drive both the speed curve and the distance travelled off wall-clock time
-    // so the warp always lasts WARP_MS, whatever the display's refresh rate.
     const t = Math.min((now - startTime) / WARP_MS, 1);
-    // Clamped so a stalled/throttled frame doesn't teleport every star at once.
-    const frames = Math.min((now - lastTime) / 16.67, 3);
+    const frames = Math.min((now - lastTime) / 50.67, 3);
     lastTime = now;
 
-    // 1 - t^2 holds close to full speed early and brakes hard into the finish,
-    // so the stars are still visibly moving right up to the reveal. An ease-out
-    // like (1 - t)^3 instead spends its last second at a speed too low to see,
-    // which reads as a stall between the warp ending and the content arriving.
     const speed = START_SPEED * (1 - t * t);
 
-    // fade the background slightly to create motion blur effect
-    ctx.fillStyle = "rgba(0, 0, 0, 0.2)"; // lower alpha = longer trails
+    ctx.fillStyle = "rgba(0, 0, 0, 0.2)";
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
     for (let i = 0; i < stars.length; i++) {
@@ -116,17 +101,13 @@ window.addEventListener("DOMContentLoaded", () => {
     return;
   }
 
-  // Set the flag up front so a reload part-way through doesn't replay the intro.
   sessionStorage.setItem("introPlayed", "true");
 
   startWarp(revealContent);
 
-  // requestAnimationFrame is throttled or paused in a background tab, so the
-  // warp may never finish. Guarantee the content shows up regardless.
-  setTimeout(revealContent, WARP_MS + 2000);
+  setTimeout(revealContent, WARP_MS);
 });
 
-// resize canvas when window changes
 window.addEventListener("resize", () => {
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;

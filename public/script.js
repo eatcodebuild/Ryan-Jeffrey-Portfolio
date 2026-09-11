@@ -1,5 +1,5 @@
-// const URL = "https://www.ryancjeffrey.com";
-const URL = "http://localhost:3000";
+const URL = "https://www.ryancjeffrey.com";
+// const URL = "http://localhost:3000";
 
 async function loadProjects() {
   const response = await fetch(`${URL}/get/projects`);
